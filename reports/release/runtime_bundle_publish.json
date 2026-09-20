@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "verified",
+  "visibility": "private_repository_release",
+  "repository": "YiAn-172/commerce-agent",
+  "git_commit": "1a84df0a2d8e6e882ce6715bec143f7144bb6645",
+  "release_tag": "demo-runtime-v1",
+  "release_url": "https://github.com/YiAn-172/commerce-agent/releases/tag/demo-runtime-v1",
+  "asset_url": "https://github.com/YiAn-172/commerce-agent/releases/download/demo-runtime-v1/commerce-agent-demo-runtime-v1.zip",
+  "asset_size_bytes": 414276839,
+  "asset_digest": "sha256:f8386e93c390b444dc72e73de86eb67c21e227be9ec62b0678be3d6f26ea4c73",
+  "upload_state": "uploaded",
+  "contains_secrets": false,
+  "verified_at": "2026-09-20T03:41:12Z"
+}

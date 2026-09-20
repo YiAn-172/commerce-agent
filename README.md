@@ -425,7 +425,8 @@ uv run --cache-dir .uv-cache --frozen python scripts/import_runtime_bundle.py `
 
 `dist/` 默认被 Git 忽略。导入器要求压缩包成员与清单完全一致、拒绝路径穿越，并逐文件
 验证大小和 SHA-256；遇到不同的已有文件默认失败关闭，只有显式 `--replace` 才会替换。
-本地已生成的 v1 包尚未上传到外部 Release，因此完整远端克隆复现仍未闭环。
+v1 包已上传到私有 GitHub Release `demo-runtime-v1`，远端资产大小和 GitHub 返回的 digest
+均与本地报告一致。完整隔离栈从零启动仍是独立验收项。
 
 ## 数据安全与版本边界
 

@@ -83,6 +83,12 @@ def build(root: Path) -> dict[str, Any]:
     porcelain = git(root, "status", "--porcelain")
     deepseek = read_json(root / "reports/agent/p6_deepseek_live.json") or {}
     fresh_clone = read_json(root / "reports/release/fresh_clone_reproduction.json") or {}
+    runtime_publish = read_json(root / "reports/release/runtime_bundle_publish.json") or {}
+    fresh_clone_verified = (
+        fresh_clone.get("evaluation_status") == "source_and_runtime_artifacts_verified"
+        and fresh_clone.get("source_checks_passed") is True
+        and fresh_clone.get("runtime_artifacts_complete") is True
+    )
     waivers: list[dict[str, Any]] = [
         {
             "gate": "independent_human_review",
@@ -96,10 +102,16 @@ def build(root: Path) -> dict[str, Any]:
         },
         {
             "gate": "fresh_clone_reproduction",
-            "status": "not_performed_demo_only",
+            "status": (
+                "source_and_runtime_artifacts_verified_demo_only"
+                if fresh_clone_verified
+                else "not_performed_demo_only"
+            ),
             "reason": (
-                "The committed source has not yet been proven in a fully isolated demo runtime "
-                "with externally distributed model/data artifacts."
+                "A clean clone passed source checks and restored the published runtime bundle; "
+                "a fully isolated demo stack was not started from that clone."
+                if fresh_clone_verified
+                else "A fully isolated clone reproduction has not been completed."
             ),
         },
         {
@@ -143,6 +155,12 @@ def build(root: Path) -> dict[str, Any]:
             "runtime_artifacts_complete": fresh_clone.get(
                 "runtime_artifacts_complete", False
             ),
+        },
+        "runtime_bundle_distribution": {
+            "status": runtime_publish.get("evaluation_status", "not_recorded"),
+            "release_url": runtime_publish.get("release_url"),
+            "asset_digest": runtime_publish.get("asset_digest"),
+            "asset_size_bytes": runtime_publish.get("asset_size_bytes"),
         },
         "evidence": {
             name: {

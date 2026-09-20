@@ -197,9 +197,11 @@ The ignored ONNX runtime and generated knowledge documents were packaged into
 bundle contains no secrets and has SHA-256
 `f8386e93c390b444dc72e73de86eb67c21e227be9ec62b0678be3d6f26ea4c73`.
 Its importer rejects undeclared members and path traversal, verifies every file hash, and fails
-closed on mismatched existing files. The bundle is local and Git-ignored until it is uploaded to a
-controlled release location. Evidence: `reports/release/runtime_bundle_export.json` and
-`reports/release/fresh_clone_reproduction.json`. The latter is
+closed on mismatched existing files. The bundle remains Git-ignored and was uploaded to the private
+GitHub Release `demo-runtime-v1`; the uploaded asset is 414,276,839 bytes and GitHub reports the
+same SHA-256 as the local file. Evidence: `reports/release/runtime_bundle_export.json`,
+`reports/release/runtime_bundle_publish.json`, and `reports/release/fresh_clone_reproduction.json`.
+The latter is
 `source_and_runtime_artifacts_verified`; a separate isolated stack was not started.
 
 ## 9. Remaining strict-release blockers

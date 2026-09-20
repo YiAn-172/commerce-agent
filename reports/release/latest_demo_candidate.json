@@ -5,7 +5,7 @@
   "blockers": [],
   "provenance": "ai_assisted_project_owner_accepted",
   "human_review_status": "not_performed",
-  "git_commit": "9dbf9ac08a188e67f87fc3936717e48e153de7fd",
+  "git_commit": "1a84df0a2d8e6e882ce6715bec143f7144bb6645",
   "working_tree_clean": false,
   "waivers": [
     {
@@ -20,8 +20,8 @@
     },
     {
       "gate": "fresh_clone_reproduction",
-      "status": "not_performed_demo_only",
-      "reason": "The committed source has not yet been proven in a fully isolated demo runtime with externally distributed model/data artifacts."
+      "status": "source_and_runtime_artifacts_verified_demo_only",
+      "reason": "A clean clone passed source checks and restored the published runtime bundle; a fully isolated demo stack was not started from that clone."
     },
     {
       "gate": "demo_video",
@@ -39,6 +39,12 @@
     "git_commit": "9dbf9ac08a188e67f87fc3936717e48e153de7fd",
     "source_checks_passed": true,
     "runtime_artifacts_complete": true
+  },
+  "runtime_bundle_distribution": {
+    "status": "verified",
+    "release_url": "https://github.com/YiAn-172/commerce-agent/releases/tag/demo-runtime-v1",
+    "asset_digest": "sha256:f8386e93c390b444dc72e73de86eb67c21e227be9ec62b0678be3d6f26ea4c73",
+    "asset_size_bytes": 414276839
   },
   "evidence": {
     "ai_acceptance": {
@@ -4410,5 +4416,5 @@
       "created_at": "2026-09-19T03:54:34.151275+00:00"
     }
   },
-  "created_at": "2026-09-20T03:29:12.292181+00:00"
+  "created_at": "2026-09-20T03:42:22.478271+00:00"
 }
