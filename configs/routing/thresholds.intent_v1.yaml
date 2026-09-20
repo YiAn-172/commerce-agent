@@ -1,0 +1,16 @@
+schema_version: '1.0'
+data_version: intent_v1
+calibration_report: reports/training/calibration_v1.json
+temperature: 1.3041662636995004
+auto_route_min_confidence: 0.98
+route_margin: 0.5
+clarify_below_confidence: 0.91
+target_coverage: 0.8
+target_selective_accuracy: 0.96
+observed_coverage: 0.8544
+observed_selective_accuracy: 0.9943820224719101
+target_met: true
+status: verified_internal_validation
+selection_objective: maximize selective accuracy, then coverage, while meeting both
+  targets
+note: Thresholds use internal validation and must be revalidated on frozen human gold.

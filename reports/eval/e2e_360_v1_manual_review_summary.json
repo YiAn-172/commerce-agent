@@ -1,0 +1,16 @@
+{
+  "required_sample_rate": 0.2,
+  "sample_count": 72,
+  "status": "pending_human_review",
+  "quality_gate_passed": false,
+  "reviewed": 0,
+  "pending": 72,
+  "passed": 0,
+  "failed": 0,
+  "pass_rate": null,
+  "mean_relevance_score": null,
+  "mean_clarity_score": null,
+  "duplicate_case_ids": [],
+  "invalid_reviews": [],
+  "updated_at": "2026-09-18T10:01:45.167650+00:00"
+}

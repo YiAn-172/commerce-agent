@@ -1,0 +1,35 @@
+{
+  "input_rows": 36228,
+  "model": "BAAI/bge-small-zh-v1.5",
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "minhash_threshold": 0.9,
+  "minhash_removed": 108,
+  "trials": [
+    {
+      "bge_similarity_threshold": 0.96,
+      "output_rows": 27283,
+      "bge_removed": 8837,
+      "all_label_source_quotas_feasible": false
+    },
+    {
+      "bge_similarity_threshold": 0.985,
+      "output_rows": 33013,
+      "bge_removed": 3107,
+      "all_label_source_quotas_feasible": false
+    },
+    {
+      "bge_similarity_threshold": 0.99,
+      "output_rows": 34305,
+      "bge_removed": 1815,
+      "all_label_source_quotas_feasible": false
+    },
+    {
+      "bge_similarity_threshold": 0.997,
+      "output_rows": 35820,
+      "bge_removed": 300,
+      "all_label_source_quotas_feasible": true
+    }
+  ],
+  "selection": "0.997",
+  "rationale": "Exact hash and 0.90 MinHash run first. Lower BGE thresholds collapsed valid same-intent paraphrases and made fixed per-label external/synthetic quotas infeasible; 0.997 is retained as a near-identity semantic gate."
+}

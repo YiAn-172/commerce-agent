@@ -1,0 +1,24 @@
+{
+  "input_rows": 23574,
+  "unique_sample_ids": 23574,
+  "discarded_duplicate_rows": 0,
+  "duplicate_ids_with_different_responses": 0,
+  "observed_issue_rows": {
+    "model_reported_issue": 2382,
+    "entities_not_preserved": 2
+  },
+  "selection_policy": "prefer entities_preserved, then no suspected_issue, then latest checkpoint row",
+  "history": [
+    {
+      "input_rows": 22692,
+      "unique_sample_ids": 15967,
+      "discarded_duplicate_rows": 6725,
+      "duplicate_ids_with_different_responses": 5670,
+      "observed_issue_rows": {
+        "model_reported_issue": 2021,
+        "entities_not_preserved": 4
+      },
+      "selection_policy": "prefer entities_preserved, then no suspected_issue, then latest checkpoint row"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+name: commerce-agent
+
+x-python-service: &python-service
+  build:
+    context: .
+    dockerfile: infra/docker/python.Dockerfile
+    target: runtime
+  env_file:
+    - .env
+  restart: unless-stopped
+  networks:
+    - commerce-net
+  volumes:
+    - ./configs:/workspace/configs:ro
+    - ./models:/workspace/models:ro
+    - hf-cache:/cache/huggingface
+    - checkpoint-data:/cache/checkpoints
+  logging:
+    driver: json-file
+    options:
+      max-size: 10m
+      max-file: "3"
+
+services:
+  cache-init:
+    image: alpine:3.21.3
+    profiles: [tooling, dev-lite, demo-full, train, test]
+    user: "0:0"
+    command: ["sh", "-c", "chown -R 10001:10001 /cache/huggingface /cache/checkpoints"]
+    volumes:
+      - hf-cache:/cache/huggingface
+      - checkpoint-data:/cache/checkpoints
+    restart: "no"
+
+  mysql:
+    image: mysql:8.4.6
+    profiles: [core, dev-lite, demo-full, test]
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    command: ["mysqld", "--character-set-server=utf8mb4", "--collation-server=utf8mb4_0900_ai_ci"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+    networks: [commerce-net]
+
+  redis:
+    image: redis:7.4.5-alpine
+    profiles: [core, dev-lite, demo-full, test]
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory-policy", "allkeys-lru"]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+    restart: unless-stopped
+    networks: [commerce-net]
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.7
+    profiles: [core, dev-lite, demo-full, test]
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9200/_cluster/health?wait_for_status=yellow || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+      start_period: 45s
+    restart: unless-stopped
+    networks: [commerce-net]
+
+  etcd:
+    image: quay.io/coreos/etcd:v3.5.18
+    profiles: [demo-full, test]
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command: etcd -advertise-client-urls=http://127.0.0.1:2379 -listen-client-urls=http://0.0.0.0:2379 --data-dir /etcd
+    volumes:
+      - etcd-data:/etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks: [commerce-net]
+
+  minio:
+    image: quay.io/minio/minio:RELEASE.2025-07-23T15-54-02Z
+    profiles: [demo-full, test]
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: minio server /minio_data --console-address ":9001"
+    volumes:
+      - minio-data:/minio_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks: [commerce-net]
+
+  milvus:
+    image: milvusdb/milvus:v2.5.14
+    profiles: [demo-full, test]
+    command: ["milvus", "run", "standalone"]
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    volumes:
+      - milvus-data:/var/lib/milvus
+    depends_on:
+      etcd:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+    networks: [commerce-net]
+
+  api:
+    <<: *python-service
+    profiles: [dev-lite, demo-full]
+    command: ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health/live"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+
+  web:
+    build:
+      context: .
+      dockerfile: infra/docker/web.Dockerfile
+      target: runner
+    profiles: [dev-lite, demo-full]
+    environment:
+      API_INTERNAL_URL: http://api:8000
+      COOKIE_SECURE: "false"
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 15s
+    restart: unless-stopped
+    networks: [commerce-net]
+
+  intent-service:
+    <<: *python-service
+    build:
+      context: .
+      dockerfile: infra/docker/python.Dockerfile
+      target: intent-runtime
+    profiles: [dev-lite, demo-full]
+    command: ["uvicorn", "apps.intent_service.api:app", "--host", "0.0.0.0", "--port", "8001"]
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8001/health/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./configs:/workspace/configs:ro
+      - ./models:/workspace/models:ro
+      - hf-cache:/cache/huggingface
+
+  mcp-catalog:
+    <<: *python-service
+    profiles: [demo-full]
+    command: ["python", "-m", "services.mcp_catalog.server"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8101/health/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+
+  mcp-order:
+    <<: *python-service
+    profiles: [demo-full]
+    command: ["python", "-m", "services.mcp_order.server"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8102/health/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+
+  mcp-after-sales:
+    <<: *python-service
+    profiles: [demo-full]
+    command: ["python", "-m", "services.mcp_after_sales.server"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8103/health/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+
+  worker:
+    build:
+      context: .
+      dockerfile: infra/docker/python.Dockerfile
+      target: dev
+    profiles: [tooling]
+    env_file: [.env]
+    working_dir: /workspace
+    networks: [commerce-net]
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+    volumes:
+      - .:/workspace
+      - hf-cache:/cache/huggingface
+      - checkpoint-data:/cache/checkpoints
+
+  intent-trainer:
+    build:
+      context: .
+      dockerfile: infra/docker/python.Dockerfile
+      target: trainer
+    profiles: [train]
+    env_file: [.env]
+    working_dir: /workspace
+    networks: [commerce-net]
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./data:/workspace/data
+      - ./models:/workspace/models
+      - ./reports:/workspace/reports
+      - hf-cache:/cache/huggingface
+
+  evaluator:
+    build:
+      context: .
+      dockerfile: infra/docker/python.Dockerfile
+      target: dev
+    profiles: [test]
+    env_file: [.env]
+    working_dir: /workspace
+    networks: [commerce-net]
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+    volumes:
+      - .:/workspace
+      - hf-cache:/cache/huggingface
+
+  load-runner:
+    build:
+      context: .
+      dockerfile: infra/docker/python.Dockerfile
+      target: dev
+    profiles: [test]
+    env_file: [.env]
+    working_dir: /workspace
+    networks: [commerce-net]
+    volumes:
+      - .:/workspace
+
+networks:
+  commerce-net:
+    name: commerce-agent-net
+
+volumes:
+  mysql-data:
+  redis-data:
+  es-data:
+  etcd-data:
+  minio-data:
+  milvus-data:
+  hf-cache:
+  checkpoint-data:

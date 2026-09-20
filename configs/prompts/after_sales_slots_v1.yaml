@@ -1,0 +1,12 @@
+prompt_id: after_sales_slots_v1
+version: "1.0"
+purpose: 提取售后资格校验所需字段，不执行写操作
+input_schema: "{query: string}"
+output_schema: "{order_id?,item_id?,request_type?,reason_code?,description?}"
+allowed_facts:
+  - 用户明确提供的订单号、明细号、售后类型和原因
+forbidden_actions:
+  - 猜测订单号或订单项
+  - 判定资格、退款金额或审批结果
+  - 创建工单
+system: 你是售后槽位提取器。request_type 只能为 return、exchange、repair 或 cancel。

@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "suite": "load_mixed",
+  "evaluation_status": "verified",
+  "measurement_scope": "live_http_end_to_end",
+  "requested": 3000,
+  "completed": 3000,
+  "concurrency": 20,
+  "test_time_seconds": 85.182,
+  "throughput_requests_per_second": 35.219,
+  "successes": 3000,
+  "errors": 0,
+  "error_rate": 0.0,
+  "status_codes": {
+    "200": 3000
+  },
+  "latency": {
+    "count": 3000,
+    "min_ms": 0.948,
+    "p50_ms": 32.759,
+    "p95_ms": 2771.803,
+    "p99_ms": 4891.323,
+    "max_ms": 7430.605
+  },
+  "external_deepseek_latency": {
+    "status": "not_observable_from_api_response",
+    "reason": "API responses do not expose trusted component timing fields."
+  },
+  "local_service_latency": {
+    "status": "included_in_end_to_end_only",
+    "reason": "No trusted server-timing breakdown is currently emitted."
+  },
+  "cache": {
+    "mode": "mixed_unspecified",
+    "cold_hot_split": "not_isolated",
+    "reason": "Mixed traffic is not a cache-specific benchmark."
+  },
+  "workload": {
+    "distribution_percent": {
+      "health_live": 10,
+      "meta": 10,
+      "session_list": 20,
+      "knowledge_chat": 25,
+      "order_chat": 20,
+      "safety_chat": 15
+    }
+  },
+  "preflight": {
+    "/health/live": {
+      "status_code": 200,
+      "ok": true
+    },
+    "/health/ready": {
+      "status_code": 200,
+      "ok": true
+    }
+  },
+  "environment": {
+    "python": "3.11.15",
+    "operating_system": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 20,
+    "ram_bytes": 16573128704,
+    "gpu": "not_detected_or_not_reported",
+    "network": {
+      "base_url": "http://127.0.0.1:8000",
+      "topology": "caller_to_configured_base_url",
+      "bandwidth": "not_measured"
+    },
+    "deepseek_model": "deepseek-flash"
+  },
+  "sample_errors": [],
+  "created_at": "2026-09-19T04:27:52.245748+00:00"
+}

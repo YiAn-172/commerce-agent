@@ -1,0 +1,13 @@
+{
+  "input_external": 26174,
+  "input_synthetic": 15000,
+  "output_rows": 36228,
+  "rejections": {
+    "translation_flagged_nonblocking": 2380,
+    "translation_entity_mismatch": 2,
+    "length": 6,
+    "exact_label_conflict": 385,
+    "exact_duplicate": 4553
+  },
+  "exact_conflict_hashes": 110
+}

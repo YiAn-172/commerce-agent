@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "kind": "routing",
+  "status": "ai_assisted_verified_for_demo",
+  "human_review_status": "not_performed",
+  "source_sha256": "5c774495c36d6396cc9a6192b94348c7d02fbf967b0d53304a9a70bffd3868e4",
+  "draft_sha256": "c44922a4cb0fdec699ec1b3d9d24d5d2ea4e50bee649c306a9f5e24ee0a8f294",
+  "adjudicated_sha256": "cf5b469b87bf81d36663f06559838907a8470bbf9d7c397ca12c3810d7ce65c6",
+  "expected_rows": 800,
+  "adjudicated_output": "evals\\routing\\routing_800_v1_ai_assisted.jsonl",
+  "created_at": "2026-09-18T10:49:08.955275+00:00"
+}

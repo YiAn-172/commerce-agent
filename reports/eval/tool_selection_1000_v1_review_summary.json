@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool_selection",
+  "status": "pending_human_review",
+  "source_suite": "evals\\tool_selection\\tool_selection_1000_v1.jsonl",
+  "source_sha256": "1cb0e56b8d752f19c2dbc2a82074f3cf5937658f34dd3a6d6e3bfdafcc2919d4",
+  "expected_rows": 1000,
+  "queue_rows": 1000,
+  "reviewed": 0,
+  "pending": 1000,
+  "duplicate_source_ids": false,
+  "duplicate_review_ids": false,
+  "missing_case_ids": [],
+  "unexpected_case_ids": [],
+  "invalid_reviews": [],
+  "adjudicated_output": "evals\\tool_selection\\tool_selection_1000_v1_human_gold.jsonl",
+  "adjudicated_sha256": null,
+  "updated_at": "2026-09-18T10:01:44.909932+00:00"
+}

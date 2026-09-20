@@ -1,0 +1,65 @@
+schema_version: "1.0"
+reviewed_at: "2026-09-15"
+sources:
+  full_ecom:
+    kind: huggingface_dataset
+    repo_id: rescommons/Full-Ecom-Chatbot-Dataset
+    url: https://huggingface.co/datasets/rescommons/Full-Ecom-Chatbot-Dataset
+    requested_revision: main
+    expected_license: mit
+    upstream_source: Research Commons aggregation; only explicitly approved record sources may enter processed data
+    allowed_use: Local model-development experiments with per-record provenance filtering
+    redistribution_allowed: false
+    attribution_required: true
+    license_status: approved_for_experiment
+    approved_record_sources:
+      - synthetic_api_generated
+      - bitext_customer_support
+      - bitext_retail_ecom
+    handler: data-engineering
+    notes: ASOS and Amazon-derived records are quarantined because the aggregation license does not replace upstream terms.
+
+  massive_zh:
+    kind: huggingface_dataset
+    repo_id: SetFit/amazon_massive_intent_zh-CN
+    url: https://huggingface.co/datasets/SetFit/amazon_massive_intent_zh-CN
+    requested_revision: main
+    expected_license: cc-by-4.0
+    upstream_source: Amazon MASSIVE 1.0/1.1, localized from SLURP
+    allowed_use: Intent experiments with attribution; only semantically compatible labels or explicit OOS samples
+    redistribution_allowed: false
+    attribution_required: true
+    license_status: approved_for_experiment
+    approved_record_sources: []
+    handler: data-engineering
+    notes: Mirror metadata may omit the license; the upstream MASSIVE NOTICE and LICENSE state CC BY 4.0.
+
+  smp2017:
+    kind: git_repository
+    repo_id: null
+    url: https://github.com/HITlilingzhi/SMP2017ECDT-DATA.git
+    requested_revision: master
+    expected_license: research-use-notice
+    upstream_source: HIT-SCIR SMP2017 ECDT evaluation data
+    allowed_use: Local non-commercial research experiment with required paper citation
+    redistribution_allowed: false
+    attribution_required: true
+    license_status: approved_for_experiment
+    approved_record_sources: []
+    handler: data-engineering
+    notes: Repository contains no SPDX/OSI LICENSE; README says open for research use. Raw data and derivatives are not redistributed.
+
+  bitext_retail:
+    kind: huggingface_dataset
+    repo_id: bitext/Bitext-retail-ecommerce-llm-chatbot-training-dataset
+    url: https://huggingface.co/datasets/bitext/Bitext-retail-ecommerce-llm-chatbot-training-dataset
+    requested_revision: main
+    expected_license: cdla-sharing-1.0
+    upstream_source: Bitext Innovations retail and e-commerce chatbot dataset
+    allowed_use: Computational use with attribution and CDLA Sharing obligations
+    redistribution_allowed: false
+    attribution_required: true
+    license_status: approved_for_experiment
+    approved_record_sources: []
+    handler: data-engineering
+    notes: Added as a direct, license-traceable source to cover e-commerce intents without relying on unclear ASOS/Amazon provenance.

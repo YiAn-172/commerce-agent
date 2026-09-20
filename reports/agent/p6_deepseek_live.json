@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-20T02:49:53.627243+00:00",
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "prompt_id": "knowledge_rewrite_v1",
+  "latency_ms": 1207.1,
+  "validated_output": {
+    "query": "七天无理由退货需要满足什么条件？",
+    "doc_types": [
+      "return_policy"
+    ]
+  }
+}

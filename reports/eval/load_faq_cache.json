@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "suite": "load_faq_cache",
+  "evaluation_status": "verified",
+  "measurement_scope": "live_http_end_to_end",
+  "requested": 5000,
+  "completed": 5000,
+  "concurrency": 1,
+  "test_time_seconds": 59.101,
+  "throughput_requests_per_second": 84.601,
+  "successes": 5000,
+  "errors": 0,
+  "error_rate": 0.0,
+  "status_codes": {
+    "200": 5000
+  },
+  "latency": {
+    "count": 5000,
+    "min_ms": 7.998,
+    "p50_ms": 10.295,
+    "p95_ms": 12.277,
+    "p99_ms": 16.035,
+    "max_ms": 514.28
+  },
+  "external_deepseek_latency": {
+    "status": "not_observable_from_api_response",
+    "reason": "API responses do not expose trusted component timing fields."
+  },
+  "local_service_latency": {
+    "status": "included_in_end_to_end_only",
+    "reason": "No trusted server-timing breakdown is currently emitted."
+  },
+  "cache": {
+    "cold": {
+      "requests": 1,
+      "latency": {
+        "count": 1,
+        "min_ms": 127.384,
+        "p50_ms": 127.384,
+        "p95_ms": 127.384,
+        "p99_ms": 127.384,
+        "max_ms": 127.384
+      }
+    },
+    "hot": {
+      "requests": 4999,
+      "latency": {
+        "count": 4999,
+        "min_ms": 7.998,
+        "p50_ms": 10.295,
+        "p95_ms": 12.277,
+        "p99_ms": 16.035,
+        "max_ms": 514.28
+      }
+    },
+    "observed_response_headers": {
+      "MISS": 1,
+      "HIT": 4999
+    },
+    "hot_hits": 4999,
+    "hot_hit_rate": 1.0,
+    "verification": "header_verified"
+  },
+  "workload": {
+    "endpoint": "/api/v1/chat",
+    "text": "手机保修政策是什么",
+    "sequential": true
+  },
+  "preflight": {
+    "/health/live": {
+      "status_code": 200,
+      "ok": true
+    },
+    "/health/ready": {
+      "status_code": 200,
+      "ok": true
+    }
+  },
+  "environment": {
+    "python": "3.11.15",
+    "operating_system": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 20,
+    "ram_bytes": 16573128704,
+    "gpu": "not_detected_or_not_reported",
+    "network": {
+      "base_url": "http://127.0.0.1:8000",
+      "topology": "caller_to_configured_base_url",
+      "bandwidth": "not_measured"
+    },
+    "deepseek_model": "deepseek-flash"
+  },
+  "sample_errors": [],
+  "created_at": "2026-09-19T04:23:26.664096+00:00"
+}

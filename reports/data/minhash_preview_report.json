@@ -1,0 +1,660 @@
+{
+  "input_rows": 36228,
+  "output_rows": 36120,
+  "bge_executed": false,
+  "bge_model": null,
+  "bge_model_revision": null,
+  "removal_counts": {
+    "minhash_near_duplicate": 108
+  },
+  "removals": [
+    {
+      "sample_id": "19d6c2efa6dc7f8e1960ef83",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0220b9d5689a3fde935ab661",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "2c6a9b528b7981bd2e5d0436",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "135c1be3e31b1a45a7c71d69",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "5377bed2ce02660b8fef7bb8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "302a724712038bae47c66692",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "563590df55356d042b96937e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4a32abbc437dd2e0286f66f7",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "5fec806174285c39a46a4d89",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "450cbeb76935fe6a97a3d1c0",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "861a7c87d0e72fd1d1cd3fe1",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "20b3bdc9069ea2e35a0a6479",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "a4db053aec5de89317b699c0",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "19ecd53fc929fb2add6ff272",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c564cfe4f7d2ae678407174f",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "11615a99ffe9071cd8c7d057",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c617b5d51dbc0046fb985618",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "8f72d5a161b02b615767df9e",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "dddbddff8da8188836d5e019",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "ba9e555ee03a20dc7027341f",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e6dff8ebc3c523a30db6fdef",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "065f938312257289d84800e7",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e8f7f6e0e1bacfc7ea621da8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "6d7d8d0eaa5bdeec80ac7fab",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "f11e0589064d467907a336d0",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0b16871795a4a21c6d134799",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "1002c05b305df01dbeece15d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0ba3914d9e3ece413155f56d",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "10f779183eacb775fe181393",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0826abb7103c34ed5dc754d1",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "28e2c7a243f98355d8e0ee1a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2230d5401a0cecb38f98c9d9",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "2b680fc62fc801f0999deacf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2605d840437dffc1b8492724",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "3490e061ce84aae27282923a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "09236d68d24062aafa01660e",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "39378b9aea5d084141a0d2c2",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "062ae4d9437d4ffad9d39946",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "5058548ff930bd813036e8d6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3b05a80c1fa7464ba3fbc5d8",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "559d4546922f3508959c4391",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "043d1226e046952704fa2550",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "5ffb68aee6df2034f8623d69",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0397f883274729aeed296ee1",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "637e85e0de8aacd8c6276c21",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "08a654acabc144c73725f861",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "7783b671baa1c4f37a630ee5",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2f0b588f87d364809e29b5cb",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "85dcc46cf8893602c2b3640a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2816eabd2d9795bafddb0e74",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "9ccb7ddb0f8ba6ae207c4e81",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "54edc47f8af8ca11d18237a2",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ab3503bda39c8ebc23f7759c",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0cd5b6b16d6b443769b81495",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "b212219be7e478b081f316b8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2cdb4481bc1a203a58684da5",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ce804b3eed703d0feb90d493",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "b91b4881e40aeb3a28fe34f7",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "636d652d975806b980c7fe80",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3e690e75a5dd9bc1ae182c4e",
+      "target_intent": "chitchat"
+    },
+    {
+      "sample_id": "916bb1ed0ad19dbe2e4eb972",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3e690e75a5dd9bc1ae182c4e",
+      "target_intent": "chitchat"
+    },
+    {
+      "sample_id": "89adbbf991c1c2b65da1d6ac",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "87f82d8351c0c6ca2facdb1d",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "a634268d8127852c961d6ed7",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "9e54d0bb2bf92c102a795b20",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "a852782277a5811f350756cb",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "02cbf3a3c612febd5daa487c",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "becb058e8e242d2c9d83a828",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "bc66c8b994c52a8301fee33e",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "39ee7b213618d50f0575ca15",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "201f4dfd76d9540e83e2cb0c",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "57119234404267748d2fc065",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "061fabb801bc74b1d7269553",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "79ee00a469b0bb34eece1543",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "43fbcb76d2b21b1630469f0d",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "97b440be294aa053eac08250",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "46f9360808f03e28654847e7",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "9a48c48438c7104437dd78cc",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "796dc14794977a51571c90c8",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "d88e205874bf5d872000f2dd",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7cc94a13a840fba028bfe22d",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "e5ad6b807791d27ff6dd2910",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "17c44e52b81af36d7cb6637b",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "3ab1c23a28a9aa63cb4d1080",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "18d794678c2d4585ba84ac84",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c2219f08bcd9790b7b544e4e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7931a160b696eed5352d59ea",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d8696e22ee2f64b77cf20814",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "896f0d697ab4674c5b343f53",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e4c3b5f4c062da6b537de09c",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7bd36514e08ab7e04aecbc05",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "faea75e3ab3a5686fb0d4a60",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "06c2e973013afe85416b7b0b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d85e223f517e427beff6f4ed",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4e09726644bf716f5721946c",
+      "target_intent": "out_of_scope"
+    },
+    {
+      "sample_id": "f916616f4a188d1a405f6116",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "eb218b6ebc8d6a5a6da2b3cb",
+      "target_intent": "out_of_scope"
+    },
+    {
+      "sample_id": "13267fd2449f2ddfa42cef4d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0cf8572b3fe4d98d0990a5af",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "525f3110af4efafbcbbaa8d1",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4330abeecf7aaa40f2225f93",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "54f38d803d0c4585a653d975",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "209572ba78e524f40535a89a",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "5f93c26357a1721525eb22b3",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "27905ea3f654c687e2d8190d",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "758ea7415fb986468f643fd5",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "72487ed2f8c076baef5e2f7c",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "84c6556a86bf733330cfff8f",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "40a383d793bca15f7055b89e",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "4bcdc691c09e4279ed80189d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "10eb0a28e4ff5b0137beb84c",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "55e965aed377263f1e3f937d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0e35848a23bf5cbb89fdb703",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "5f23458e51feeff208acd45b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "008183bcf49bde050c2c32d7",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "da27489570e0854c07805324",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2ca5e98fe67763dc05cf5269",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "ddf5b271e0fe4c79c593348e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "57c31ee4635e3f5c63b3647e",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "eaec3b3a3a1abb8a58167c95",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "b4f3e3eda09f0048eae3460c",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "1ef98b52283c6b334947de66",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "04e8b5c3dcd29dc81deb0f25",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "4e4770aa2f27e20c81e6eb37",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "36497e1087877013d3482b79",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "54767322dfe7022f0783a70d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2f223b2038a414b120486b2d",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "69fb907fe9e28b5e267a3d96",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "071ea3f78dda441c13064ee1",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "7fc9db5549c43a03d577a196",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4f10d4f113ea921a8f0dbb38",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "892b5869fd32862c08635000",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "603ddf35ce95ab4705dbbe6d",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "be199b1a9ae1ac8d9269b3a0",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "90734e6c19518e470b513fec",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "755f272febaee7ddecf5eeaf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4b77491cfbd1d60e2d1e89c2",
+      "target_intent": "product_recommend"
+    },
+    {
+      "sample_id": "53147566df184b47f53f16cd",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "118d147232664c09b30771b8",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "8cc307d542a981a4e4a542d3",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1207ee28c3c9e8aefef331e5",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "9c91a0fb8d68c39281d68d84",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1782e7b3eb497c03c603b057",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "c087e069fbd1a00c1f64d53a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0798af84cbe496ead17e1d80",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "d61d77f35499c2b4456a5daf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "80a369c1969ee81bbe14cf73",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "eb4f42130b61075c88114d7f",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "8e5192725be56972e9963870",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "f02e08976d3d17cb68cbaa6d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "07c0bdc5a87900bd82a7aa2d",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "fe7b1bbb804a44ad8fabec68",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "5b7e6db253858d6ae9be357b",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "ffd49e8e60be989569b5fce6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "5cf3cf1ea51c2a6a3934ad5b",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "27099fd12d564642b9ffbfd3",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "26f3fcc1d104a3aaf6c04398",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "3efaa2d1f0a8d2db77f7d0de",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3827c13b6c36a08f3a9b0c66",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "53b1de31f3d414e95e8319f5",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "06aed44afe376d028950010e",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "553614ac24b98088c0a41361",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "16464e292aaba2fe05487ad4",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "5f83dabad183d8737ab1c442",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0a73265b8808a17cdbea73c3",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "92c198b1cf6a2028f390481d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2040a64e5d493640c2cc44fd",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "988cd87eeed6c4f235a22adf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "087da6439f68eb49ed3e32b1",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "a9f7dc1a317bf5a0643b8957",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "a45bfd0247c6ffe299d7290b",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "c68f38905d1a034b5db8ff6b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "ae4bdfc44a4c229b48ccdb95",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "e6be7a369713b3c8ed0288ed",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3d13fa8705809f7794e88a10",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "f4f961b863ddabe3c4556349",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7294b819dc2592d2cf560c51",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "339b0e7e9cac6159fa9eb9e9",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2e927ca1b14c89575627a3aa",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "40d400832f6f0f09ca1bf7f6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "406342e9eb50ec4c2e113086",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "51932ebe28abe7b0ceab533b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "115288a27904f135b6f43cae",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "72f51a6684dd5639d1f4fc3a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4961ca3e718f1724c54c2201",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "7692d86cce02bcc700375147",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "6f5af2c45fa58f4616e3cf23",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b06036949c4d68d91c47662e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "8ec6bdb0316403b1740eb3bd",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b99645a0bc481fb52a3d7322",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "114cba8a763ed4a7c5242d28",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bc43f78317bad7eab2144ee6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "ba7d44599b5325495e2332ee",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bce5b75d6f6795bd736b40b8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3783d0aa3c935bf8d7a4c086",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bf07e4bb4f415be620e793c4",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1afd119afd973c756cefeff3",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "c24c4d8c6a880815e67895e7",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "5a54b0dde2ef6c24ea07d412",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ca386fbf8e958597e47fda4b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0127aee7489b4fbfdba59a1b",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "cf0d685f3105fb9050c42f21",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4f8195de318908b4e8435716",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "d06906cf3a8d76281f49f59b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7b4a739edc40beb793eb1fc9",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "d811804ebe707847db87c4be",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1189af702ed612fe736db3c6",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "e5bf63eea98ddd81bffadf8e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "618c44ec734b8210c96c151d",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "e5d1e83e3462fd780f95bcea",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "104dfcf06df1298b67e34011",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ec9615ad034082cc039ec75a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4ae42738e828d87a87db82e7",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ece084ae2b696eab474a7309",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "c143dd01c9f6b55e3e3ca51a",
+      "target_intent": "stock_price"
+    }
+  ]
+}

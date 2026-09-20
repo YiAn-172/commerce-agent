@@ -1,0 +1,833 @@
+name: commerce-agent
+networks:
+  commerce-net:
+    name: commerce-agent-net
+  default:
+    name: commerce-agent_default
+services:
+  api:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: runtime
+    command:
+    - uvicorn
+    - apps.api.main:app
+    - --host
+    - 0.0.0.0
+    - --port
+    - '8000'
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+        required: true
+      mysql:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - curl
+      - -fsS
+      - http://localhost:8000/health/live
+      timeout: 3s
+    logging:
+      driver: json-file
+      options:
+        max-file: '3'
+        max-size: 10m
+    networks:
+      commerce-net: null
+    ports:
+    - mode: ingress
+      protocol: tcp
+      published: '8000'
+      target: 8000
+    profiles:
+    - dev-lite
+    - demo-full
+    restart: unless-stopped
+    volumes:
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\configs
+      target: /workspace/configs
+      type: bind
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\models
+      target: /workspace/models
+      type: bind
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+    - source: checkpoint-data
+      target: /cache/checkpoints
+      type: volume
+      volume: {}
+  cache-init:
+    command:
+    - sh
+    - -c
+    - chown -R 10001:10001 /cache/huggingface /cache/checkpoints
+    image: alpine:3.21.3
+    networks:
+      default: null
+    profiles:
+    - tooling
+    - dev-lite
+    - demo-full
+    - train
+    - test
+    restart: 'no'
+    user: 0:0
+    volumes:
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+    - source: checkpoint-data
+      target: /cache/checkpoints
+      type: volume
+      volume: {}
+  elasticsearch:
+    environment:
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+      discovery.type: single-node
+      xpack.security.enabled: 'false'
+    healthcheck:
+      interval: 15s
+      retries: 20
+      start_period: 45s
+      test:
+      - CMD-SHELL
+      - curl -fsS http://localhost:9200/_cluster/health?wait_for_status=yellow ||
+        exit 1
+      timeout: 5s
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.7
+    networks:
+      commerce-net: null
+    profiles:
+    - core
+    - dev-lite
+    - demo-full
+    - test
+    restart: unless-stopped
+    volumes:
+    - source: es-data
+      target: /usr/share/elasticsearch/data
+      type: volume
+      volume: {}
+  etcd:
+    command:
+    - etcd
+    - -advertise-client-urls=http://127.0.0.1:2379
+    - -listen-client-urls=http://0.0.0.0:2379
+    - --data-dir
+    - /etcd
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: '1000'
+      ETCD_QUOTA_BACKEND_BYTES: '4294967296'
+      ETCD_SNAPSHOT_COUNT: '50000'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - etcdctl
+      - endpoint
+      - health
+      timeout: 5s
+    image: quay.io/coreos/etcd:v3.5.18
+    networks:
+      commerce-net: null
+    profiles:
+    - demo-full
+    - test
+    volumes:
+    - source: etcd-data
+      target: /etcd
+      type: volume
+      volume: {}
+  evaluator:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: dev
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+        required: true
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    networks:
+      commerce-net: null
+    profiles:
+    - test
+    volumes:
+    - bind:
+        create_host_path: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent
+      target: /workspace
+      type: bind
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+    working_dir: /workspace
+  intent-service:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: intent-runtime
+    command:
+    - uvicorn
+    - apps.intent_service.api:app
+    - --host
+    - 0.0.0.0
+    - --port
+    - '8001'
+    depends_on:
+      cache-init:
+        condition: service_completed_successfully
+        required: true
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - curl
+      - -fsS
+      - http://localhost:8001/health/ready
+      timeout: 3s
+    logging:
+      driver: json-file
+      options:
+        max-file: '3'
+        max-size: 10m
+    networks:
+      commerce-net: null
+    ports:
+    - mode: ingress
+      protocol: tcp
+      published: '8001'
+      target: 8001
+    profiles:
+    - dev-lite
+    - demo-full
+    restart: unless-stopped
+    volumes:
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\configs
+      target: /workspace/configs
+      type: bind
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\models
+      target: /workspace/models
+      type: bind
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+  load-runner:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: dev
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    networks:
+      commerce-net: null
+    profiles:
+    - test
+    volumes:
+    - bind:
+        create_host_path: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent
+      target: /workspace
+      type: bind
+    working_dir: /workspace
+  mcp-after-sales:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: runtime
+    command:
+    - python
+    - -m
+    - services.mcp_after_sales.server
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - curl
+      - -fsS
+      - http://localhost:8103/health/ready
+      timeout: 3s
+    logging:
+      driver: json-file
+      options:
+        max-file: '3'
+        max-size: 10m
+    networks:
+      commerce-net: null
+    profiles:
+    - demo-full
+    restart: unless-stopped
+    volumes:
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\configs
+      target: /workspace/configs
+      type: bind
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\models
+      target: /workspace/models
+      type: bind
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+    - source: checkpoint-data
+      target: /cache/checkpoints
+      type: volume
+      volume: {}
+  mcp-catalog:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: runtime
+    command:
+    - python
+    - -m
+    - services.mcp_catalog.server
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - curl
+      - -fsS
+      - http://localhost:8101/health/ready
+      timeout: 3s
+    logging:
+      driver: json-file
+      options:
+        max-file: '3'
+        max-size: 10m
+    networks:
+      commerce-net: null
+    profiles:
+    - demo-full
+    restart: unless-stopped
+    volumes:
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\configs
+      target: /workspace/configs
+      type: bind
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\models
+      target: /workspace/models
+      type: bind
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+    - source: checkpoint-data
+      target: /cache/checkpoints
+      type: volume
+      volume: {}
+  mcp-order:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/python.Dockerfile
+      target: runtime
+    command:
+    - python
+    - -m
+    - services.mcp_order.server
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_ENV: local
+      APP_SECRET: <redacted>
+      CHECKPOINT_DB: /cache/checkpoints/checkpoints.sqlite
+      CLARIFY_THRESHOLD: '0.55'
+      COMPOSE_PROJECT_NAME: commerce-agent
+      DEEPSEEK_API_KEY: <redacted>
+      DEEPSEEK_BASE_URL: https://api.deepseek.com
+      DEEPSEEK_MAX_RETRIES: '1'
+      DEEPSEEK_MODEL: deepseek-flash
+      DEEPSEEK_TEMPERATURE: '0.1'
+      DEEPSEEK_TIMEOUT_SECONDS: '30'
+      DEMO_AUTH_ENABLED: 'true'
+      DIRECT_ROUTE_THRESHOLD: '0.78'
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EMBEDDING_MODEL: BAAI/bge-small-zh-v1.5
+      HF_HOME: /cache/huggingface
+      INTENT_MODEL_PATH: /workspace/models/intent_classifier/current
+      LOG_LEVEL: INFO
+      MAX_GRAPH_STEPS: '30'
+      MAX_LLM_CALLS: '3'
+      MAX_TOOL_CALLS: '5'
+      MILVUS_URI: http://milvus:19530
+      MYSQL_DATABASE: commerce
+      MYSQL_DSN: <redacted>
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+      REDIS_URL: redis://redis:6379/0
+      RERANKER_MODEL: BAAI/bge-reranker-base
+      ROUTE_MARGIN: '0.20'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - curl
+      - -fsS
+      - http://localhost:8102/health/ready
+      timeout: 3s
+    logging:
+      driver: json-file
+      options:
+        max-file: '3'
+        max-size: 10m
+    networks:
+      commerce-net: null
+    profiles:
+    - demo-full
+    restart: unless-stopped
+    volumes:
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\configs
+      target: /workspace/configs
+      type: bind
+    - bind:
+        create_host_path: true
+      read_only: true
+      source: C:\Users\mtcbf\Desktop\commerce-agent\models
+      target: /workspace/models
+      type: bind
+    - source: hf-cache
+      target: /cache/huggingface
+      type: volume
+      volume: {}
+    - source: checkpoint-data
+      target: /cache/checkpoints
+      type: volume
+      volume: {}
+  milvus:
+    command:
+    - milvus
+    - run
+    - standalone
+    depends_on:
+      etcd:
+        condition: service_healthy
+        required: true
+      minio:
+        condition: service_healthy
+        required: true
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    healthcheck:
+      interval: 15s
+      retries: 20
+      start_period: 30s
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:9091/healthz
+      timeout: 5s
+    image: milvusdb/milvus:v2.5.14
+    networks:
+      commerce-net: null
+    profiles:
+    - demo-full
+    - test
+    security_opt:
+    - seccomp:unconfined
+    volumes:
+    - source: milvus-data
+      target: /var/lib/milvus
+      type: volume
+      volume: {}
+  minio:
+    command:
+    - minio
+    - server
+    - /minio_data
+    - --console-address
+    - :9001
+    environment:
+      MINIO_ROOT_PASSWORD: <redacted>
+      MINIO_ROOT_USER: minioadmin
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:9000/minio/health/live
+      timeout: 5s
+    image: quay.io/minio/minio:RELEASE.2025-07-23T15-54-02Z
+    networks:
+      commerce-net: null
+    profiles:
+    - demo-full
+    - test
+    volumes:
+    - source: minio-data
+      target: /minio_data
+      type: volume
+      volume: {}
+  mysql:
+    command:
+    - mysqld
+    - --character-set-server=utf8mb4
+    - --collation-server=utf8mb4_0900_ai_ci
+    environment:
+      MYSQL_DATABASE: commerce
+      MYSQL_PASSWORD: <redacted>
+      MYSQL_ROOT_PASSWORD: <redacted>
+      MYSQL_USER: commerce
+    healthcheck:
+      interval: 10s
+      retries: 12
+      start_period: 30s
+      test:
+      - CMD-SHELL
+      - mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD --silent
+      timeout: 5s
+    image: mysql:8.4.6
+    networks:
+      commerce-net: null
+    profiles:
+    - core
+    - dev-lite
+    - demo-full
+    - test
+    restart: unless-stopped
+    volumes:
+    - source: mysql-data
+      target: /var/lib/mysql
+      type: volume
+      volume: {}
+  redis:
+    command:
+    - redis-server
+    - --appendonly
+    - 'yes'
+    - --maxmemory-policy
+    - allkeys-lru
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test:
+      - CMD
+      - redis-cli
+      - ping
+      timeout: 3s
+    image: redis:7.4.5-alpine
+    networks:
+      commerce-net: null
+    profiles:
+    - core
+    - dev-lite
+    - demo-full
+    - test
+    restart: unless-stopped
+    volumes:
+    - source: redis-data
+      target: /data
+      type: volume
+      volume: {}
+  web:
+    build:
+      context: C:\Users\mtcbf\Desktop\commerce-agent
+      dockerfile: infra/docker/web.Dockerfile
+      target: runner
+    depends_on:
+      api:
+        condition: service_healthy
+        required: true
+    environment:
+      API_INTERNAL_URL: http://api:8000
+      COOKIE_SECURE: 'false'
+    healthcheck:
+      interval: 10s
+      retries: 12
+      start_period: 15s
+      test:
+      - CMD
+      - node
+      - -e
+      - fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))
+      timeout: 3s
+    networks:
+      commerce-net: null
+    ports:
+    - mode: ingress
+      protocol: tcp
+      published: '3000'
+      target: 3000
+    profiles:
+    - dev-lite
+    - demo-full
+    restart: unless-stopped
+volumes:
+  checkpoint-data:
+    name: commerce-agent_checkpoint-data
+  es-data:
+    name: commerce-agent_es-data
+  etcd-data:
+    name: commerce-agent_etcd-data
+  hf-cache:
+    name: commerce-agent_hf-cache
+  milvus-data:
+    name: commerce-agent_milvus-data
+  minio-data:
+    name: commerce-agent_minio-data
+  mysql-data:
+    name: commerce-agent_mysql-data
+  redis-data:
+    name: commerce-agent_redis-data
+x-python-service:
+  build:
+    context: .
+    dockerfile: infra/docker/python.Dockerfile
+    target: runtime
+  env_file:
+  - .env
+  logging:
+    driver: json-file
+    options:
+      max-file: '3'
+      max-size: 10m
+  networks:
+  - commerce-net
+  restart: unless-stopped
+  volumes:
+  - ./configs:/workspace/configs:ro
+  - ./models:/workspace/models:ro
+  - hf-cache:/cache/huggingface
+  - checkpoint-data:/cache/checkpoints

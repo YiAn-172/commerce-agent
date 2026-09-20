@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "knowledge_version": "kb_20260915_001",
+  "created_at": "2026-09-17T04:27:13.600604+00:00",
+  "document_count": 1580,
+  "chunk_count": 2780,
+  "document_counts_by_type": {
+    "activity": 20,
+    "faq": 300,
+    "policy": 60,
+    "product": 1200
+  },
+  "dataset_fingerprint": "c069aebe3ab1420ba3c45c85f29ec281f8ba1771178c90ee897e0b03b9f39348",
+  "documents_sha256": "2adf0f1300d0de7a37e9698e69346ed8ed06a3ac88365a876d3fdfb2d3eab20e",
+  "chunks_sha256": "577b8a599380f356bf8fd41796a037faec1de723cb68887e945a39f37daa6566",
+  "documents_path": "data/processed/knowledge/kb_20260915_001/documents.jsonl",
+  "chunks_path": "data/processed/knowledge/kb_20260915_001/chunks.jsonl"
+}

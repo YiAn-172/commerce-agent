@@ -1,0 +1,1303 @@
+{
+  "schema_version": "1.0",
+  "suite_version": "routing_800_v1_ai_assisted",
+  "suite_sha256": "cf5b469b87bf81d36663f06559838907a8470bbf9d7c397ca12c3810d7ce65c6",
+  "source_suite_sha256": "5c774495c36d6396cc9a6192b94348c7d02fbf967b0d53304a9a70bffd3868e4",
+  "suite_status": "ai_assisted_verified_for_demo",
+  "review_summary": "reports\\eval\\routing_800_v1_ai_assisted_summary.json",
+  "model_version": "intent-macbert-v1",
+  "created_at": "2026-09-18T10:54:15.915619+00:00",
+  "metrics": {
+    "overall": {
+      "correct": 526,
+      "total": 800,
+      "accuracy": 0.6575,
+      "wilson_95_ci": [
+        0.6239336169027312,
+        0.6895610370924807
+      ]
+    },
+    "route_accuracy": {
+      "correct": 533,
+      "total": 700,
+      "accuracy": 0.7614285714285715,
+      "wilson_95_ci": [
+        0.7284821916347979,
+        0.7915212770628874
+      ]
+    },
+    "direct_dispatch_accuracy": {
+      "correct": 40,
+      "total": 100,
+      "accuracy": 0.4,
+      "wilson_95_ci": [
+        0.3094012864324589,
+        0.4979974132089382
+      ]
+    },
+    "clarification_accuracy": {
+      "correct": 85,
+      "total": 100,
+      "accuracy": 0.85,
+      "wilson_95_ci": [
+        0.7671644040916763,
+        0.9069401471634337
+      ]
+    },
+    "human_handoff_accuracy": {
+      "correct": 100,
+      "total": 100,
+      "accuracy": 1.0,
+      "wilson_95_ci": [
+        0.9630065017930143,
+        1.0
+      ]
+    },
+    "by_category": {
+      "after_sales": {
+        "correct": 59,
+        "total": 100,
+        "accuracy": 0.59,
+        "wilson_95_ci": [
+          0.4920143005341078,
+          0.6813268697886348
+        ]
+      },
+      "ambiguous": {
+        "correct": 72,
+        "total": 100,
+        "accuracy": 0.72,
+        "wilson_95_ci": [
+          0.6251197129007884,
+          0.7986031478881379
+        ]
+      },
+      "clarification": {
+        "correct": 85,
+        "total": 100,
+        "accuracy": 0.85,
+        "wilson_95_ci": [
+          0.7671644040916763,
+          0.9069401471634337
+        ]
+      },
+      "direct_dispatch": {
+        "correct": 40,
+        "total": 100,
+        "accuracy": 0.4,
+        "wilson_95_ci": [
+          0.3094012864324589,
+          0.4979974132089382
+        ]
+      },
+      "human_handoff": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0,
+        "wilson_95_ci": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "order_logistics": {
+        "correct": 40,
+        "total": 100,
+        "accuracy": 0.4,
+        "wilson_95_ci": [
+          0.3094012864324589,
+          0.4979974132089382
+        ]
+      },
+      "product_consult": {
+        "correct": 49,
+        "total": 100,
+        "accuracy": 0.49,
+        "wilson_95_ci": [
+          0.3942199893044113,
+          0.5865198806597283
+        ]
+      },
+      "product_recommend": {
+        "correct": 81,
+        "total": 100,
+        "accuracy": 0.81,
+        "wilson_95_ci": [
+          0.7222115462093562,
+          0.8748524849023126
+        ]
+      }
+    },
+    "confusion_matrix": {
+      "after_sales": {
+        "after_sales": 60,
+        "general": 0,
+        "human": 0,
+        "knowledge": 16,
+        "order": 0,
+        "safe_reply": 24,
+        "shopping": 0
+      },
+      "general": {
+        "after_sales": 0,
+        "general": 0,
+        "human": 0,
+        "knowledge": 0,
+        "order": 0,
+        "safe_reply": 0,
+        "shopping": 0
+      },
+      "human": {
+        "after_sales": 0,
+        "general": 0,
+        "human": 100,
+        "knowledge": 0,
+        "order": 0,
+        "safe_reply": 0,
+        "shopping": 0
+      },
+      "knowledge": {
+        "after_sales": 6,
+        "general": 0,
+        "human": 0,
+        "knowledge": 151,
+        "order": 0,
+        "safe_reply": 42,
+        "shopping": 1
+      },
+      "order": {
+        "after_sales": 0,
+        "general": 0,
+        "human": 0,
+        "knowledge": 0,
+        "order": 50,
+        "safe_reply": 50,
+        "shopping": 0
+      },
+      "safe_reply": {
+        "after_sales": 2,
+        "general": 18,
+        "human": 0,
+        "knowledge": 4,
+        "order": 3,
+        "safe_reply": 72,
+        "shopping": 1
+      },
+      "shopping": {
+        "after_sales": 0,
+        "general": 0,
+        "human": 0,
+        "knowledge": 0,
+        "order": 0,
+        "safe_reply": 0,
+        "shopping": 100
+      }
+    },
+    "failure_count": 274,
+    "failure_samples": [
+      {
+        "case_id": "product_consult_001",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_detail",
+        "confidence": 0.49395455738865024,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_002",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9431222246951461,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_004",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.934362105629455,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_005",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_search",
+        "confidence": 0.2947654376022075,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_006",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9021845210563737,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_007",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.6772779631539922,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_008",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.7477552666069638,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_013",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9711912562576077,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_014",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9718001664787554,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_015",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9760868878355231,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_021",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_search",
+        "confidence": 0.8479836965355059,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_022",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9637501417165606,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_024",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9706373114208162,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_025",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_search",
+        "confidence": 0.23949516088045944,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_026",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_detail",
+        "confidence": 0.8879525850127904,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_027",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.471571681866484,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_028",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.5237276789536218,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_033",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9621036704167752,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_034",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9491469041184739,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_035",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9694610288778737,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_041",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_search",
+        "confidence": 0.9286016306538527,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_042",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9799295423869291,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_044",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_detail",
+        "confidence": 0.7732114423633829,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_045",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "out_of_scope",
+        "confidence": 0.5149590241462542,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_046",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9791124061496626,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_047",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.8752143865466754,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_048",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.8773019073441564,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_049",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.979403481346498,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_052",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9561964860666672,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_053",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.957893718700602,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_054",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9258350841564246,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_055",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9770690467895696,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_061",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_detail",
+        "confidence": 0.6672899688365155,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_064",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9725413661408546,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_065",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "out_of_scope",
+        "confidence": 0.6081515429120625,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_066",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9769554333736952,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_067",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.5020835082875936,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_068",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.5618112326426419,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_073",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9753159619729005,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_074",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9352709670422505,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_075",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9766949633192514,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_081",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9099822089494353,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_084",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.9704076109059407,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_085",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "out_of_scope",
+        "confidence": 0.5558729615159577,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_086",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.978727514926772,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_087",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.6965032336705728,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_088",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.6435021319728612,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_089",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_detail",
+        "confidence": 0.947423756116714,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_093",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9546438881572084,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_094",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.8558890210246614,
+        "passed": false
+      },
+      {
+        "case_id": "product_consult_095",
+        "category": "product_consult",
+        "expected_route": "knowledge",
+        "actual_route": "knowledge",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "policy_faq",
+        "confidence": 0.9699908478570637,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_003",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9755574845976864,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_007",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9785738866598526,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_011",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9701424961671051,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_015",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9785136882323712,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_022",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9796601469994841,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_023",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9774684169531984,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_027",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9797080023135613,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_031",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9719960293330773,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_035",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9790608416789077,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_042",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9780859912273174,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_043",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9765102547691086,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_047",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9792509236415363,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_051",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9694815825927247,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_055",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9791496098116791,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_063",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9783340414860883,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_067",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9798502817185865,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_071",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9712485913417626,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_075",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.9791241924670796,
+        "passed": false
+      },
+      {
+        "case_id": "product_recommend_082",
+        "category": "product_recommend",
+        "expected_route": "shopping",
+        "actual_route": "shopping",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "product_recommend",
+        "confidence": 0.97879728509619,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_002",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.7641277404478255,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_003",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8951433673454507,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_004",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8913812575034273,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_007",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.668638060253072,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_008",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9102266177350656,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_009",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9050994219957094,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_012",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.6754111840816193,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_013",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9123101072991101,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_014",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9095221936311495,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_017",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.6924977290769527,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_018",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9154902777765571,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_019",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9069501563515244,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_022",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.6985682762743048,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_023",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9140442598225499,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_024",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9106906498797877,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_027",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.6965193590578581,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_028",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9131791468710027,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_029",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9102559540634643,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_032",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.7773848460313968,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_033",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8996507916087297,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_034",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.916011822167984,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_037",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.7163097935046121,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_038",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9084520103679558,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_039",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "order",
+        "expected_decision": "auto_route",
+        "actual_decision": "clarify",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.9141902189997165,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_042",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.6808927667892778,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_043",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8870536756905292,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_044",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8795554330766118,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_047",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.7806738848512575,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_048",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8757135504336914,
+        "passed": false
+      },
+      {
+        "case_id": "order_logistics_049",
+        "category": "order_logistics",
+        "expected_route": "order",
+        "actual_route": "safe_reply",
+        "expected_decision": "auto_route",
+        "actual_decision": "safe_reply",
+        "predicted_intent": "logistics_tracking",
+        "confidence": 0.8671140583231924,
+        "passed": false
+      }
+    ]
+  },
+  "limitations": [
+    "The project owner accepted AI-assisted labels for demo use.",
+    "This is not independent human-gold or production accuracy."
+  ]
+}

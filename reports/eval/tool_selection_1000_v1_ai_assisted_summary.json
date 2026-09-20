@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool_selection",
+  "status": "ai_assisted_verified_for_demo",
+  "human_review_status": "not_performed",
+  "source_sha256": "1cb0e56b8d752f19c2dbc2a82074f3cf5937658f34dd3a6d6e3bfdafcc2919d4",
+  "draft_sha256": "78d413bc84db0ded8cea304fd4c0e90475aa3433e4422300a888f979c1de11b9",
+  "adjudicated_sha256": "6a81a08d99f86ea7540e829e5a0f6a3dcf13649469c5fb6ff2674420fc110c26",
+  "expected_rows": 1000,
+  "adjudicated_output": "evals\\tool_selection\\tool_selection_1000_v1_ai_assisted.jsonl",
+  "created_at": "2026-09-18T10:49:08.969275+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-19T04:26:10.566649+00:00",
+  "expired_count": 8,
+  "expired_approval_ids": [
+    "approval_068580165d6e45f8821aca3628f24dc8",
+    "approval_0f7f448883314d2d9500b0841acb73d4",
+    "approval_521f289a84f54428b74b83020962ed7f",
+    "approval_7e02de94059b4148814cbfc40b6fad34",
+    "approval_a4027d3c93fd4aabb96681abec5d4cc7",
+    "approval_c6cc536dc6ad4b58914ab258ae4b04fc",
+    "approval_f1b1d8904593404486a019b2e95420ff",
+    "approval_fafbf8eda7a74c5d94179af333bec53e"
+  ],
+  "recovered_count": 1,
+  "recovered": [
+    {
+      "approval_id": "approval_b0f39daa140d4df8b6399687138d4724",
+      "ticket_id": "ticket_cf54e95a26e24be2986becac282170fe",
+      "status": "approved",
+      "outcome": "mock_action_authorized",
+      "revalidation_reason": "符合当前版本的售后规则，可创建待确认草稿。",
+      "resumed_at": "2026-09-19T04:26:10.554078",
+      "duplicate": false
+    }
+  ]
+}

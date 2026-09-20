@@ -1,0 +1,31 @@
+schema_version: "1.0"
+knowledge_version: kb_20260917_001
+embedding:
+  model_id: BAAI/bge-small-zh-v1.5
+  revision: 7999e1d3359715c523056ef9478215996d62a620
+  dimension: 512
+  normalize: true
+  query_instruction: "为这个句子生成表示以用于检索相关文章："
+  batch_size: 64
+reranker:
+  model_id: BAAI/bge-reranker-base
+  revision: 2cfc18c9415c912f9d8155881c133215df768a70
+  batch_size: 16
+retrieval:
+  bm25_top_k: 20
+  vector_top_k: 20
+  rrf_k: 60
+  fusion_top_k: 20
+  rerank_top_k: 5
+  insufficient_score: 0.8
+stores:
+  elasticsearch_url: http://elasticsearch:9200
+  elasticsearch_alias: commerce_kb_active
+  milvus_uri: http://milvus:19530
+  milvus_alias: commerce_kb_active
+evaluation:
+  suite: rag_v1
+  product_cases: 250
+  policy_cases: 200
+  activity_cases: 100
+  no_answer_cases: 50

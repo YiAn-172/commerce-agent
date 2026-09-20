@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "ai_assisted_verified_for_demo",
+  "human_review_status": "not_performed",
+  "provenance": "ai_assisted_project_owner_accepted",
+  "method": "interactive_browser_visual_inspection",
+  "base_url": "http://127.0.0.1:3000",
+  "checks": [
+    {
+      "name": "persona_gate",
+      "passed": true,
+      "detail": "Four demo personas and local-service disclosure rendered correctly."
+    },
+    {
+      "name": "customer_clean_landing",
+      "passed": true,
+      "detail": "Customer entry opens a blank new-consultation state instead of auto-opening load-test history."
+    },
+    {
+      "name": "evaluation_session_isolation",
+      "passed": true,
+      "detail": "Load, smoke, security, recovery, SSE, and tool-selection session prefixes are hidden from the customer demo sidebar."
+    },
+    {
+      "name": "starter_prompts",
+      "passed": true,
+      "detail": "Three starters are visible; the knowledge starter was replaced with a runtime-verified product-detail query."
+    },
+    {
+      "name": "admin_console",
+      "passed": true,
+      "detail": "Approval queue, active knowledge version kb_20260917_001, and latest evaluation metrics rendered."
+    },
+    {
+      "name": "responsive_layout",
+      "passed": true,
+      "detail": "Customer UI was inspected at compact and wide browser layouts without overlap blocking the primary flow."
+    }
+  ],
+  "limitations": [
+    "No video or persisted screenshot artifact was produced.",
+    "DeepSeek live generation remains externally blocked by HTTP 402; this visual check does not claim live-LLM semantic quality."
+  ],
+  "created_at": "2026-09-20T02:30:04.3659085Z"
+}

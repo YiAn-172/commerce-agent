@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "verified",
+  "timeout_seconds": 120.0,
+  "attempts": 1,
+  "services": [
+    {
+      "name": "api",
+      "url": "http://api:8000/health/ready",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 142.145,
+      "body_preview": "{\"status\":\"ready\",\"environment\":\"local\",\"model\":\"deepseek-flash\",\"checks\":{\"mysql\":{\"status\":\"ok\"},\"knowledge_version\":{\"status\":\"ok\",\"version\":\"kb_20260917_001\"},\"redis\":{\"status\":\"ok\"},\"intent_service\":{\"status\":\"ok\",\"code\":200},\"mcp_catalog\":{\"status\":\"ok\",\"code\":200},\"mcp_order\":{\"status\":\"ok\",\""
+    },
+    {
+      "name": "intent-service",
+      "url": "http://intent-service:8001/health/ready",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 7.378,
+      "body_preview": "{\"status\":\"ready\",\"model_path\":\"/workspace/models/intent_classifier/current\",\"model_version\":\"intent-macbert-v1\"}"
+    },
+    {
+      "name": "mcp-catalog",
+      "url": "http://mcp-catalog:8101/health/ready",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 7.903,
+      "body_preview": "{\"status\":\"ready\",\"service\":\"mcp-catalog\",\"database\":\"ok\",\"timestamp\":\"2026-09-20T03:04:03.815619+00:00\"}"
+    },
+    {
+      "name": "mcp-order",
+      "url": "http://mcp-order:8102/health/ready",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 7.879,
+      "body_preview": "{\"status\":\"ready\",\"service\":\"mcp-order\",\"database\":\"ok\",\"timestamp\":\"2026-09-20T03:04:03.815674+00:00\"}"
+    },
+    {
+      "name": "mcp-after-sales",
+      "url": "http://mcp-after-sales:8103/health/ready",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 7.999,
+      "body_preview": "{\"status\":\"ready\",\"service\":\"mcp-after-sales\",\"database\":\"ok\",\"timestamp\":\"2026-09-20T03:04:03.815842+00:00\"}"
+    },
+    {
+      "name": "web",
+      "url": "http://web:3000/api/health",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 8.13,
+      "body_preview": "{\"status\":\"ok\",\"service\":\"commerce-agent-web\"}"
+    },
+    {
+      "name": "elasticsearch",
+      "url": "http://elasticsearch:9200/_cluster/health",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 8.754,
+      "body_preview": "{\"cluster_name\":\"docker-cluster\",\"status\":\"green\",\"timed_out\":false,\"number_of_nodes\":1,\"number_of_data_nodes\":1,\"active_primary_shards\":2,\"active_shards\":2,\"relocating_shards\":0,\"initializing_shards\":0,\"unassigned_shards\":0,\"unassigned_primary_shards\":0,\"delayed_unassigned_shards\":0,\"number_of_pend"
+    },
+    {
+      "name": "milvus",
+      "url": "http://milvus:9091/healthz",
+      "ready": true,
+      "status_code": 200,
+      "latency_ms": 7.065,
+      "body_preview": "OK"
+    }
+  ],
+  "created_at": "2026-09-20T03:04:03.894164+00:00"
+}

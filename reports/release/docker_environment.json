@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "verified",
+  "compose_output": "reports\\release\\compose.resolved.yaml",
+  "compose_resolved_sha256": "0409ae6e7219675ebc4b62f6ac3e314dec46075669e863eded2aaa91dba3dbe7",
+  "compose_redacted_sha256": "ad79e960a99e522981c29be104e2d8fc4167c4fe32cf5413f50e37eb98420a5e",
+  "secrets_redacted": true,
+  "docker_server": {
+    "Platform": {
+      "Name": "Docker Desktop 4.40.0 (187762)"
+    },
+    "Components": [
+      {
+        "Name": "Engine",
+        "Version": "28.0.4",
+        "Details": {
+          "ApiVersion": "1.48",
+          "Arch": "amd64",
+          "BuildTime": "Tue Mar 25 15:07:22 2025",
+          "Experimental": "false",
+          "GitCommit": "6430e49",
+          "GoVersion": "go1.23.7",
+          "KernelVersion": "6.6.87.2-microsoft-standard-WSL2",
+          "MinAPIVersion": "1.24",
+          "Os": "linux"
+        }
+      },
+      {
+        "Name": "containerd",
+        "Version": "1.7.26",
+        "Details": {
+          "GitCommit": "753481ec61c7c8955a23d6ff7bc8e4daed455734"
+        }
+      },
+      {
+        "Name": "runc",
+        "Version": "1.2.5",
+        "Details": {
+          "GitCommit": "v1.2.5-0-g59923ef"
+        }
+      },
+      {
+        "Name": "docker-init",
+        "Version": "0.19.0",
+        "Details": {
+          "GitCommit": "de40ad0"
+        }
+      }
+    ],
+    "Version": "28.0.4",
+    "ApiVersion": "1.48",
+    "MinAPIVersion": "1.24",
+    "GitCommit": "6430e49",
+    "GoVersion": "go1.23.7",
+    "Os": "linux",
+    "Arch": "amd64",
+    "KernelVersion": "6.6.87.2-microsoft-standard-WSL2",
+    "BuildTime": "2025-03-25T15:07:22.000000000+00:00"
+  },
+  "images": [
+    {
+      "service": null,
+      "repository": "commerce-agent-api",
+      "tag": "latest",
+      "image_id": "sha256:273ede8e2039d11ed18bbe3782da43379867aff3b545d78ad6cfdeef37eb7abb",
+      "repo_digests": [],
+      "size": 3215194886
+    },
+    {
+      "service": null,
+      "repository": "alpine",
+      "tag": "3.21.3",
+      "image_id": "sha256:aded1e1a5b3705116fa0a92ba074a5e0b0031647d9c315983ccba2ee5428ec8b",
+      "repo_digests": [
+        "alpine@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c"
+      ],
+      "size": 7834312
+    },
+    {
+      "service": null,
+      "repository": "docker.elastic.co/elasticsearch/elasticsearch",
+      "tag": "8.17.7",
+      "image_id": "sha256:6e8dc0f8231f467ff72a589f7d375f127bfaccb384564faed9998eadbfe1447a",
+      "repo_digests": [
+        "docker.elastic.co/elasticsearch/elasticsearch@sha256:bfe5dade36f25400e82b6a11d3fb2a96b5d77e7bbc6d2e024e6f4584cb7e6162"
+      ],
+      "size": 1304329589
+    },
+    {
+      "service": null,
+      "repository": "quay.io/coreos/etcd",
+      "tag": "v3.5.18",
+      "image_id": "sha256:b9e6889272c9e672fa749795344385882b2696b0f302c6430a427a4377044a7a",
+      "repo_digests": [
+        "quay.io/coreos/etcd@sha256:d0a641d5fbcc89678c931a61b7de7b8a1cf097149f135c9c73bc81d076a1494b"
+      ],
+      "size": 59016574
+    },
+    {
+      "service": null,
+      "repository": "commerce-agent-intent-service",
+      "tag": "latest",
+      "image_id": "sha256:ba5d1fa8b3ba9ba021212197f447b9d043868fcd655652988a1b5947ff583d25",
+      "repo_digests": [],
+      "size": 1242579581
+    },
+    {
+      "service": null,
+      "repository": "commerce-agent-mcp-after-sales",
+      "tag": "latest",
+      "image_id": "sha256:46a4e3c26e70a80bde1caff6d164e9aedbfd5670f6468ff2fa957a83f3766948",
+      "repo_digests": [],
+      "size": 3214437261
+    },
+    {
+      "service": null,
+      "repository": "commerce-agent-mcp-catalog",
+      "tag": "latest",
+      "image_id": "sha256:405818596685f76479423bafdb545eeeb4ac5ee4739e8549f2cb9ef5e01a1897",
+      "repo_digests": [],
+      "size": 819701015
+    },
+    {
+      "service": null,
+      "repository": "commerce-agent-mcp-order",
+      "tag": "latest",
+      "image_id": "sha256:9b278a30c5b0599f8343834b563f4462f70e07982c960bd706f093ebfba44357",
+      "repo_digests": [],
+      "size": 819701015
+    },
+    {
+      "service": null,
+      "repository": "milvusdb/milvus",
+      "tag": "v2.5.14",
+      "image_id": "sha256:9417fe918fb99bb2ad52b0bdd5d2ae387e1dc37b32da83e5827d82ca7ec8bf2b",
+      "repo_digests": [
+        "milvusdb/milvus@sha256:c469d101d851b28ca3b3c41e617c7ab2a5cd26b1c2e4d1c6a1460b646ee39e4c"
+      ],
+      "size": 1963199655
+    },
+    {
+      "service": null,
+      "repository": "quay.io/minio/minio",
+      "tag": "RELEASE.2025-07-23T15-54-02Z",
+      "image_id": "sha256:a98a9d647e700e45c1d3d2e44709f23952a39c199731d84e623eb558fd5501f4",
+      "repo_digests": [
+        "quay.io/minio/minio@sha256:d249d1fb6966de4d8ad26c04754b545205ff15a62e4fd19ebd0f26fa5baacbc0"
+      ],
+      "size": 175285058
+    },
+    {
+      "service": null,
+      "repository": "mysql",
+      "tag": "8.4.6",
+      "image_id": "sha256:c7fa03bf950b7fca40d7e1cae1ed638fadbc63b679ff74f1efb7d626e4c042ea",
+      "repo_digests": [
+        "mysql@sha256:869218921e61d6c3c89820955d63cca42971f0e3e6c1e2792247bbd944ebc6e9"
+      ],
+      "size": 785255658
+    },
+    {
+      "service": null,
+      "repository": "redis",
+      "tag": "7.4.5-alpine",
+      "image_id": "sha256:f218e591b571a4129aa29a8566b597d849fba21af7be853d31b03122b20db5e9",
+      "repo_digests": [
+        "redis@sha256:bb186d083732f669da90be8b0f975a37812b15e913465bb14d845db72a4e3e08"
+      ],
+      "size": 41400477
+    },
+    {
+      "service": null,
+      "repository": "commerce-agent-web",
+      "tag": "latest",
+      "image_id": "sha256:4d487e46b9f05d94082b508a3c89fe9148584c679161654d499d62116c2f1a22",
+      "repo_digests": [],
+      "size": 267446012
+    }
+  ],
+  "resources": [
+    {
+      "BlockIO": "694MB / 6.41MB",
+      "CPUPerc": "0.88%",
+      "Container": "c47cee653a65f92ff43381318bd37120088dafd28458dfba968e6f78cb5b517f",
+      "ID": "c47cee653a65",
+      "MemPerc": "12.57%",
+      "MemUsage": "962.1MiB / 7.474GiB",
+      "Name": "commerce-agent-api-1",
+      "NetIO": "265kB / 128kB",
+      "PIDs": "105"
+    },
+    {
+      "BlockIO": "227MB / 3.64MB",
+      "CPUPerc": "0.31%",
+      "Container": "5f29428aec0a4385bd8b27d86582517ce13682e98bd238948f0b60df24161732",
+      "ID": "5f29428aec0a",
+      "MemPerc": "21.26%",
+      "MemUsage": "1.589GiB / 7.474GiB",
+      "Name": "commerce-agent-elasticsearch-1",
+      "NetIO": "12.7kB / 23.4kB",
+      "PIDs": "144"
+    },
+    {
+      "BlockIO": "82.6MB / 19.2MB",
+      "CPUPerc": "0.37%",
+      "Container": "9cbf2285c6d8a07879228d57fdc0e8e94562383f60f2efc8d0c85ade39a2f7c8",
+      "ID": "9cbf2285c6d8",
+      "MemPerc": "0.53%",
+      "MemUsage": "40.29MiB / 7.474GiB",
+      "Name": "commerce-agent-etcd-1",
+      "NetIO": "1.3MB / 996kB",
+      "PIDs": "20"
+    },
+    {
+      "BlockIO": "140MB / 45.1kB",
+      "CPUPerc": "0.07%",
+      "Container": "8f668ecafecb852e0780b638d1358b13adf5c0fcd3802fd106bedc3b35f778f9",
+      "ID": "8f668ecafecb",
+      "MemPerc": "7.26%",
+      "MemUsage": "555.3MiB / 7.474GiB",
+      "Name": "commerce-agent-intent-service-1",
+      "NetIO": "118kB / 50.9kB",
+      "PIDs": "48"
+    },
+    {
+      "BlockIO": "42.1MB / 0B",
+      "CPUPerc": "0.09%",
+      "Container": "b02323fb78ae485d00697c744939047706ae9df399a34559b26fbbe28689a424",
+      "ID": "b02323fb78ae",
+      "MemPerc": "1.13%",
+      "MemUsage": "86.81MiB / 7.474GiB",
+      "Name": "commerce-agent-mcp-after-sales-1",
+      "NetIO": "77.2kB / 92.6kB",
+      "PIDs": "2"
+    },
+    {
+      "BlockIO": "27.6MB / 0B",
+      "CPUPerc": "0.08%",
+      "Container": "4fb8dac622d9a541447bf15b78ea94e9409490a45a587f03c00e679ebeef36ed",
+      "ID": "4fb8dac622d9",
+      "MemPerc": "1.01%",
+      "MemUsage": "77.22MiB / 7.474GiB",
+      "Name": "commerce-agent-mcp-catalog-1",
+      "NetIO": "83.2kB / 107kB",
+      "PIDs": "2"
+    },
+    {
+      "BlockIO": "19.1MB / 0B",
+      "CPUPerc": "0.09%",
+      "Container": "bfa40470622cc0e8f58073dd4c69c8a49e90771cf9da357c897b04863b1d2c1c",
+      "ID": "bfa40470622c",
+      "MemPerc": "0.97%",
+      "MemUsage": "74.05MiB / 7.474GiB",
+      "Name": "commerce-agent-mcp-order-1",
+      "NetIO": "77.1kB / 92.5kB",
+      "PIDs": "2"
+    },
+    {
+      "BlockIO": "309MB / 6.78MB",
+      "CPUPerc": "2.35%",
+      "Container": "625208e5291b4ea569a468755984017bf3d64c11f12424e0cf2ccc23ddd6ddca",
+      "ID": "625208e5291b",
+      "MemPerc": "2.91%",
+      "MemUsage": "222.9MiB / 7.474GiB",
+      "Name": "commerce-agent-milvus-1",
+      "NetIO": "13.7MB / 1.42MB",
+      "PIDs": "70"
+    },
+    {
+      "BlockIO": "147MB / 13.9MB",
+      "CPUPerc": "0.00%",
+      "Container": "f9ccb68b8bd76c459e3e3faf0b2de1facb8398d597173ec1cc08fdbd6cd0094c",
+      "ID": "f9ccb68b8bd7",
+      "MemPerc": "3.20%",
+      "MemUsage": "244.7MiB / 7.474GiB",
+      "Name": "commerce-agent-minio-1",
+      "NetIO": "55.8kB / 12.7MB",
+      "PIDs": "23"
+    },
+    {
+      "BlockIO": "122MB / 24.4MB",
+      "CPUPerc": "0.26%",
+      "Container": "f04fa27366fd64e9778a7ff5b312eae5c556bbb452cc20c4d2b50a877778b5df",
+      "ID": "f04fa27366fd",
+      "MemPerc": "6.76%",
+      "MemUsage": "517.5MiB / 7.474GiB",
+      "Name": "commerce-agent-mysql-1",
+      "NetIO": "577kB / 2.03MB",
+      "PIDs": "56"
+    },
+    {
+      "BlockIO": "18.3MB / 201kB",
+      "CPUPerc": "0.31%",
+      "Container": "c471746cfa96ef974de88d16ed29373c5ce735f1ce7f257c1c74982e7402694f",
+      "ID": "c471746cfa96",
+      "MemPerc": "0.12%",
+      "MemUsage": "9.293MiB / 7.474GiB",
+      "Name": "commerce-agent-redis-1",
+      "NetIO": "14kB / 2.57kB",
+      "PIDs": "6"
+    },
+    {
+      "BlockIO": "22MB / 0B",
+      "CPUPerc": "0.02%",
+      "Container": "66e2d536f8e899775a6ddcccaa2d9a85dfc3773943a26dea146421a6f744eb16",
+      "ID": "66e2d536f8e8",
+      "MemPerc": "0.75%",
+      "MemUsage": "57.36MiB / 7.474GiB",
+      "Name": "commerce-agent-web-1",
+      "NetIO": "3.93kB / 939B",
+      "PIDs": "11"
+    }
+  ],
+  "created_at": "2026-09-20T03:04:19.872674+00:00"
+}

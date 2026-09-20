@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scenario": "decision_committed_then_api_container_restarted",
+  "approval_id": "approval_b0f39daa140d4df8b6399687138d4724",
+  "session_id": "ses_p7_f704ceb831b2491f",
+  "decision": "approved",
+  "outcome": "mock_action_authorized",
+  "revalidation": "符合当前版本的售后规则，可创建待确认草稿。",
+  "duplicate_resume": true,
+  "session_read_after_restart": true,
+  "real_money_action": false
+}

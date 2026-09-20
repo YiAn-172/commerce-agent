@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "checkpoint": "/cache/checkpoints/p6-smoke.sqlite",
+  "scenarios": [
+    {
+      "scenario": "knowledge",
+      "intent": "product_detail",
+      "route": "knowledge",
+      "status": "completed",
+      "nodes": 13,
+      "llm_calls": 2,
+      "tool_calls": 0,
+      "citations": 1
+    },
+    {
+      "scenario": "shopping",
+      "intent": "product_recommend",
+      "route": "shopping",
+      "status": "completed",
+      "nodes": 14,
+      "llm_calls": 2,
+      "tool_calls": 2,
+      "citations": 5
+    },
+    {
+      "scenario": "order",
+      "intent": "order_status",
+      "route": "order",
+      "status": "completed",
+      "nodes": 12,
+      "llm_calls": 0,
+      "tool_calls": 1,
+      "citations": 0
+    },
+    {
+      "scenario": "after_sales",
+      "intent": "return_exchange",
+      "route": "after_sales",
+      "status": "awaiting_user_confirmation",
+      "nodes": 11,
+      "llm_calls": 1,
+      "tool_calls": 1,
+      "citations": 0
+    },
+    {
+      "scenario": "safety",
+      "intent": null,
+      "route": "safe_reply",
+      "status": "completed",
+      "nodes": 5,
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "citations": 0
+    }
+  ]
+}

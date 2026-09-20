@@ -1,0 +1,57 @@
+{
+  "row_count": 25000,
+  "split_counts": {
+    "train": 20000,
+    "validation": 2500,
+    "test": 2500
+  },
+  "label_counts": {
+    "after_sales_eligibility": 1500,
+    "cancel_order": 1200,
+    "chitchat": 1200,
+    "complaint": 1100,
+    "human_handoff": 900,
+    "logistics_tracking": 1800,
+    "order_status": 1800,
+    "out_of_scope": 1300,
+    "policy_faq": 1600,
+    "product_compare": 1500,
+    "product_detail": 1800,
+    "product_recommend": 2500,
+    "product_search": 2500,
+    "refund_progress": 1200,
+    "return_exchange": 1600,
+    "stock_price": 1500
+  },
+  "source_counts": {
+    "controlled_synthetic": 10000,
+    "bitext_retail": 8045,
+    "full_ecom": 5385,
+    "massive_zh": 1041,
+    "smp2017": 529
+  },
+  "provenance_counts": {
+    "deepseek_controlled_template:intent_templates_v1:seed=20260915:generated_at=2026-09-15T19:46:42+08:00": 10000,
+    "bitext_retail_direct": 8045,
+    "bitext_retail_ecom": 1973,
+    "bitext_customer_support": 1889,
+    "synthetic_api_generated": 1523,
+    "amazon_massive": 1041,
+    "smp2017_task1": 529
+  },
+  "pii_status_counts": {
+    "clear": 23836,
+    "redacted": 1164
+  },
+  "translation_count": 13430,
+  "synthetic_count": 10000,
+  "length": {
+    "min": 2,
+    "p50": 17.0,
+    "p95": 35.0,
+    "p99": 56.0,
+    "max": 130
+  },
+  "duplicate_sample_ids": 0,
+  "duplicate_text_hashes": 0
+}

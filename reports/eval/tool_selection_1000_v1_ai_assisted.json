@@ -1,0 +1,1417 @@
+{
+  "schema_version": "1.0",
+  "suite": "tool_selection_1000_v1_ai_assisted",
+  "suite_sha256": "6a81a08d99f86ea7540e829e5a0f6a3dcf13649469c5fb6ff2674420fc110c26",
+  "source_suite_sha256": "1cb0e56b8d752f19c2dbc2a82074f3cf5937658f34dd3a6d6e3bfdafcc2919d4",
+  "suite_status": "ai_assisted_verified_for_demo",
+  "evaluation_status": "ai_assisted_verified_for_demo",
+  "review_summary": "reports\\eval\\tool_selection_1000_v1_ai_assisted_summary.json",
+  "backend": "published_onnx_intent_plus_production_graph_with_scripted_dependencies",
+  "model_version": "intent-macbert-v1",
+  "metrics": {
+    "tool_selection_accuracy": {
+      "correct": 808,
+      "total": 1000,
+      "accuracy": 0.808
+    },
+    "tool_call_cases": {
+      "correct": 308,
+      "total": 500,
+      "accuracy": 0.616
+    },
+    "no_tool_cases": {
+      "correct": 500,
+      "total": 500,
+      "accuracy": 1.0
+    },
+    "by_category": {
+      "after_sales": {
+        "correct": 75,
+        "total": 100,
+        "accuracy": 0.75
+      },
+      "general": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "human": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "knowledge": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "logistics": {
+        "correct": 0,
+        "total": 100,
+        "accuracy": 0.0
+      },
+      "missing_information": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "order_detail": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "recent_order": {
+        "correct": 51,
+        "total": 100,
+        "accuracy": 0.51
+      },
+      "safe_reply": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "shopping": {
+        "correct": 82,
+        "total": 100,
+        "accuracy": 0.82
+      }
+    },
+    "failure_reasons": {
+      "abstained_without_tool": 192,
+      "wrong_tool_sequence": 0,
+      "unexpected_tool_call": 0,
+      "execution_error": 0
+    },
+    "abstention_statuses": {
+      "needs_clarification": 140,
+      "safe_reply": 52
+    },
+    "failure_count": 192,
+    "failure_samples": [
+      {
+        "case_id": "shopping_003",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_008",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_013",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "safe_reply",
+        "actual_status": "safe_reply",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_018",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_023",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_028",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_033",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_038",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_043",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_048",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_053",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "safe_reply",
+        "actual_status": "safe_reply",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_058",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_063",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_068",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_073",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_078",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_083",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "shopping_093",
+        "category": "shopping",
+        "expected_tools": [
+          "search_products",
+          "check_inventory"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "product_recommend",
+        "actual_route": "shopping",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_001",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_002",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_003",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_004",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_005",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_006",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_007",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_008",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_009",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_010",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_011",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_012",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_013",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_014",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_015",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_016",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_017",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_018",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_019",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_020",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_021",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_022",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_023",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_024",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_025",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_026",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_027",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_028",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_029",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_030",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_031",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_032",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_033",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_034",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_035",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_036",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_037",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_038",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_039",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_040",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_041",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_042",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_043",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_044",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_045",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_046",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_047",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_048",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_049",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_050",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_051",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_052",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_053",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_054",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_055",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_056",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_057",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_058",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_059",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_060",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_061",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_062",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_063",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_064",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_065",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_066",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_067",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_068",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_069",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_070",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_071",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_072",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_073",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_074",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_075",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_076",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_077",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_078",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_079",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_080",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_081",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      },
+      {
+        "case_id": "logistics_082",
+        "category": "logistics",
+        "expected_tools": [
+          "track_logistics"
+        ],
+        "actual_tools": [],
+        "predicted_intent": "logistics_tracking",
+        "actual_route": "order",
+        "actual_status": "needs_clarification",
+        "error": null,
+        "passed": false
+      }
+    ]
+  },
+  "limitations": [
+    "The project owner accepted AI-assisted tool labels for demo use.",
+    "Dependencies are scripted; the measured boundary is tool selection, not tool execution.",
+    "This is not independent human-gold or production accuracy."
+  ],
+  "created_at": "2026-09-18T10:54:57.218262+00:00"
+}

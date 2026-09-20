@@ -1,0 +1,6 @@
+version: "intent-v0-initial-only"
+calibrated: false
+direct_route_threshold: 0.78
+clarify_threshold: 0.55
+route_margin: 0.20
+selection_rule: "replace after validation-set calibration"

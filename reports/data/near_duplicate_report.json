@@ -1,0 +1,2463 @@
+{
+  "input_rows": 36228,
+  "output_rows": 35820,
+  "bge_executed": true,
+  "bge_model": "BAAI/bge-small-zh-v1.5",
+  "bge_model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "minhash_threshold": 0.9,
+  "bge_similarity_threshold": 0.997,
+  "removal_counts": {
+    "minhash_near_duplicate": 108,
+    "bge_semantic_duplicate": 300
+  },
+  "removals": [
+    {
+      "sample_id": "19d6c2efa6dc7f8e1960ef83",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0220b9d5689a3fde935ab661",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "2c6a9b528b7981bd2e5d0436",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "135c1be3e31b1a45a7c71d69",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "5377bed2ce02660b8fef7bb8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "302a724712038bae47c66692",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "563590df55356d042b96937e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4a32abbc437dd2e0286f66f7",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "5fec806174285c39a46a4d89",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "450cbeb76935fe6a97a3d1c0",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "861a7c87d0e72fd1d1cd3fe1",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "20b3bdc9069ea2e35a0a6479",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "a4db053aec5de89317b699c0",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "19ecd53fc929fb2add6ff272",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c564cfe4f7d2ae678407174f",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "11615a99ffe9071cd8c7d057",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c617b5d51dbc0046fb985618",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "8f72d5a161b02b615767df9e",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "dddbddff8da8188836d5e019",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "ba9e555ee03a20dc7027341f",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e6dff8ebc3c523a30db6fdef",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "065f938312257289d84800e7",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e8f7f6e0e1bacfc7ea621da8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "6d7d8d0eaa5bdeec80ac7fab",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "f11e0589064d467907a336d0",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0b16871795a4a21c6d134799",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "1002c05b305df01dbeece15d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0ba3914d9e3ece413155f56d",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "10f779183eacb775fe181393",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0826abb7103c34ed5dc754d1",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "28e2c7a243f98355d8e0ee1a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2230d5401a0cecb38f98c9d9",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "2b680fc62fc801f0999deacf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2605d840437dffc1b8492724",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "3490e061ce84aae27282923a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "09236d68d24062aafa01660e",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "39378b9aea5d084141a0d2c2",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "062ae4d9437d4ffad9d39946",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "5058548ff930bd813036e8d6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3b05a80c1fa7464ba3fbc5d8",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "559d4546922f3508959c4391",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "043d1226e046952704fa2550",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "5ffb68aee6df2034f8623d69",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0397f883274729aeed296ee1",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "637e85e0de8aacd8c6276c21",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "08a654acabc144c73725f861",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "7783b671baa1c4f37a630ee5",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2f0b588f87d364809e29b5cb",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "85dcc46cf8893602c2b3640a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2816eabd2d9795bafddb0e74",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "9ccb7ddb0f8ba6ae207c4e81",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "54edc47f8af8ca11d18237a2",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ab3503bda39c8ebc23f7759c",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0cd5b6b16d6b443769b81495",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "b212219be7e478b081f316b8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2cdb4481bc1a203a58684da5",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ce804b3eed703d0feb90d493",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "b91b4881e40aeb3a28fe34f7",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "636d652d975806b980c7fe80",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3e690e75a5dd9bc1ae182c4e",
+      "target_intent": "chitchat"
+    },
+    {
+      "sample_id": "916bb1ed0ad19dbe2e4eb972",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3e690e75a5dd9bc1ae182c4e",
+      "target_intent": "chitchat"
+    },
+    {
+      "sample_id": "89adbbf991c1c2b65da1d6ac",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "87f82d8351c0c6ca2facdb1d",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "a634268d8127852c961d6ed7",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "9e54d0bb2bf92c102a795b20",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "a852782277a5811f350756cb",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "02cbf3a3c612febd5daa487c",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "becb058e8e242d2c9d83a828",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "bc66c8b994c52a8301fee33e",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "39ee7b213618d50f0575ca15",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "201f4dfd76d9540e83e2cb0c",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "57119234404267748d2fc065",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "061fabb801bc74b1d7269553",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "79ee00a469b0bb34eece1543",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "43fbcb76d2b21b1630469f0d",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "97b440be294aa053eac08250",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "46f9360808f03e28654847e7",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "9a48c48438c7104437dd78cc",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "796dc14794977a51571c90c8",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "d88e205874bf5d872000f2dd",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7cc94a13a840fba028bfe22d",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "e5ad6b807791d27ff6dd2910",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "17c44e52b81af36d7cb6637b",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "3ab1c23a28a9aa63cb4d1080",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "18d794678c2d4585ba84ac84",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c2219f08bcd9790b7b544e4e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7931a160b696eed5352d59ea",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d8696e22ee2f64b77cf20814",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "896f0d697ab4674c5b343f53",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e4c3b5f4c062da6b537de09c",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7bd36514e08ab7e04aecbc05",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "faea75e3ab3a5686fb0d4a60",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "06c2e973013afe85416b7b0b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d85e223f517e427beff6f4ed",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4e09726644bf716f5721946c",
+      "target_intent": "out_of_scope"
+    },
+    {
+      "sample_id": "f916616f4a188d1a405f6116",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "eb218b6ebc8d6a5a6da2b3cb",
+      "target_intent": "out_of_scope"
+    },
+    {
+      "sample_id": "13267fd2449f2ddfa42cef4d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0cf8572b3fe4d98d0990a5af",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "525f3110af4efafbcbbaa8d1",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4330abeecf7aaa40f2225f93",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "54f38d803d0c4585a653d975",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "209572ba78e524f40535a89a",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "5f93c26357a1721525eb22b3",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "27905ea3f654c687e2d8190d",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "758ea7415fb986468f643fd5",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "72487ed2f8c076baef5e2f7c",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "84c6556a86bf733330cfff8f",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "40a383d793bca15f7055b89e",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "4bcdc691c09e4279ed80189d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "10eb0a28e4ff5b0137beb84c",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "55e965aed377263f1e3f937d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0e35848a23bf5cbb89fdb703",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "5f23458e51feeff208acd45b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "008183bcf49bde050c2c32d7",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "da27489570e0854c07805324",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2ca5e98fe67763dc05cf5269",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "ddf5b271e0fe4c79c593348e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "57c31ee4635e3f5c63b3647e",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "eaec3b3a3a1abb8a58167c95",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "b4f3e3eda09f0048eae3460c",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "1ef98b52283c6b334947de66",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "04e8b5c3dcd29dc81deb0f25",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "4e4770aa2f27e20c81e6eb37",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "36497e1087877013d3482b79",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "54767322dfe7022f0783a70d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2f223b2038a414b120486b2d",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "69fb907fe9e28b5e267a3d96",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "071ea3f78dda441c13064ee1",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "7fc9db5549c43a03d577a196",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4f10d4f113ea921a8f0dbb38",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "892b5869fd32862c08635000",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "603ddf35ce95ab4705dbbe6d",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "be199b1a9ae1ac8d9269b3a0",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "90734e6c19518e470b513fec",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "755f272febaee7ddecf5eeaf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4b77491cfbd1d60e2d1e89c2",
+      "target_intent": "product_recommend"
+    },
+    {
+      "sample_id": "53147566df184b47f53f16cd",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "118d147232664c09b30771b8",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "8cc307d542a981a4e4a542d3",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1207ee28c3c9e8aefef331e5",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "9c91a0fb8d68c39281d68d84",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1782e7b3eb497c03c603b057",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "c087e069fbd1a00c1f64d53a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0798af84cbe496ead17e1d80",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "d61d77f35499c2b4456a5daf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "80a369c1969ee81bbe14cf73",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "eb4f42130b61075c88114d7f",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "8e5192725be56972e9963870",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "f02e08976d3d17cb68cbaa6d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "07c0bdc5a87900bd82a7aa2d",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "fe7b1bbb804a44ad8fabec68",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "5b7e6db253858d6ae9be357b",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "ffd49e8e60be989569b5fce6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "5cf3cf1ea51c2a6a3934ad5b",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "27099fd12d564642b9ffbfd3",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "26f3fcc1d104a3aaf6c04398",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "3efaa2d1f0a8d2db77f7d0de",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3827c13b6c36a08f3a9b0c66",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "53b1de31f3d414e95e8319f5",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "06aed44afe376d028950010e",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "553614ac24b98088c0a41361",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "16464e292aaba2fe05487ad4",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "5f83dabad183d8737ab1c442",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0a73265b8808a17cdbea73c3",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "92c198b1cf6a2028f390481d",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2040a64e5d493640c2cc44fd",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "988cd87eeed6c4f235a22adf",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "087da6439f68eb49ed3e32b1",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "a9f7dc1a317bf5a0643b8957",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "a45bfd0247c6ffe299d7290b",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "c68f38905d1a034b5db8ff6b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "ae4bdfc44a4c229b48ccdb95",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "e6be7a369713b3c8ed0288ed",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3d13fa8705809f7794e88a10",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "f4f961b863ddabe3c4556349",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7294b819dc2592d2cf560c51",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "339b0e7e9cac6159fa9eb9e9",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "2e927ca1b14c89575627a3aa",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "40d400832f6f0f09ca1bf7f6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "406342e9eb50ec4c2e113086",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "51932ebe28abe7b0ceab533b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "115288a27904f135b6f43cae",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "72f51a6684dd5639d1f4fc3a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4961ca3e718f1724c54c2201",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "7692d86cce02bcc700375147",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "6f5af2c45fa58f4616e3cf23",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b06036949c4d68d91c47662e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "8ec6bdb0316403b1740eb3bd",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b99645a0bc481fb52a3d7322",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "114cba8a763ed4a7c5242d28",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bc43f78317bad7eab2144ee6",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "ba7d44599b5325495e2332ee",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bce5b75d6f6795bd736b40b8",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "3783d0aa3c935bf8d7a4c086",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bf07e4bb4f415be620e793c4",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1afd119afd973c756cefeff3",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "c24c4d8c6a880815e67895e7",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "5a54b0dde2ef6c24ea07d412",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ca386fbf8e958597e47fda4b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "0127aee7489b4fbfdba59a1b",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "cf0d685f3105fb9050c42f21",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4f8195de318908b4e8435716",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "d06906cf3a8d76281f49f59b",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "7b4a739edc40beb793eb1fc9",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "d811804ebe707847db87c4be",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "1189af702ed612fe736db3c6",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "e5bf63eea98ddd81bffadf8e",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "618c44ec734b8210c96c151d",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "e5d1e83e3462fd780f95bcea",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "104dfcf06df1298b67e34011",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ec9615ad034082cc039ec75a",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "4ae42738e828d87a87db82e7",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ece084ae2b696eab474a7309",
+      "reason": "minhash_near_duplicate",
+      "duplicate_of": "c143dd01c9f6b55e3e3ca51a",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "173078ddc0fe166b2249d49b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "02b39e573e7c7c5f4a54981e",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "1bdb6f700e2514e078611368",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0e03080124f51fdf02c90f5c",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "34d5e8821b5ddfd88cf9e7cf",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "18c14de4591883b6cc161374",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "4b91c91b369f77ae910ac80a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "01cf0b7100f9144329a46647",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "6be712ea8c52a56646ee5a7c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "16274fd73cb247900acffc35",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "6c168dd6a9df8a120fde4df6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "18c14de4591883b6cc161374",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "7b4936e9a5b9f1b2e8a16778",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0618e15430c652b46ed3385c",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "9231503c2235dd9dc9b4485d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2ad02e2bfa8c2746d17f3009",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "a32f45112d5c3ffc3a41fafb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5283a4719e923e170e8beb3b",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "a672367eaf5d07ceed6fa9c2",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "46749a31214f98fe8d78e8d1",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "abaa90fe2368033b9f2ebe76",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "01cf0b7100f9144329a46647",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "b9db2741ecbee317250a10cc",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0817b18312a9b6cea0f2565a",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "be640a29ad5f372989b33b2c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "943b4f0fce41202c62ceb4f8",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c0926ccfd4cfe3f05c627ed6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "6c261dd88d8479d2cc7b57d1",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c41d3133583c5737673d7d4e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "aeff8b2a3653d39a117e5eac",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c4494124266f7faf4d942b98",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2339c9cc2282842d432610e6",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c7ff9d8c7a78fd968932337a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4582450f897ea4b8e4e97b03",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "c91c16e151c8475f0fda234a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "9f1a74ae545785ffcb0baa00",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "d5f2d12b7aa7b7a5f033e954",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "a76d29bd4b2aa761914059c6",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "d6b967fa084d3d54f8e980d9",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "807b1d3582b1143b6c7c1c30",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e112e9fa62864b270db13f47",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "80e4025d188683e0dbd8a84c",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e46eca26270f8230c0bf53ac",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "cf8db8259060c44102afcbc3",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "e7b277f3f5241cb0e8b77068",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "8421c925f2ba155ec9e7c135",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "f4f2a29d726d4ddc9dabcb71",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4a7392bf37b5d44d10dc9be9",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "fef4f44efeeee949d7877645",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "e0b269e8cba7d1f545b63688",
+      "target_intent": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "123493e4072fad8470cbb31e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053f660a5b136d3f260afad1",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "2b7e30e16fe9696beb69d3ac",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f023911f126a25eb16ffb49",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "2f0b588f87d364809e29b5cb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0098f2a8f0c3b24a99ae21be",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "418b216161c3c6fc4d77a389",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0dfb0bed5f7c3681ea837e6f",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "4d767b211c4779c461da8def",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "128897c436b08d00fb6f9af5",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "5c16afa5569d1816431e8579",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5052c1f25af3ba17cb20075d",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "6a73a5b305f12fed90ff2200",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "16f0754bac7f91f8297b6fb8",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "85e01afbe28b256ea7d6a74e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "360d6d7097acad6a186033e0",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "a8753b29b32cc0a3253a9c0b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "a7ed79322bbd4f54c22faef4",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ad72b076c1e05cb625576e03",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5052c1f25af3ba17cb20075d",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "b3372e94d93f7046feb10ab5",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7a09fe7d34b1c177dc61e49a",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "b5efcd969744b9f5f681dcd8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2cb5926ca9a9fc3198270373",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "b943c774ddcd78559c40dd16",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3cec4fcba30ae8f4b16f47ca",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "bae87724494ea891e355495f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1e4719ca2f81037e58eced0a",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "bb4694f5d155dfedebbefc81",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "499bdfc4f8027aa125d35146",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "cdd92f8345865aed85f7001c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "acf985119dcd6d86d9c20db8",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ced88c15515ac3f6f4d927c8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "104cf99f7c2c9d33c33c2d08",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "d72b7a239a6e1190ffc62ea1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4251eeaa8c15a539575dab2d",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "ddd9c302fcc0c6d8e5555ee4",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "46f006ccad2e8044d457f493",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "f74d324e9df80f8a053ae284",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "06d0d095ac0c7dd05affbe15",
+      "target_intent": "cancel_order"
+    },
+    {
+      "sample_id": "59ab5775cf3e9e5adb0debe6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "48f0243ba3f29cc2500d0c84",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "d1384913a9abaefb403ecba4",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5822388523553e8b5dafc060",
+      "target_intent": "human_handoff"
+    },
+    {
+      "sample_id": "20089d1a7a3a23edf9a5b6a1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "17eb916e9f9c780c9972a47f",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "5d75c54720dfa4fba80a5830",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1787381221742adc4d7e2bcf",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "864b371048224c1d9c82543b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "52343884a578efaf02219aa4",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "953f262b4094afd5534f3156",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5d1cf6e85e6d509875843267",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "98a3884ac9e53772aeefcb03",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "67fee936cadac95f137e4583",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "b2077310724b988f1b164411",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "74f3d9f183dfd0a1f5b91721",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "cacc88769592cc9a9069ca1b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "6f8406196d3842447512a16f",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "e8df57912a07b8405a8b165c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "a2426044689fe62c1c8e52b6",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "fbdd57167f62c5feed7b1e96",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1444b5d22791e7eb503bc9c1",
+      "target_intent": "logistics_tracking"
+    },
+    {
+      "sample_id": "0719e8265a090d723ffa7f18",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "0f5723eb38053ac54917d6d6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "05cb3b97eb150f120292c5e5",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "0f6216a7de23ea3dddfac7d8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "0f9ffb1d011e9ac0d4be84ff",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0898da1c27f2c3f6d4b8b05e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "117c04bfe1ddc67f464a3f2a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "11fb91fb6b217bd3617438ee",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0930f6c3db260a739e2cb600",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "1bfc470424bd40ede510f831",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "20e61a4b38fdae952af626f1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "249c5eb0407cc88e41efe8b8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f2ee41782491c87c8da80fe",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "261837d3a84b7549c51df541",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2235874a77b9557e6b0833a4",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "289d3677976b268f4ffa9074",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1b83910104f9550238acc24b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "2af8008982bc0d29d7a9ff9e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "358e4e1babcde55c690f2988",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1859b93b8daa4c68a316024a",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "360ccfb0cf4cc4d2c769c4c7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "3644e6047e1fdc26295c30d2",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "3763622bf05aeb17caf23d7f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "3d3d35c7598678429cfecf19",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "3de43767c3805ec1a3d617d3",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1dd5dd1367a8d8340a3f512d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "42352f60fdf7b55bf34aeefd",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "4677d10fe1a9a70faf048773",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "294656d7e5bb0484baf6edcc",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "47f9d29e5aac71e50848173b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "4a5177b98c8416257d1440d6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1860bd07dd32630383835638",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "4f6ec14b01778e7695eac6f6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "099d2a8dfeace0130ab553e1",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "4ff1a09b87abe560f21acdf6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "51a60c9e823e0955e9ae0994",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "23819f3b5323808148477c48",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "523ba2c31ed6428dd0486ac1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2dda6fcb4cd1e3e310e792d4",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "5632cc0be7d5e659892c76b0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0225e42e879b05bc4151ae93",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "56760a5d4438a3bd04a86d7e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2107667961a62af64c81ade9",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "56a4869b19ffa1e2ef273ac6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "56be79121506b9534b7e1ba9",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3d927cdd1ec10ec67743e040",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "5c4c3ccf2c5b56cf23f3cbc8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "5fa61b1612c944ffd25df101",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "628dec92522bfea4583fc1c0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "456f09fba3c4b3b2b443c72c",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6543115fd420c68f983c0cf7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "678c2c33cae651a9ef47154d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "684cd652db6091deefe4549d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0930f6c3db260a739e2cb600",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6a1331f9f2e1663259bd098d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "56b31c88c4f4aeb6daad7ceb",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6a330f6363be5a8bc9446e4c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6b39931e0e2f30b8b842a4ed",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6b5c472a2a0e80229992a7e5",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6bb3494bf2ea6b71ece57bfb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "294656d7e5bb0484baf6edcc",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6c7a6cc31c1acec2cd4f3631",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "6d372067b9f382fa13cb51d5",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4cd2d8cc557e7691e154b2be",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "7301b865142ca77f714e1c49",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4161049b193b7be1240ed5e6",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "73be5bd84b176b387547f8f3",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "75191863659487da81b22fb0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "41f604a7bc47ba395b05517d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "7573a5d9a7895c5f150defde",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4cd2d8cc557e7691e154b2be",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "75c0c6dfb4da7208c74307e7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "77197ee21eeee7bc8322959d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "7c170fa285ab505e5cef16f6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1c10bc389d180b0b18510757",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "7d9c5a3b995b893e23858ea9",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0575bbb5163687479933e51a",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "7e1effc4fdc26846e03aa79c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "7eb59eacb4ee71889475b469",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "80deb5a5d2a4e7727ee2547f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "835b2a0d7fb7ebded3140b2e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "41f604a7bc47ba395b05517d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "84dc87b151fc98ca5d8f13d4",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "8a639f8b18dd77b75b12d63e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "456f09fba3c4b3b2b443c72c",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "8ac2b58a54aff2b7db1771fe",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "8d890ca007456b0203c28cc8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "018c3e85e54c4fb6684ea312",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "90c68607c6f4944c781a4e4e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f2ee41782491c87c8da80fe",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "921a0439301f97ec02aeccef",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1236ee29868049079cd8e37c",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "97952c52aa1ca3e2815e0ced",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "98216d644dcc969c2b55d494",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "991b926ea67ed67584e9a164",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9a648fb65821590fb1073bfa",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9b44d87dfb8816822ad97b16",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9b4a7a03a3e3dbd5924e3a43",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9cad37fa2f6b7206db93e2e7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "552d7daa13353c1efeab3737",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9d25f4c3ff14bc0441607ae0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9de459ccfe47e5ab0aa69520",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1865f20e65e2b3b54fab7fb3",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "9dfe2a48fe4bc23e85f87361",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2b26790216b99bd05de4ddb1",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a0949544c4435bc79b0851db",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "6e90ee1636cfe381c7d684d3",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a12c4335db4239e7b2355575",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "05cb3b97eb150f120292c5e5",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a260b5696de5d58da6c91cb6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "68a1c98b9dd9bc5320a97111",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a27266b25f89207215d4eb74",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "41f604a7bc47ba395b05517d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a5cdd956c5600f3e4a74badd",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a6d347df735fa69a1b76cdf1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1859b93b8daa4c68a316024a",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a717b73c3b1ceb9009b56212",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a887ac8d3ecb7320d4a9f8f4",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1236ee29868049079cd8e37c",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "a9b7564b6042d9e7878ec7ee",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ac568aa5dfffee55769e57d1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ad763d53e8deeb97c82a3f84",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "ab2a28032daa2ff25b0e7171",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "afaeaddec9eaaf75eb439fec",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "b264c87c46018318ce795571",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "b8666bb0e886c7cf915b7263",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "449119359ddaae64d72f48d0",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "bbb5e27874dbde2454f4523e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7450b949ac5f68c5878dde45",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "bc27a6d7b2442e9ef41c0b16",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "bc70b4e199da6a207264fb91",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "be3c166da4ef64277bb9696b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4703e7a237f3036340218094",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "bea617320750ed59d79c55ef",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "ab4cb5893291492d8ca8005b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c235e1a6673e9a1ddf2a680b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c3f7378ddb0ab4e90882bb8c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "145145267f95935bd9a34e10",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c598072d3b535871846d1bf7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0930f6c3db260a739e2cb600",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c65cf8ba063bc5c74d231b76",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "552d7daa13353c1efeab3737",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c6e406d7870d972108d55bba",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0930f6c3db260a739e2cb600",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "c8cd545826d50ef7e289ecf0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "70b8473b6f7031373823c146",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "cc078beb9a77af7f877752d8",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "cd660efce18125edfc13e1dd",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "b4e2dfb761609e3c5ebf1b0e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d0c4d0da81d8eca3ffbf769c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "50b522350e8b9b128e6c0b87",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d3141fe1b314c38271d9da61",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "29445a118202efdcaac85c32",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d45b365ac8c608a9a7206c9c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5558de51e7402aa225d27c12",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d7d287fba76adaef8b179dd7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d857547a847cbb6af54afa71",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "544faa37eb523f0cec2142fd",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "d92ff696869a5f15a9f8cc4f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "29445a118202efdcaac85c32",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "dbc1984b85c6e25b40da989e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "53ab06b6168780526545de8e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e16b76fcea254923af08af06",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5695fba1c61430c78d78783b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e2ddf8e1f9276f06fa227bf7",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "07c14aab9eb7408c62e7a83d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e39aef30db47377f61e75047",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "59003019050ad61f25b37532",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e3dda09f8bbeaceb246ba840",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4b4c080b1dfae39121ba59c3",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e76226f3d92196913975e8c6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4b4c080b1dfae39121ba59c3",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "e8a10185336c0e61c0057948",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "b2fb0f63150617891e0055d2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ea7fc40dda5f231015fd2b9b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "099d2a8dfeace0130ab553e1",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "eaed727eed15e6224e17c89d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "eaf0e9ed3136cbb0bac9f52c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "d15573aea84fe1a79cebd60a",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "eb24e2e2107d4085d67b2bb1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ae9b92f964d9933ec1e4bc2",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "eb523037be0bab46384a1a8c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "73408a6dd17d6d9d7054bfb4",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "eb54ba13a04fea2c57783756",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "294656d7e5bb0484baf6edcc",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "eca1a6fcdb4fca1707e79e04",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "e6b22e77bb983360c7f3edc7",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ee64e3de73a2012df72530ae",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0575bbb5163687479933e51a",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ee79d38a6ba8487ae717156b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ee7d33b73ed984362b338677",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f0483f804c5fc08d3ea21042",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f2ee41782491c87c8da80fe",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f61e6f8e7300fb5d4ca55ed1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "68a1c98b9dd9bc5320a97111",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f719ac7fdc3a3ee3e89fdfb0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b8f75939377bcd3ebbc496d",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f739f3fb1ec4646737fee883",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0930f6c3db260a739e2cb600",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f7542cbc2450fcaa775f026e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f7bc6288626487a4d3894bf3",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "08c4455ccd75a68928dce53b",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "f89c3ccbe61e0938f67d79a3",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2107667961a62af64c81ade9",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "fa74332c5362ab5932374305",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "053ee2f288cdf99a08839a4e",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "ffefa12b71b18ced48398157",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4cd2d8cc557e7691e154b2be",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "fffb48bced01a425ab542210",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "552d7daa13353c1efeab3737",
+      "target_intent": "order_status"
+    },
+    {
+      "sample_id": "2d2a9b2ef9a6ae8d3595295b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "04f42252183d8bb0779f169b",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "35b3efa3649e175bed5bb23e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1ca6ad072829f3e0763a1d17",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "c78bd7d5f68ebebd25da4224",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "03c39cc0c46dc296597ae9b2",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "f06e113f84b78db834e7f05a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "32d2e6189ff02522175c866b",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "ff17a115d9b161e05af96cd9",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1676d64c9738b17b0fad9134",
+      "target_intent": "policy_faq"
+    },
+    {
+      "sample_id": "52352883aaaeb9c0485ea6bf",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "23aa360a168f6e33af4a871d",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "57c31ee4635e3f5c63b3647e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "26c654b8f0534e801bf96121",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "61907b33049f51e02450aedd",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "433749ed6d1abbc1f60fb5d1",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "8422e6eb7ebcdae5e0897c25",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "6d1659d4d630e957677b59c2",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "a44e7dee1c33e5e20325013d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "36567b39b207765563b3d921",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "bc2cc4cf0cca9315d84f8a93",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "26c654b8f0534e801bf96121",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "c30fcc7756b4d858d7609480",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "6326e8298803cab54f9c3666",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "d2dbdc6a984fa991ed09ee11",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "36567b39b207765563b3d921",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "d4b45a2b011f9405e3cfaf68",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "26f5e3d90ce34f45104f1ff5",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "d60710456a7634faa3010107",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "b42c0060cb559f5d4b23f219",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "d6a99c7a07e7b4d74d7af07a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "bd88a406e3e15f494889a721",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "df787fc531cf550d0ebdb33f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2d74f061b6b59e139d2071c5",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "dfd825569919b236d7bbe9ba",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "27181dfb48fe1fc764ac7985",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "e2d6115eae744a280bf880ba",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "23aa360a168f6e33af4a871d",
+      "target_intent": "product_compare"
+    },
+    {
+      "sample_id": "17164691dbcd321a606ecef2",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b4ae1de7df3b8ca73ae7fc3",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "30773f0f837dae77973ca392",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1652583ec21f63f820323029",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "52052fe45f25532df8308e5d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "092cff9ae30098343fc8f2f4",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "5bca64a25bc0a0b8d1fdf662",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2a721cbd895f28ce453a79df",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "749209c04d580d2f7d83322d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4f41ad3ca338668c8fcc6561",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "79d67d9448d89f02c07e9472",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "62d356c3a2f199994490dbd6",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "90734e6c19518e470b513fec",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2bd8ba39d5e39818348c88d0",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "a7c173235569605b72cd5656",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3de7c57e065beda28229770b",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "aa896c907a050f4722acbe91",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "490d6940b94f2d1bcc109d5e",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "ac842625b64cc28e6b4e55eb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4b9aa5097d452b6fe66fabe6",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "ae567f73b809c18f2758ce24",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "892217bd30dace7713121bf5",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "b92f9ab96599b836edb06bc5",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "b5670cd794f89e3ddf3b8b23",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "b9be0dd4cd0d5d75d5b25ea6",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "61f30875c0963c2866e08799",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "c205a762850839d742c6be29",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "926e2a63d0ea3497035f8bd1",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "cfa6b06cca5b945162128639",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "b11f7e3cbdc3d2cf0610d1d1",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "d3d7f14a471daec6c3ccb8ef",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "cea6669b567c790b4a5c9fde",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "d7268a61ef1d9746463f375b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "18362eb1010a3a99702015f2",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "ead744fe4cdad719ff5d3507",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "b6a4828e703865333ffca57e",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "f7b7f661baae08195b808725",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "042a6a2e900bad553b5cd2c0",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "f976281335af120f9c2d4e40",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7a5c525f9ff1a8920a74edc2",
+      "target_intent": "product_detail"
+    },
+    {
+      "sample_id": "662049f09420dfda3c58d81a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0e3920636658494a5747e85c",
+      "target_intent": "product_recommend"
+    },
+    {
+      "sample_id": "13159ade94ad980b827e1d01",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f062022ca8aaff9e2464aca",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "26bbbd72ec68422a869adc71",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0322874c4fdb65924c957647",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "348e556a6658fc334098c485",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0b6f546614618ad43739d35f",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "3a6c0d3cff8a6181adb528ca",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "186a98f8e1f05e466412f35b",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "6702062ac3914552de3747ac",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "43ce4eedcbd9a6cd1e822fcd",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "7a10bb7f7f4217aecec8de82",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "31bbea9ca6a1ff227222298a",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "876dae329f3db74d6228db44",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "86e005dda10a942c0cb90dd9",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "a50001fec72f6542a71933c9",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0064fb6afe20cb36d598adbe",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "b8a579ead3acf7456c6ad50b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "97c4d261edebdd1dcdb99a45",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "dd000e0c27d9488eccfdd766",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "244402d18563e8541dbc608e",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "e086b50ef9c58aee2c042cdb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f58d4f93383e4976a6097aa",
+      "target_intent": "product_search"
+    },
+    {
+      "sample_id": "6214513b707d4a18cbbfcfb3",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1c8cee66eaaad78a8759a3e6",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "935346e7c4d18903405c7adf",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "49447bd243a3b4bdbff7c094",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "9f99e9ba7f3b1793a448c656",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "58775776a046f7d870104a67",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "a89a53170b807f496b950f96",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "8d8cbb88d798f2cd530b74af",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "b67a36d14c5e3c9afcb8d474",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "065450f9466f512343c3e407",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "b7e7d2f2694322886ead592a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7d907fcf58d06ae6440855cc",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "bb8b25da6f93d9ccd503921a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "78ea30f0b03338f020c509a6",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "d288d8fc19803447817a6272",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "9d5953973e95b582a295c4b0",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "d7bf58e7b446a7b7ee73d391",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7eb782ed11ae4cfc5317c4da",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "dc233037da50b4b766ec9059",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7dbbadb4a595912e91f56b16",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "e07b5b0f3bacae091c9a0efb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5ac24f463e2501543f3171dd",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "ef86cd76367da034d9abbd9f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4df75b6abae17d2b5fd64829",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "f388c50cf328cea644372a5e",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "ad71a5c2e629e5b1e38b0817",
+      "target_intent": "refund_progress"
+    },
+    {
+      "sample_id": "1662cb68da39a53a7f1cf9c5",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "12050292fc2e21085e5c269d",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "3eb796503399f6a647a61fa1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3a0932b98d14e109841cca0b",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "5c6c9481ae2dd873724e0107",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4de9a47ef8aed59acf8c4a02",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "67f802cabffe9c94dbe9aab0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "654472652a7ea13c3ac1ae90",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "680120d299fee68c610583ea",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1cb4e0b523917fb801e7b0c0",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "68cbe17abe8850ca439bc857",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1e572b071998294cfca99e84",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "695c82b64de1df2c5ae04599",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "214353b87d988aaa4c1f06da",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "6ec61f701bc942de6784286b",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "59a5f67e053ba71d0ea2eb20",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "847752e352b2cd81526e74c1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "054d1ac2643f2e94f1376958",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "8717f5d81332258eb296820d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0f7603ad0123d9885c2fb192",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "887b555e9093f302a8d196d2",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "78ca96fe453e50026979541b",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9562615c66b79c24f9027b63",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "057761ef7e08b7ebd7e8821b",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9b6069de99aa7d2f0a26550d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3ab682aac006949ebe73041f",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9c2a37f47955b3dffc5d372a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "245bcdf41569bc4a84ab76c7",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9d6f2853285827d48450ed7c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "7a6324d7e4d6b014db7ff0c2",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9defdd72db9bece5051d8968",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "47f3814af42ae95397fa8135",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9f2c65772ef428315fcb2647",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "15986712451ff2f92f4205bf",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "9fd7ff0b614ed0012715d10c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "227608c8e23770bab9d3358a",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "b5926fbeaec86b52d35f15d0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "48f69947d1e2b9af0882b980",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "c71f4a77df8ad1fbc936814a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2eeb6eb96762384f6416b2f0",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "c7632eaeba37e03a22b4df68",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "490a907f9112c725021cf7b1",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "de8623fbb43c9b0fcd597295",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "588ea3b66dd5dc9f1aff8455",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "e0065497f46498cc9105c461",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "bdb219aa9b310bbdfad1f512",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "e7fb92e477990f8dc764f002",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "d2fd9233a06431810b7fd3e6",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "f0ba04ec8317e86ded497397",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4e035a9a6a6728cb1f729a7a",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "f4c653f1fc26c4c9a2ae64d3",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "440a3c60bca1861c11bd3808",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "fc68f1e28c2071e2d9fa7aeb",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "d2beb44060235d86cbcd5b2b",
+      "target_intent": "return_exchange"
+    },
+    {
+      "sample_id": "283079e6ec1d5744b9cc2a1f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "116874349bf7d7391e460882",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "2d4872f8f78c4edf5d750397",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "2a14a926a2594fabbead3f6a",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "2f9f03aa4a8aa540c4d91802",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "116874349bf7d7391e460882",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "7cd582bd6115b36317ca4e5c",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "40398810486efe8ba8450c43",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "84ebfeb137887c9eb4144447",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "5f45c4255bf8c83d47d22a05",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "85bf9730b050cb0f63a8b788",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1c10270459865a6c43604bef",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "8c8d3b30e8f94c4e6760c921",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3543916934f33bf24969f84a",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "9db77a30d61091626cfc7211",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "10f09e05ab761689a9e73a6f",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "a3a7947a98057103c48a85e1",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0ccf4385ec2a3c9faa889104",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b14398fcf4efad7cf8cfd20d",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "8af30541389df6743e7a8c34",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b427aa655c70fe3390dcacbf",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "4fa505e569f72ecc5cb9da8c",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "b4ff80946c64cca792cbbcb0",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "3608a91f1f36da8b6e786751",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "bd04ec56f22236503534ee5f",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "10f09e05ab761689a9e73a6f",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "c1bf5091f446b8fa3ae5e903",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "1617936583e51ee20588f95c",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "c91754f4121efb6b0cfaed8a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "bc320daed4f2e1c0f5310b58",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "d3515b6309eb300881d3f5e4",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "46d5a92ce871545c38450d5e",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "d37cdbab0a390ea0644a0084",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "21396a95c8f04073aa578d17",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "da112a0ef5552b6bc2f86084",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "942752c5d297926b94cca756",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "e89a3dc8ec2ee185629f4d96",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "0791281d7e67522f53201e55",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "ed22e1be7b19d282c660a295",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "32aa25917b4086bb18a4815b",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "f26044ee36cb888d9d7b7838",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "6761a1ff9c325fb815e8d4db",
+      "target_intent": "stock_price"
+    },
+    {
+      "sample_id": "fd888fe1337a84ffd35fa80a",
+      "reason": "bge_semantic_duplicate",
+      "duplicate_of": "bbfa48ed8f180af903a0850c",
+      "target_intent": "stock_price"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "event_count": 3,
+  "resume_count": 2,
+  "sequences": [
+    1,
+    2,
+    3
+  ],
+  "terminal_events": [
+    "completed"
+  ],
+  "ttl_seconds": 600,
+  "forbidden_payload_removed": true
+}

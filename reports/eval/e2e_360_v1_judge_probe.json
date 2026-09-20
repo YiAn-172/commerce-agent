@@ -1,0 +1,29 @@
+{
+  "status": "partial_not_release_evidence",
+  "scope": "expression_relevance_only",
+  "model": "deepseek-flash",
+  "judged": 1,
+  "total": 360,
+  "relevant": 1,
+  "relevance_rate": 1.0,
+  "mean_relevance_score": 2.0,
+  "prompt_tokens": 171,
+  "completion_tokens": 63,
+  "rows": [
+    {
+      "case_id": "knowledge_001",
+      "category": "knowledge",
+      "user_text": "手机保修政策是什么",
+      "expected_status": "completed",
+      "assistant_answer": "根据现行政策，可以在规则窗口内申请。",
+      "relevant": true,
+      "relevance_score": 2,
+      "concise": true,
+      "clear": false,
+      "rationale": "回答虽与保修政策相关，但未提供任何具体政策内容，仅模糊提及'规则窗口'，用户无法获得有效信息，表达不清晰。",
+      "prompt_tokens": 171,
+      "completion_tokens": 63
+    }
+  ],
+  "updated_at": "2026-09-20T02:50:28.114770+00:00"
+}

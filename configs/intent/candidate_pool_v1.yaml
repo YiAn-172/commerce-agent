@@ -1,0 +1,74 @@
+schema_version: "1.0"
+pool_version: intent_candidate_pool_v1
+seed: 20260915
+generation_run_started_at: "2026-09-15T19:46:42+08:00"
+candidate_pool_multiplier: 2.00
+prompt_version: intent_templates_v1
+generator_model: deepseek-flash
+translation_model: deepseek-flash
+deepseek_pricing_checked_at: "2026-09-15"
+deepseek_pricing_usd_per_million_tokens:
+  input_cache_miss: 0.14
+  output: 0.28
+
+target_counts:
+  product_search: 2500
+  product_recommend: 2500
+  product_compare: 1500
+  product_detail: 1800
+  stock_price: 1500
+  order_status: 1800
+  logistics_tracking: 1800
+  cancel_order: 1200
+  return_exchange: 1600
+  refund_progress: 1200
+  after_sales_eligibility: 1500
+  policy_faq: 1600
+  complaint: 1100
+  human_handoff: 900
+  chitchat: 1200
+  out_of_scope: 1300
+
+# This is the oversized candidate-pool allocation used for the frozen P1 run.
+# dataset_v1.yaml contains the final 10,000-row allocation after quality gates.
+synthetic_counts:
+  product_search: 1300
+  product_recommend: 2000
+  product_compare: 1200
+  product_detail: 700
+  stock_price: 300
+  order_status: 300
+  logistics_tracking: 500
+  cancel_order: 200
+  return_exchange: 300
+  refund_progress: 300
+  after_sales_eligibility: 400
+  policy_faq: 700
+  complaint: 300
+  human_handoff: 300
+  chitchat: 500
+  out_of_scope: 700
+
+source_caps:
+  full_ecom: 13200
+  bitext_retail: 30000
+  massive_zh: 1600
+  smp2017: 1000
+
+source_preferences:
+  product_search: [full_ecom, bitext_retail]
+  product_recommend: [full_ecom]
+  product_compare: [full_ecom]
+  product_detail: [bitext_retail, full_ecom]
+  stock_price: [bitext_retail, full_ecom]
+  order_status: [full_ecom, bitext_retail]
+  logistics_tracking: [bitext_retail]
+  cancel_order: [full_ecom, bitext_retail]
+  return_exchange: [full_ecom, bitext_retail]
+  refund_progress: [bitext_retail]
+  after_sales_eligibility: [bitext_retail]
+  policy_faq: [full_ecom, bitext_retail]
+  complaint: [full_ecom, bitext_retail]
+  human_handoff: [bitext_retail, full_ecom]
+  chitchat: [massive_zh, smp2017]
+  out_of_scope: [smp2017, massive_zh]

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "ai_assisted_draft_not_human_review",
+  "warning": "These files are suggestions only. They do not satisfy independent human review, must not populate reviewer identities, and cannot promote release evidence.",
+  "model_version": "intent-macbert-v1",
+  "p1_gold": {
+    "output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p1_gold_ai_draft.csv",
+    "rows": 1600,
+    "needs_human_attention": 440,
+    "attention_output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p1_gold_ai_attention.csv"
+  },
+  "p1_challenge": {
+    "output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p1_challenge_ai_draft.csv",
+    "rows": 400
+  },
+  "p9_routing": {
+    "output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p9_routing_ai_draft.csv",
+    "rows": 800,
+    "runtime_disagreement": 359,
+    "attention_output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p9_routing_ai_attention.csv"
+  },
+  "p9_tool_selection": {
+    "output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p9_tool_selection_ai_draft.csv",
+    "rows": 1000
+  },
+  "p9_e2e": {
+    "output": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\data\\annotation\\review_work\\ai_drafts\\p9_e2e_ai_draft.csv",
+    "rows": 72,
+    "draft_failures": 0
+  },
+  "generated_at": "2026-09-18T10:38:10.722969+00:00"
+}

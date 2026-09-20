@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "status": "ai_assisted_verified_for_demo",
+  "limitations": [
+    "The project owner accepted AI-assisted labels for the current demo scope.",
+    "No result in this report is independent human annotation or human-gold evidence.",
+    "Production release verification remains separate and fail-closed."
+  ],
+  "intent": {
+    "schema_version": "1.0",
+    "gold_version": "intent_ai_assisted_v1",
+    "evaluation_status": "ai_assisted_verified_for_demo",
+    "human_review_status": "not_performed",
+    "row_count": 1600,
+    "label_counts": {
+      "after_sales_eligibility": 100,
+      "cancel_order": 100,
+      "chitchat": 100,
+      "complaint": 100,
+      "human_handoff": 100,
+      "logistics_tracking": 100,
+      "order_status": 100,
+      "out_of_scope": 100,
+      "policy_faq": 100,
+      "product_compare": 100,
+      "product_detail": 100,
+      "product_recommend": 100,
+      "product_search": 100,
+      "refund_progress": 100,
+      "return_exchange": 100,
+      "stock_price": 100
+    },
+    "training_overlap_count": 0,
+    "residual_pii_count": 0,
+    "draft_sha256": "de7d50b79375a2aaf64d01213d5dcbd3c99227b486eeb61c8ca507568cdb5122",
+    "output_sha256": "f704b344046184f539517a083ac078f11c9d52c1352c8c23498ed78ca208edbd",
+    "created_at": "2026-09-18T10:49:08.937276+00:00"
+  },
+  "challenge": {
+    "schema_version": "1.0",
+    "challenge_version": "intent_challenge_ai_assisted_v1",
+    "evaluation_status": "ai_assisted_verified_for_demo",
+    "human_review_status": "not_performed",
+    "row_count": 400,
+    "challenge_type_counts": {
+      "low_information": 120,
+      "multi_intent": 160,
+      "near_boundary": 40,
+      "out_of_scope": 80
+    },
+    "output_sha256": "6ba6e20cfe82c3747dd1ab303c24b94c07eb3cc8a89d8daf226eda6838a1e1ac",
+    "created_at": "2026-09-18T10:49:08.943276+00:00"
+  },
+  "routing": {
+    "schema_version": "1.0",
+    "kind": "routing",
+    "status": "ai_assisted_verified_for_demo",
+    "human_review_status": "not_performed",
+    "source_sha256": "5c774495c36d6396cc9a6192b94348c7d02fbf967b0d53304a9a70bffd3868e4",
+    "draft_sha256": "c44922a4cb0fdec699ec1b3d9d24d5d2ea4e50bee649c306a9f5e24ee0a8f294",
+    "adjudicated_sha256": "cf5b469b87bf81d36663f06559838907a8470bbf9d7c397ca12c3810d7ce65c6",
+    "expected_rows": 800,
+    "adjudicated_output": "evals\\routing\\routing_800_v1_ai_assisted.jsonl",
+    "created_at": "2026-09-18T10:49:08.955275+00:00"
+  },
+  "tool_selection": {
+    "schema_version": "1.0",
+    "kind": "tool_selection",
+    "status": "ai_assisted_verified_for_demo",
+    "human_review_status": "not_performed",
+    "source_sha256": "1cb0e56b8d752f19c2dbc2a82074f3cf5937658f34dd3a6d6e3bfdafcc2919d4",
+    "draft_sha256": "78d413bc84db0ded8cea304fd4c0e90475aa3433e4422300a888f979c1de11b9",
+    "adjudicated_sha256": "6a81a08d99f86ea7540e829e5a0f6a3dcf13649469c5fb6ff2674420fc110c26",
+    "expected_rows": 1000,
+    "adjudicated_output": "evals\\tool_selection\\tool_selection_1000_v1_ai_assisted.jsonl",
+    "created_at": "2026-09-18T10:49:08.969275+00:00"
+  },
+  "e2e": {
+    "schema_version": "1.0",
+    "status": "ai_assisted_verified_for_demo",
+    "human_review_status": "not_performed",
+    "reviewed": 72,
+    "passed": 72,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "mean_relevance_score": 4.0,
+    "mean_clarity_score": 4.0,
+    "draft_sha256": "91bba4f4d266ffea85a08f0b90cdab60c3be86d08718b45074f1407bf90e59aa",
+    "created_at": "2026-09-18T10:49:08.971275+00:00"
+  },
+  "created_at": "2026-09-18T10:49:08.971275+00:00"
+}

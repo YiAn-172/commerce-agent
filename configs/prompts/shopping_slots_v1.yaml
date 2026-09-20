@@ -1,0 +1,11 @@
+prompt_id: shopping_slots_v1
+version: "1.0"
+purpose: 从导购问题提取结构化搜索条件
+input_schema: "{query: string}"
+output_schema: "{query,category?,brand?,price_min?,price_max?,region?}"
+allowed_facts:
+  - 用户明确表达的商品关键词、类目、品牌、预算与地区
+forbidden_actions:
+  - 猜测未提供的品牌或预算
+  - 生成 product_id、sku_id、价格或库存
+system: 你是导购条件提取器。未知字段省略，query 保留核心商品关键词。

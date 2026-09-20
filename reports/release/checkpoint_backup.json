@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "verified",
+  "output": "/workspace/backups/checkpoints.jsonl",
+  "output_sha256": "99b68a02aa8dc433c3ae94e66b7dd6459558935b17510f4c710dd741b91aebdd",
+  "mode": "latest_state_per_thread",
+  "databases": [
+    {
+      "path": "/cache/checkpoints/checkpoints.sqlite",
+      "status": "exported",
+      "tables": {
+        "checkpoints": 755,
+        "writes": 37
+      },
+      "rows": 792
+    },
+    {
+      "path": "/cache/checkpoints/approval-checkpoints.sqlite",
+      "status": "exported",
+      "tables": {
+        "checkpoints": 2,
+        "writes": 0
+      },
+      "rows": 2
+    }
+  ],
+  "total_rows": 794,
+  "created_at": "2026-09-19T04:20:34.531846+00:00"
+}

@@ -1,0 +1,222 @@
+{
+  "status": "passed",
+  "version": "kb_20260917_001",
+  "verified_at": "2026-09-17T09:47:04.025718+00:00",
+  "expected_chunks": 2780,
+  "elasticsearch_chunks": 2780,
+  "milvus_chunks": 2780,
+  "sampled_hashes": 100,
+  "embedding_dimension": 512,
+  "sampled_metadata": 100,
+  "smoke": [
+    {
+      "query": "星穹耳机适合通勤吗",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_faq_demo_000001_01",
+      "decision_score": 0.9474970102310181,
+      "latency_ms": 8937
+    },
+    {
+      "query": "SKU 000001 的静态规格",
+      "doc_types": [
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_product_demo_000001_02",
+      "decision_score": 0.9954916834831238,
+      "latency_ms": 994
+    },
+    {
+      "query": "蓝牙耳机保修多久",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_product_demo_000043_02",
+      "decision_score": 0.05974375456571579,
+      "latency_ms": 1069
+    },
+    {
+      "query": "智能手表适合运动吗",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_faq_demo_000300_01",
+      "decision_score": 0.009337703697383404,
+      "latency_ms": 819
+    },
+    {
+      "query": "笔记本电脑有哪些使用场景",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_faq_demo_000154_01",
+      "decision_score": 0.8696673512458801,
+      "latency_ms": 834
+    },
+    {
+      "query": "手机的退货政策",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_021_01",
+      "decision_score": 0.6561514735221863,
+      "latency_ms": 814
+    },
+    {
+      "query": "退货需要哪些材料",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_037_01",
+      "decision_score": 0.8537455797195435,
+      "latency_ms": 985
+    },
+    {
+      "query": "商品未拆封能否退货",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_037_01",
+      "decision_score": 0.3859255313873291,
+      "latency_ms": 792
+    },
+    {
+      "query": "包装破损如何申请售后",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_037_01",
+      "decision_score": 0.7269103527069092,
+      "latency_ms": 751
+    },
+    {
+      "query": "质量问题换货规则",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_037_01",
+      "decision_score": 0.5728141069412231,
+      "latency_ms": 783
+    },
+    {
+      "query": "平板电脑静态参数",
+      "doc_types": [
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_product_demo_000029_01",
+      "decision_score": 0.9089208841323853,
+      "latency_ms": 970
+    },
+    {
+      "query": "机械键盘适合办公吗",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_faq_demo_000110_01",
+      "decision_score": 0.020055368542671204,
+      "latency_ms": 890
+    },
+    {
+      "query": "显示器适用人群",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_product_demo_000857_01",
+      "decision_score": 0.09012723714113235,
+      "latency_ms": 866
+    },
+    {
+      "query": "路由器产品说明",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_product_demo_000009_01",
+      "decision_score": 0.029064109548926353,
+      "latency_ms": 1039
+    },
+    {
+      "query": "相机保修说明",
+      "doc_types": [
+        "faq",
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_faq_demo_000150_01",
+      "decision_score": 0.20459002256393433,
+      "latency_ms": 978
+    },
+    {
+      "query": "耳机 SKU 规格",
+      "doc_types": [
+        "product"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_product_demo_000001_02",
+      "decision_score": 0.992935836315155,
+      "latency_ms": 1043
+    },
+    {
+      "query": "活动规则的有效期",
+      "doc_types": [
+        "activity"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_065_01",
+      "decision_score": 0.1906057596206665,
+      "latency_ms": 820
+    },
+    {
+      "query": "维修申请窗口期",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_053_01",
+      "decision_score": 0.25498253107070923,
+      "latency_ms": 843
+    },
+    {
+      "query": "售后排除原因",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_037_01",
+      "decision_score": 0.9579355120658875,
+      "latency_ms": 877
+    },
+    {
+      "query": "规则冲突时如何处理",
+      "doc_types": [
+        "policy"
+      ],
+      "passed": true,
+      "top_chunk_id": "chk_rule_demo_021_01",
+      "decision_score": 0.6903701424598694,
+      "latency_ms": 660
+    }
+  ],
+  "errors": []
+}

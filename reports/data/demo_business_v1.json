@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "status": "passed",
+  "seed": 20260915,
+  "data_version": "demo-business-v1",
+  "dataset_fingerprint": "459ebd36abae58a13bbe42aa39d14f622357caa8b6325150d120a591f94af785",
+  "required_table_count": 19,
+  "missing_tables": [],
+  "service_ticket_unique_constraints": [
+    "uq_ticket_fingerprint",
+    "uq_ticket_principal_idem"
+  ],
+  "missing_service_ticket_unique_constraints": [],
+  "counts": {
+    "users": 100,
+    "products": 300,
+    "skus": 1200,
+    "inventory": 3600,
+    "orders": 3000,
+    "order_items": 4500,
+    "logistics_events": 6533,
+    "after_sales_rules": 80,
+    "service_tickets": 102,
+    "approval_tasks": 102,
+    "knowledge_versions": 3
+  },
+  "seeded_runtime_counts": {
+    "service_tickets": 100,
+    "approval_tasks": 100
+  },
+  "logistics_event_rows": 6533,
+  "order_total_mismatches": 0,
+  "ticket_amount_mismatches": 0,
+  "invalid_masked_phones": 0,
+  "non_mock_approval_actions": 0,
+  "active_rule_count": 20,
+  "scenario_ids": {
+    "pending_payment": "ord_demo_000001",
+    "paid": "ord_demo_000002",
+    "packed": "ord_demo_000003",
+    "shipped": "ord_demo_000004",
+    "delivered": "ord_demo_000005",
+    "cancellation_requested": "ord_demo_000006",
+    "cancelled": "ord_demo_000007",
+    "refunded": "ord_demo_000010",
+    "catalog_budget_headphones": "prd_demo_000001",
+    "inventory_zero_example": "inv_demo_000121_0"
+  },
+  "errors": []
+}

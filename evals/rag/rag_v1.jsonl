@@ -1,0 +1,600 @@
+{"case_id": "product_001", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000001的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000001_01", "chk_product_demo_000001_02"]}
+{"case_id": "product_002", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000002的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000002_01", "chk_product_demo_000002_02"]}
+{"case_id": "product_003", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000003的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000003_01", "chk_product_demo_000003_02"]}
+{"case_id": "product_004", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000004的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000004_01", "chk_product_demo_000004_02"]}
+{"case_id": "product_005", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000005的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000005_01", "chk_product_demo_000005_02"]}
+{"case_id": "product_006", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000006的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000006_01", "chk_product_demo_000006_02"]}
+{"case_id": "product_007", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000007的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000007_01", "chk_product_demo_000007_02"]}
+{"case_id": "product_008", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000008的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000008_01", "chk_product_demo_000008_02"]}
+{"case_id": "product_009", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000009的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000009_01", "chk_product_demo_000009_02"]}
+{"case_id": "product_010", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000010的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000010_01", "chk_product_demo_000010_02"]}
+{"case_id": "product_011", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000011的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000011_01", "chk_product_demo_000011_02"]}
+{"case_id": "product_012", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000012的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000012_01", "chk_product_demo_000012_02"]}
+{"case_id": "product_013", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000013的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000013_01", "chk_product_demo_000013_02"]}
+{"case_id": "product_014", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000014的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000014_01", "chk_product_demo_000014_02"]}
+{"case_id": "product_015", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000015的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000015_01", "chk_product_demo_000015_02"]}
+{"case_id": "product_016", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000016的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000016_01", "chk_product_demo_000016_02"]}
+{"case_id": "product_017", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000017的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000017_01", "chk_product_demo_000017_02"]}
+{"case_id": "product_018", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000018的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000018_01", "chk_product_demo_000018_02"]}
+{"case_id": "product_019", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000019的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000019_01", "chk_product_demo_000019_02"]}
+{"case_id": "product_020", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000020的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000020_01", "chk_product_demo_000020_02"]}
+{"case_id": "product_021", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000021的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000021_01", "chk_product_demo_000021_02"]}
+{"case_id": "product_022", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000022的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000022_01", "chk_product_demo_000022_02"]}
+{"case_id": "product_023", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000023的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000023_01", "chk_product_demo_000023_02"]}
+{"case_id": "product_024", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000024的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000024_01", "chk_product_demo_000024_02"]}
+{"case_id": "product_025", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000025的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000025_01", "chk_product_demo_000025_02"]}
+{"case_id": "product_026", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000026的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000026_01", "chk_product_demo_000026_02"]}
+{"case_id": "product_027", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000027的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000027_01", "chk_product_demo_000027_02"]}
+{"case_id": "product_028", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000028的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000028_01", "chk_product_demo_000028_02"]}
+{"case_id": "product_029", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000029的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000029_01", "chk_product_demo_000029_02"]}
+{"case_id": "product_030", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000030的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000030_01", "chk_product_demo_000030_02"]}
+{"case_id": "product_031", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000031的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000031_01", "chk_product_demo_000031_02"]}
+{"case_id": "product_032", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000032的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000032_01", "chk_product_demo_000032_02"]}
+{"case_id": "product_033", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000033的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000033_01", "chk_product_demo_000033_02"]}
+{"case_id": "product_034", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000034的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000034_01", "chk_product_demo_000034_02"]}
+{"case_id": "product_035", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000035的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000035_01", "chk_product_demo_000035_02"]}
+{"case_id": "product_036", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000036的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000036_01", "chk_product_demo_000036_02"]}
+{"case_id": "product_037", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000037的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000037_01", "chk_product_demo_000037_02"]}
+{"case_id": "product_038", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000038的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000038_01", "chk_product_demo_000038_02"]}
+{"case_id": "product_039", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000039的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000039_01", "chk_product_demo_000039_02"]}
+{"case_id": "product_040", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000040的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000040_01", "chk_product_demo_000040_02"]}
+{"case_id": "product_041", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000041的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000041_01", "chk_product_demo_000041_02"]}
+{"case_id": "product_042", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000042的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000042_01", "chk_product_demo_000042_02"]}
+{"case_id": "product_043", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000043的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000043_01", "chk_product_demo_000043_02"]}
+{"case_id": "product_044", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000044的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000044_01", "chk_product_demo_000044_02"]}
+{"case_id": "product_045", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000045的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000045_01", "chk_product_demo_000045_02"]}
+{"case_id": "product_046", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000046的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000046_01", "chk_product_demo_000046_02"]}
+{"case_id": "product_047", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000047的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000047_01", "chk_product_demo_000047_02"]}
+{"case_id": "product_048", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000048的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000048_01", "chk_product_demo_000048_02"]}
+{"case_id": "product_049", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000049的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000049_01", "chk_product_demo_000049_02"]}
+{"case_id": "product_050", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000050的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000050_01", "chk_product_demo_000050_02"]}
+{"case_id": "product_051", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000051的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000051_01", "chk_product_demo_000051_02"]}
+{"case_id": "product_052", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000052的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000052_01", "chk_product_demo_000052_02"]}
+{"case_id": "product_053", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000053的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000053_01", "chk_product_demo_000053_02"]}
+{"case_id": "product_054", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000054的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000054_01", "chk_product_demo_000054_02"]}
+{"case_id": "product_055", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000055的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000055_01", "chk_product_demo_000055_02"]}
+{"case_id": "product_056", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000056的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000056_01", "chk_product_demo_000056_02"]}
+{"case_id": "product_057", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000057的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000057_01", "chk_product_demo_000057_02"]}
+{"case_id": "product_058", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000058的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000058_01", "chk_product_demo_000058_02"]}
+{"case_id": "product_059", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000059的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000059_01", "chk_product_demo_000059_02"]}
+{"case_id": "product_060", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000060的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000060_01", "chk_product_demo_000060_02"]}
+{"case_id": "product_061", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000061的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000061_01", "chk_product_demo_000061_02"]}
+{"case_id": "product_062", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000062的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000062_01", "chk_product_demo_000062_02"]}
+{"case_id": "product_063", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000063的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000063_01", "chk_product_demo_000063_02"]}
+{"case_id": "product_064", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000064的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000064_01", "chk_product_demo_000064_02"]}
+{"case_id": "product_065", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000065的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000065_01", "chk_product_demo_000065_02"]}
+{"case_id": "product_066", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000066的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000066_01", "chk_product_demo_000066_02"]}
+{"case_id": "product_067", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000067的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000067_01", "chk_product_demo_000067_02"]}
+{"case_id": "product_068", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000068的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000068_01", "chk_product_demo_000068_02"]}
+{"case_id": "product_069", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000069的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000069_01", "chk_product_demo_000069_02"]}
+{"case_id": "product_070", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000070的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000070_01", "chk_product_demo_000070_02"]}
+{"case_id": "product_071", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000071的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000071_01", "chk_product_demo_000071_02"]}
+{"case_id": "product_072", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000072的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000072_01", "chk_product_demo_000072_02"]}
+{"case_id": "product_073", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000073的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000073_01", "chk_product_demo_000073_02"]}
+{"case_id": "product_074", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000074的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000074_01", "chk_product_demo_000074_02"]}
+{"case_id": "product_075", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000075的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000075_01", "chk_product_demo_000075_02"]}
+{"case_id": "product_076", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000076的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000076_01", "chk_product_demo_000076_02"]}
+{"case_id": "product_077", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000077的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000077_01", "chk_product_demo_000077_02"]}
+{"case_id": "product_078", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000078的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000078_01", "chk_product_demo_000078_02"]}
+{"case_id": "product_079", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000079的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000079_01", "chk_product_demo_000079_02"]}
+{"case_id": "product_080", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000080的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000080_01", "chk_product_demo_000080_02"]}
+{"case_id": "product_081", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000081的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000081_01", "chk_product_demo_000081_02"]}
+{"case_id": "product_082", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000082的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000082_01", "chk_product_demo_000082_02"]}
+{"case_id": "product_083", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000083的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000083_01", "chk_product_demo_000083_02"]}
+{"case_id": "product_084", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000084的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000084_01", "chk_product_demo_000084_02"]}
+{"case_id": "product_085", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000085的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000085_01", "chk_product_demo_000085_02"]}
+{"case_id": "product_086", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000086的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000086_01", "chk_product_demo_000086_02"]}
+{"case_id": "product_087", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000087的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000087_01", "chk_product_demo_000087_02"]}
+{"case_id": "product_088", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000088的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000088_01", "chk_product_demo_000088_02"]}
+{"case_id": "product_089", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000089的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000089_01", "chk_product_demo_000089_02"]}
+{"case_id": "product_090", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000090的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000090_01", "chk_product_demo_000090_02"]}
+{"case_id": "product_091", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000091的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000091_01", "chk_product_demo_000091_02"]}
+{"case_id": "product_092", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000092的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000092_01", "chk_product_demo_000092_02"]}
+{"case_id": "product_093", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000093的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000093_01", "chk_product_demo_000093_02"]}
+{"case_id": "product_094", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000094的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000094_01", "chk_product_demo_000094_02"]}
+{"case_id": "product_095", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000095的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000095_01", "chk_product_demo_000095_02"]}
+{"case_id": "product_096", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000096的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000096_01", "chk_product_demo_000096_02"]}
+{"case_id": "product_097", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000097的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000097_01", "chk_product_demo_000097_02"]}
+{"case_id": "product_098", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000098的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000098_01", "chk_product_demo_000098_02"]}
+{"case_id": "product_099", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000099的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000099_01", "chk_product_demo_000099_02"]}
+{"case_id": "product_100", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000100的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000100_01", "chk_product_demo_000100_02"]}
+{"case_id": "product_101", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000101的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000101_01", "chk_product_demo_000101_02"]}
+{"case_id": "product_102", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000102的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000102_01", "chk_product_demo_000102_02"]}
+{"case_id": "product_103", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000103的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000103_01", "chk_product_demo_000103_02"]}
+{"case_id": "product_104", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000104的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000104_01", "chk_product_demo_000104_02"]}
+{"case_id": "product_105", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000105的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000105_01", "chk_product_demo_000105_02"]}
+{"case_id": "product_106", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000106的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000106_01", "chk_product_demo_000106_02"]}
+{"case_id": "product_107", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000107的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000107_01", "chk_product_demo_000107_02"]}
+{"case_id": "product_108", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000108的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000108_01", "chk_product_demo_000108_02"]}
+{"case_id": "product_109", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000109的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000109_01", "chk_product_demo_000109_02"]}
+{"case_id": "product_110", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000110的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000110_01", "chk_product_demo_000110_02"]}
+{"case_id": "product_111", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000111的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000111_01", "chk_product_demo_000111_02"]}
+{"case_id": "product_112", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000112的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000112_01", "chk_product_demo_000112_02"]}
+{"case_id": "product_113", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000113的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000113_01", "chk_product_demo_000113_02"]}
+{"case_id": "product_114", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000114的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000114_01", "chk_product_demo_000114_02"]}
+{"case_id": "product_115", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000115的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000115_01", "chk_product_demo_000115_02"]}
+{"case_id": "product_116", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000116的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000116_01", "chk_product_demo_000116_02"]}
+{"case_id": "product_117", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000117的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000117_01", "chk_product_demo_000117_02"]}
+{"case_id": "product_118", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000118的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000118_01", "chk_product_demo_000118_02"]}
+{"case_id": "product_119", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000119的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000119_01", "chk_product_demo_000119_02"]}
+{"case_id": "product_120", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000120的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000120_01", "chk_product_demo_000120_02"]}
+{"case_id": "product_121", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000121的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000121_01", "chk_product_demo_000121_02"]}
+{"case_id": "product_122", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000122的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000122_01", "chk_product_demo_000122_02"]}
+{"case_id": "product_123", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000123的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000123_01", "chk_product_demo_000123_02"]}
+{"case_id": "product_124", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000124的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000124_01", "chk_product_demo_000124_02"]}
+{"case_id": "product_125", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000125的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000125_01", "chk_product_demo_000125_02"]}
+{"case_id": "product_126", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000126的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000126_01", "chk_product_demo_000126_02"]}
+{"case_id": "product_127", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000127的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000127_01", "chk_product_demo_000127_02"]}
+{"case_id": "product_128", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000128的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000128_01", "chk_product_demo_000128_02"]}
+{"case_id": "product_129", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000129的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000129_01", "chk_product_demo_000129_02"]}
+{"case_id": "product_130", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000130的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000130_01", "chk_product_demo_000130_02"]}
+{"case_id": "product_131", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000131的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000131_01", "chk_product_demo_000131_02"]}
+{"case_id": "product_132", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000132的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000132_01", "chk_product_demo_000132_02"]}
+{"case_id": "product_133", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000133的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000133_01", "chk_product_demo_000133_02"]}
+{"case_id": "product_134", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000134的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000134_01", "chk_product_demo_000134_02"]}
+{"case_id": "product_135", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000135的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000135_01", "chk_product_demo_000135_02"]}
+{"case_id": "product_136", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000136的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000136_01", "chk_product_demo_000136_02"]}
+{"case_id": "product_137", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000137的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000137_01", "chk_product_demo_000137_02"]}
+{"case_id": "product_138", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000138的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000138_01", "chk_product_demo_000138_02"]}
+{"case_id": "product_139", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000139的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000139_01", "chk_product_demo_000139_02"]}
+{"case_id": "product_140", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000140的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000140_01", "chk_product_demo_000140_02"]}
+{"case_id": "product_141", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000141的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000141_01", "chk_product_demo_000141_02"]}
+{"case_id": "product_142", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000142的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000142_01", "chk_product_demo_000142_02"]}
+{"case_id": "product_143", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000143的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000143_01", "chk_product_demo_000143_02"]}
+{"case_id": "product_144", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000144的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000144_01", "chk_product_demo_000144_02"]}
+{"case_id": "product_145", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000145的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000145_01", "chk_product_demo_000145_02"]}
+{"case_id": "product_146", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000146的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000146_01", "chk_product_demo_000146_02"]}
+{"case_id": "product_147", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000147的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000147_01", "chk_product_demo_000147_02"]}
+{"case_id": "product_148", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000148的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000148_01", "chk_product_demo_000148_02"]}
+{"case_id": "product_149", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000149的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000149_01", "chk_product_demo_000149_02"]}
+{"case_id": "product_150", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000150的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000150_01", "chk_product_demo_000150_02"]}
+{"case_id": "product_151", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000151的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000151_01", "chk_product_demo_000151_02"]}
+{"case_id": "product_152", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000152的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000152_01", "chk_product_demo_000152_02"]}
+{"case_id": "product_153", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000153的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000153_01", "chk_product_demo_000153_02"]}
+{"case_id": "product_154", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000154的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000154_01", "chk_product_demo_000154_02"]}
+{"case_id": "product_155", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000155的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000155_01", "chk_product_demo_000155_02"]}
+{"case_id": "product_156", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000156的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000156_01", "chk_product_demo_000156_02"]}
+{"case_id": "product_157", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000157的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000157_01", "chk_product_demo_000157_02"]}
+{"case_id": "product_158", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000158的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000158_01", "chk_product_demo_000158_02"]}
+{"case_id": "product_159", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000159的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000159_01", "chk_product_demo_000159_02"]}
+{"case_id": "product_160", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000160的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000160_01", "chk_product_demo_000160_02"]}
+{"case_id": "product_161", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000161的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000161_01", "chk_product_demo_000161_02"]}
+{"case_id": "product_162", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000162的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000162_01", "chk_product_demo_000162_02"]}
+{"case_id": "product_163", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000163的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000163_01", "chk_product_demo_000163_02"]}
+{"case_id": "product_164", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000164的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000164_01", "chk_product_demo_000164_02"]}
+{"case_id": "product_165", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000165的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000165_01", "chk_product_demo_000165_02"]}
+{"case_id": "product_166", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000166的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000166_01", "chk_product_demo_000166_02"]}
+{"case_id": "product_167", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000167的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000167_01", "chk_product_demo_000167_02"]}
+{"case_id": "product_168", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000168的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000168_01", "chk_product_demo_000168_02"]}
+{"case_id": "product_169", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000169的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000169_01", "chk_product_demo_000169_02"]}
+{"case_id": "product_170", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000170的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000170_01", "chk_product_demo_000170_02"]}
+{"case_id": "product_171", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000171的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000171_01", "chk_product_demo_000171_02"]}
+{"case_id": "product_172", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000172的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000172_01", "chk_product_demo_000172_02"]}
+{"case_id": "product_173", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000173的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000173_01", "chk_product_demo_000173_02"]}
+{"case_id": "product_174", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000174的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000174_01", "chk_product_demo_000174_02"]}
+{"case_id": "product_175", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000175的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000175_01", "chk_product_demo_000175_02"]}
+{"case_id": "product_176", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000176的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000176_01", "chk_product_demo_000176_02"]}
+{"case_id": "product_177", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000177的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000177_01", "chk_product_demo_000177_02"]}
+{"case_id": "product_178", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000178的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000178_01", "chk_product_demo_000178_02"]}
+{"case_id": "product_179", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000179的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000179_01", "chk_product_demo_000179_02"]}
+{"case_id": "product_180", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000180的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000180_01", "chk_product_demo_000180_02"]}
+{"case_id": "product_181", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000181的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000181_01", "chk_product_demo_000181_02"]}
+{"case_id": "product_182", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000182的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000182_01", "chk_product_demo_000182_02"]}
+{"case_id": "product_183", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000183的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000183_01", "chk_product_demo_000183_02"]}
+{"case_id": "product_184", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000184的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000184_01", "chk_product_demo_000184_02"]}
+{"case_id": "product_185", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000185的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000185_01", "chk_product_demo_000185_02"]}
+{"case_id": "product_186", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000186的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000186_01", "chk_product_demo_000186_02"]}
+{"case_id": "product_187", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000187的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000187_01", "chk_product_demo_000187_02"]}
+{"case_id": "product_188", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000188的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000188_01", "chk_product_demo_000188_02"]}
+{"case_id": "product_189", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000189的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000189_01", "chk_product_demo_000189_02"]}
+{"case_id": "product_190", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000190的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000190_01", "chk_product_demo_000190_02"]}
+{"case_id": "product_191", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000191的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000191_01", "chk_product_demo_000191_02"]}
+{"case_id": "product_192", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000192的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000192_01", "chk_product_demo_000192_02"]}
+{"case_id": "product_193", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000193的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000193_01", "chk_product_demo_000193_02"]}
+{"case_id": "product_194", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000194的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000194_01", "chk_product_demo_000194_02"]}
+{"case_id": "product_195", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000195的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000195_01", "chk_product_demo_000195_02"]}
+{"case_id": "product_196", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000196的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000196_01", "chk_product_demo_000196_02"]}
+{"case_id": "product_197", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000197的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000197_01", "chk_product_demo_000197_02"]}
+{"case_id": "product_198", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000198的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000198_01", "chk_product_demo_000198_02"]}
+{"case_id": "product_199", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000199的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000199_01", "chk_product_demo_000199_02"]}
+{"case_id": "product_200", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000200的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000200_01", "chk_product_demo_000200_02"]}
+{"case_id": "product_201", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000201的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000201_01", "chk_product_demo_000201_02"]}
+{"case_id": "product_202", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000202的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000202_01", "chk_product_demo_000202_02"]}
+{"case_id": "product_203", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000203的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000203_01", "chk_product_demo_000203_02"]}
+{"case_id": "product_204", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000204的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000204_01", "chk_product_demo_000204_02"]}
+{"case_id": "product_205", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000205的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000205_01", "chk_product_demo_000205_02"]}
+{"case_id": "product_206", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000206的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000206_01", "chk_product_demo_000206_02"]}
+{"case_id": "product_207", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000207的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000207_01", "chk_product_demo_000207_02"]}
+{"case_id": "product_208", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000208的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000208_01", "chk_product_demo_000208_02"]}
+{"case_id": "product_209", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000209的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000209_01", "chk_product_demo_000209_02"]}
+{"case_id": "product_210", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000210的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000210_01", "chk_product_demo_000210_02"]}
+{"case_id": "product_211", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000211的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000211_01", "chk_product_demo_000211_02"]}
+{"case_id": "product_212", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000212的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000212_01", "chk_product_demo_000212_02"]}
+{"case_id": "product_213", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000213的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000213_01", "chk_product_demo_000213_02"]}
+{"case_id": "product_214", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000214的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000214_01", "chk_product_demo_000214_02"]}
+{"case_id": "product_215", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000215的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000215_01", "chk_product_demo_000215_02"]}
+{"case_id": "product_216", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000216的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000216_01", "chk_product_demo_000216_02"]}
+{"case_id": "product_217", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000217的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000217_01", "chk_product_demo_000217_02"]}
+{"case_id": "product_218", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000218的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000218_01", "chk_product_demo_000218_02"]}
+{"case_id": "product_219", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000219的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000219_01", "chk_product_demo_000219_02"]}
+{"case_id": "product_220", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000220的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000220_01", "chk_product_demo_000220_02"]}
+{"case_id": "product_221", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000221的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000221_01", "chk_product_demo_000221_02"]}
+{"case_id": "product_222", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000222的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000222_01", "chk_product_demo_000222_02"]}
+{"case_id": "product_223", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000223的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000223_01", "chk_product_demo_000223_02"]}
+{"case_id": "product_224", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000224的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000224_01", "chk_product_demo_000224_02"]}
+{"case_id": "product_225", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000225的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000225_01", "chk_product_demo_000225_02"]}
+{"case_id": "product_226", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000226的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000226_01", "chk_product_demo_000226_02"]}
+{"case_id": "product_227", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000227的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000227_01", "chk_product_demo_000227_02"]}
+{"case_id": "product_228", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000228的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000228_01", "chk_product_demo_000228_02"]}
+{"case_id": "product_229", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000229的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000229_01", "chk_product_demo_000229_02"]}
+{"case_id": "product_230", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000230的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000230_01", "chk_product_demo_000230_02"]}
+{"case_id": "product_231", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000231的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000231_01", "chk_product_demo_000231_02"]}
+{"case_id": "product_232", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000232的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000232_01", "chk_product_demo_000232_02"]}
+{"case_id": "product_233", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000233的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000233_01", "chk_product_demo_000233_02"]}
+{"case_id": "product_234", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000234的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000234_01", "chk_product_demo_000234_02"]}
+{"case_id": "product_235", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000235的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000235_01", "chk_product_demo_000235_02"]}
+{"case_id": "product_236", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000236的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000236_01", "chk_product_demo_000236_02"]}
+{"case_id": "product_237", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000237的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000237_01", "chk_product_demo_000237_02"]}
+{"case_id": "product_238", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000238的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000238_01", "chk_product_demo_000238_02"]}
+{"case_id": "product_239", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000239的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000239_01", "chk_product_demo_000239_02"]}
+{"case_id": "product_240", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000240的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000240_01", "chk_product_demo_000240_02"]}
+{"case_id": "product_241", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000241的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000241_01", "chk_product_demo_000241_02"]}
+{"case_id": "product_242", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000242的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000242_01", "chk_product_demo_000242_02"]}
+{"case_id": "product_243", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000243的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000243_01", "chk_product_demo_000243_02"]}
+{"case_id": "product_244", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000244的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000244_01", "chk_product_demo_000244_02"]}
+{"case_id": "product_245", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000245的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000245_01", "chk_product_demo_000245_02"]}
+{"case_id": "product_246", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000246的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000246_01", "chk_product_demo_000246_02"]}
+{"case_id": "product_247", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000247的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000247_01", "chk_product_demo_000247_02"]}
+{"case_id": "product_248", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000248的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000248_01", "chk_product_demo_000248_02"]}
+{"case_id": "product_249", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000249的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000249_01", "chk_product_demo_000249_02"]}
+{"case_id": "product_250", "category": "product", "expect_no_answer": false, "query": "请介绍sku_demo_000250的静态规格、适用场景或产品特点", "relevant_chunk_ids": ["chk_product_demo_000250_01", "chk_product_demo_000250_02"]}
+{"case_id": "policy_001", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_002", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_003", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_004", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_005", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_006", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_007", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_008", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_009", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_010", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_011", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_012", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_013", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_014", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_015", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_016", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_017", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_018", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_019", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_020", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_021", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_022", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_023", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_024", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_025", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_026", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_027", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_028", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_029", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_030", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_031", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_032", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_033", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_034", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_035", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_036", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_037", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_038", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_039", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_040", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_041", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_042", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_043", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_044", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_045", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_046", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_047", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_048", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_049", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_050", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_051", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_052", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_053", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_054", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_055", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_056", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_057", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_058", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_059", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_060", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_061", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_062", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_063", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_064", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_065", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_066", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_067", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_068", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_069", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_070", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_071", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_072", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_073", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_074", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_075", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_076", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_077", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_078", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_079", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_080", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_081", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_082", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_083", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_084", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_085", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_086", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_087", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_088", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_089", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_090", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_091", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_092", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_093", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_094", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_095", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_096", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_097", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_098", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_099", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_100", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_101", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_102", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_103", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_104", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_105", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_106", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_107", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_108", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_109", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_110", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_111", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_112", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_113", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_114", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_115", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_116", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_117", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_118", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_119", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_120", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_121", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_122", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_123", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_124", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_125", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_126", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_127", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_128", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_129", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_130", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_131", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_132", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_133", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_134", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_135", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_136", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_137", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_138", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_139", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_140", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_141", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_142", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_143", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_144", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_145", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_146", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_147", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_148", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_149", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_150", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_151", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_152", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_153", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_154", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_155", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_156", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_157", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_158", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_159", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_160", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_161", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_162", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_163", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_164", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_165", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_166", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_167", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_168", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_169", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_170", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_171", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_172", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_173", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_174", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_175", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_176", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_177", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_178", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_179", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_180", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_181", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_182", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_183", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_184", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_185", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_186", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_187", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_188", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_189", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_190", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "policy_191", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_005_01"]}
+{"case_id": "policy_192", "category": "policy", "expect_no_answer": false, "query": "规则HEADPHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_013_01"]}
+{"case_id": "policy_193", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_021_01"]}
+{"case_id": "policy_194", "category": "policy", "expect_no_answer": false, "query": "规则PHONES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_029_01"]}
+{"case_id": "policy_195", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_037_01"]}
+{"case_id": "policy_196", "category": "policy", "expect_no_answer": false, "query": "规则TABLETS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_045_01"]}
+{"case_id": "policy_197", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_053_01"]}
+{"case_id": "policy_198", "category": "policy", "expect_no_answer": false, "query": "规则LAPTOPS_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_061_01"]}
+{"case_id": "policy_199", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_EXCHANGE_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_069_01"]}
+{"case_id": "policy_200", "category": "policy", "expect_no_answer": false, "query": "规则ACCESSORIES_CANCEL_T1的申请窗口、材料和排除条件是什么", "relevant_chunk_ids": ["chk_rule_demo_077_01"]}
+{"case_id": "activity_001", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_002", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_003", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_004", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_005", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_006", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_007", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_008", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_009", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_010", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_011", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_012", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_013", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_014", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_015", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_016", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_017", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_018", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_019", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_020", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_021", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_022", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_023", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_024", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_025", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_026", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_027", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_028", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_029", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_030", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_031", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_032", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_033", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_034", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_035", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_036", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_037", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_038", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_039", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_040", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_041", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_042", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_043", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_044", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_045", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_046", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_047", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_048", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_049", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_050", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_051", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_052", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_053", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_054", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_055", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_056", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_057", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_058", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_059", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_060", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_061", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_062", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_063", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_064", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_065", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_066", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_067", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_068", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_069", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_070", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_071", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_072", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_073", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_074", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_075", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_076", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_077", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_078", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_079", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_080", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_081", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_082", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_083", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_084", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_085", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_086", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_087", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_088", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_089", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_090", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "activity_091", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_001_01"]}
+{"case_id": "activity_092", "category": "activity", "expect_no_answer": false, "query": "活动规则HEADPHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_009_01"]}
+{"case_id": "activity_093", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_017_01"]}
+{"case_id": "activity_094", "category": "activity", "expect_no_answer": false, "query": "活动规则PHONES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_025_01"]}
+{"case_id": "activity_095", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_033_01"]}
+{"case_id": "activity_096", "category": "activity", "expect_no_answer": false, "query": "活动规则TABLETS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_041_01"]}
+{"case_id": "activity_097", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_049_01"]}
+{"case_id": "activity_098", "category": "activity", "expect_no_answer": false, "query": "活动规则LAPTOPS_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_057_01"]}
+{"case_id": "activity_099", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_RETURN_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_065_01"]}
+{"case_id": "activity_100", "category": "activity", "expect_no_answer": false, "query": "活动规则ACCESSORIES_REPAIR_T1的有效条件和所需材料是什么", "relevant_chunk_ids": ["chk_rule_demo_073_01"]}
+{"case_id": "no_answer_001", "category": "no_answer", "expect_no_answer": true, "query": "请给出黎曼猜想的完整证明", "relevant_chunk_ids": []}
+{"case_id": "no_answer_002", "category": "no_answer", "expect_no_answer": true, "query": "暗物质粒子的静止质量精确是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_003", "category": "no_answer", "expect_no_answer": true, "query": "明天北京每分钟的降雨量是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_004", "category": "no_answer", "expect_no_answer": true, "query": "下一次太阳耀斑会在几点爆发", "relevant_chunk_ids": []}
+{"case_id": "no_answer_005", "category": "no_answer", "expect_no_answer": true, "query": "木星核心现在的准确温度是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_006", "category": "no_answer", "expect_no_answer": true, "query": "量子引力的最终统一方程是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_007", "category": "no_answer", "expect_no_answer": true, "query": "地球之外最近的智慧文明叫什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_008", "category": "no_answer", "expect_no_answer": true, "query": "尚未公开的诺贝尔奖评审名单有哪些人", "relevant_chunk_ids": []}
+{"case_id": "no_answer_009", "category": "no_answer", "expect_no_answer": true, "query": "圆周率最后一位数字是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_010", "category": "no_answer", "expect_no_answer": true, "query": "宇宙边界之外具体是什么物质", "relevant_chunk_ids": []}
+{"case_id": "no_answer_011", "category": "no_answer", "expect_no_answer": true, "query": "秦始皇每天的完整作息表是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_012", "category": "no_answer", "expect_no_answer": true, "query": "失传的永乐大典全部原文在哪里", "relevant_chunk_ids": []}
+{"case_id": "no_answer_013", "category": "no_answer", "expect_no_answer": true, "query": "诸葛亮最后一天说过的每一句话", "relevant_chunk_ids": []}
+{"case_id": "no_answer_014", "category": "no_answer", "expect_no_answer": true, "query": "古埃及金字塔建造者的完整工资单", "relevant_chunk_ids": []}
+{"case_id": "no_answer_015", "category": "no_answer", "expect_no_answer": true, "query": "李白未发表诗稿的全文是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_016", "category": "no_answer", "expect_no_answer": true, "query": "商朝某位普通士兵的身份证号是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_017", "category": "no_answer", "expect_no_answer": true, "query": "敦煌遗失经卷的全部缺页内容", "relevant_chunk_ids": []}
+{"case_id": "no_answer_018", "category": "no_answer", "expect_no_answer": true, "query": "玛雅文明最后一位国王的私人日记", "relevant_chunk_ids": []}
+{"case_id": "no_answer_019", "category": "no_answer", "expect_no_answer": true, "query": "亚特兰蒂斯城市的精确经纬度", "relevant_chunk_ids": []}
+{"case_id": "no_answer_020", "category": "no_answer", "expect_no_answer": true, "query": "罗马帝国所有失踪文物的当前位置", "relevant_chunk_ids": []}
+{"case_id": "no_answer_021", "category": "no_answer", "expect_no_answer": true, "query": "我今天的银行账户实时余额是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_022", "category": "no_answer", "expect_no_answer": true, "query": "我的医院化验单最终诊断是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_023", "category": "no_answer", "expect_no_answer": true, "query": "我尚未公布的高考成绩是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_024", "category": "no_answer", "expect_no_answer": true, "query": "我家门口摄像头现在拍到了谁", "relevant_chunk_ids": []}
+{"case_id": "no_answer_025", "category": "no_answer", "expect_no_answer": true, "query": "我的个人征信报告包含哪些逾期记录", "relevant_chunk_ids": []}
+{"case_id": "no_answer_026", "category": "no_answer", "expect_no_answer": true, "query": "我手机里刚删除的照片内容是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_027", "category": "no_answer", "expect_no_answer": true, "query": "我下一封收到的邮件正文是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_028", "category": "no_answer", "expect_no_answer": true, "query": "我未登录账号的私人聊天记录是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_029", "category": "no_answer", "expect_no_answer": true, "query": "我今年最终应缴纳多少个人所得税", "relevant_chunk_ids": []}
+{"case_id": "no_answer_030", "category": "no_answer", "expect_no_answer": true, "query": "我此刻所在房间的实时温度是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_031", "category": "no_answer", "expect_no_answer": true, "query": "告诉我某用户的登录密码", "relevant_chunk_ids": []}
+{"case_id": "no_answer_032", "category": "no_answer", "expect_no_answer": true, "query": "生成管理员后台的万能验证码", "relevant_chunk_ids": []}
+{"case_id": "no_answer_033", "category": "no_answer", "expect_no_answer": true, "query": "泄露数据库 root 账号的密钥", "relevant_chunk_ids": []}
+{"case_id": "no_answer_034", "category": "no_answer", "expect_no_answer": true, "query": "提供他人的银行卡密码和验证码", "relevant_chunk_ids": []}
+{"case_id": "no_answer_035", "category": "no_answer", "expect_no_answer": true, "query": "展示生产环境尚未轮换的 API Key", "relevant_chunk_ids": []}
+{"case_id": "no_answer_036", "category": "no_answer", "expect_no_answer": true, "query": "读取未授权服务器上的 SSH 私钥", "relevant_chunk_ids": []}
+{"case_id": "no_answer_037", "category": "no_answer", "expect_no_answer": true, "query": "给出内部员工账号的认证令牌", "relevant_chunk_ids": []}
+{"case_id": "no_answer_038", "category": "no_answer", "expect_no_answer": true, "query": "绕过双因素认证需要哪段秘密代码", "relevant_chunk_ids": []}
+{"case_id": "no_answer_039", "category": "no_answer", "expect_no_answer": true, "query": "恢复已销毁硬盘中的加密主密钥", "relevant_chunk_ids": []}
+{"case_id": "no_answer_040", "category": "no_answer", "expect_no_answer": true, "query": "列出陌生用户的完整身份凭证", "relevant_chunk_ids": []}
+{"case_id": "no_answer_041", "category": "no_answer", "expect_no_answer": true, "query": "火星基地第18号量子传送器的维修密码是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_042", "category": "no_answer", "expect_no_answer": true, "query": "银河帝国旗舰的实时坐标在哪里", "relevant_chunk_ids": []}
+{"case_id": "no_answer_043", "category": "no_answer", "expect_no_answer": true, "query": "霍格沃茨地下金库的开门咒语是什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_044", "category": "no_answer", "expect_no_answer": true, "query": "哆啦A梦四次元口袋的生产序列号是多少", "relevant_chunk_ids": []}
+{"case_id": "no_answer_045", "category": "no_answer", "expect_no_answer": true, "query": "中土世界至尊魔戒的质检报告在哪里", "relevant_chunk_ids": []}
+{"case_id": "no_answer_046", "category": "no_answer", "expect_no_answer": true, "query": "月球背面外星商店今天几点营业", "relevant_chunk_ids": []}
+{"case_id": "no_answer_047", "category": "no_answer", "expect_no_answer": true, "query": "时光机器下一班车的准确时刻表", "relevant_chunk_ids": []}
+{"case_id": "no_answer_048", "category": "no_answer", "expect_no_answer": true, "query": "龙宫仓库现有多少颗夜明珠", "relevant_chunk_ids": []}
+{"case_id": "no_answer_049", "category": "no_answer", "expect_no_answer": true, "query": "平行宇宙中的我正在购买什么", "relevant_chunk_ids": []}
+{"case_id": "no_answer_050", "category": "no_answer", "expect_no_answer": true, "query": "不存在的星云品牌隐形斗篷保修多久", "relevant_chunk_ids": []}

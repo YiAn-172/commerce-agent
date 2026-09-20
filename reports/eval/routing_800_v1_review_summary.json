@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "routing",
+  "status": "pending_human_review",
+  "source_suite": "evals\\routing\\routing_800_v1.jsonl",
+  "source_sha256": "5c774495c36d6396cc9a6192b94348c7d02fbf967b0d53304a9a70bffd3868e4",
+  "expected_rows": 800,
+  "queue_rows": 800,
+  "reviewed": 0,
+  "pending": 800,
+  "duplicate_source_ids": false,
+  "duplicate_review_ids": false,
+  "missing_case_ids": [],
+  "unexpected_case_ids": [],
+  "invalid_reviews": [],
+  "adjudicated_output": "evals\\routing\\routing_800_v1_human_gold.jsonl",
+  "adjudicated_sha256": null,
+  "updated_at": "2026-09-18T10:01:44.646880+00:00"
+}

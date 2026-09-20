@@ -1,0 +1,27 @@
+schema_version: "1.0"
+run_group: macbert_v1
+data_version: intent_v1
+data_root: data/processed/intent_v1
+data_manifest: data/manifests/intent_v1.json
+model_name: hfl/chinese-macbert-base
+model_revision: a986e004d2a7f2a1c2f5a3edef4e20604a974ed1
+model_license: apache-2.0
+num_labels: 16
+max_length: 128
+learning_rates: [1.0e-5, 2.0e-5, 3.0e-5]
+epochs: 5
+early_stopping_patience: 2
+train_batch_size: 16
+eval_batch_size: 32
+gradient_accumulation_steps: 2
+weight_decay: 0.01
+warmup_ratio: 0.1
+max_grad_norm: 1.0
+seeds: [13, 42, 2026]
+lr_search_seed: 13
+metric_for_best_model: macro_f1
+mixed_precision: fp16
+num_workers: 2
+output_root: models/intent_classifier/macbert_v1
+best_output: models/intent_classifier/best
+report: reports/training/macbert_v1.json

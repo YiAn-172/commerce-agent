@@ -1,0 +1,18 @@
+version: "1.0"
+routes:
+  product_search: shopping
+  product_recommend: shopping
+  product_compare: shopping
+  product_detail: knowledge
+  stock_price: shopping
+  order_status: order
+  logistics_tracking: order
+  cancel_order: after_sales
+  return_exchange: after_sales
+  refund_progress: after_sales
+  after_sales_eligibility: after_sales
+  policy_faq: knowledge
+  complaint: human
+  human_handoff: human
+  chitchat: general
+  out_of_scope: safe_reply

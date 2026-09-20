@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "onnx_path": "models/intent_classifier/best/onnx/model.onnx",
+  "onnx_sha256": "fb019e74904bf499c6928cd7966b091fa5f656459998e1349f02ac7c44e70e06",
+  "checkpoint": "models/intent_classifier/best",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "device_for_pytorch_reference": "cuda",
+  "verification": {
+    "test_rows": 2500,
+    "top1_agreement": 1.0,
+    "required_top1_agreement": 0.999,
+    "max_absolute_logit_difference": 1.9550323486328125e-05,
+    "mean_absolute_logit_difference": 5.636948939354624e-07,
+    "cpu_benchmark": {
+      "warmup_iterations": 200,
+      "measured_iterations": 2000,
+      "batch_size": 1,
+      "scope": "tokenization_plus_onnx_session",
+      "intra_op_threads": 2,
+      "inter_op_threads": 1,
+      "p50_ms": 22.615022500000002,
+      "p95_ms": 24.13944375,
+      "p99_ms": 28.99788843,
+      "mean_ms": 22.8457249505
+    },
+    "passed": true
+  },
+  "published_path": "models/intent_classifier/current",
+  "published_sha256": "0619c65da561f2aa9c4e56db7c1a48322cd0ba3b1552713f6b368437d1c5c852"
+}

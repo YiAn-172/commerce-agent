@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "suite_version": "tools_1000_v1",
+  "suite_sha256": "8772467b682fc7b4bb832ed3d3b37b46dfbf69d01ff2b3af0576d0e17a375bf6",
+  "suite_status": "deterministic_demo_verified",
+  "execution_backend": "in_memory_sqlite_with_production_tool_services",
+  "metrics": {
+    "overall": {
+      "correct": 1000,
+      "total": 1000,
+      "accuracy": 1.0
+    },
+    "tool_selection_accuracy": {
+      "status": "not_measured",
+      "reason": "The suite begins after tool selection and evaluates executable contracts."
+    },
+    "parameter_correctness_given_selected_tool": {
+      "correct": 400,
+      "total": 400,
+      "accuracy": 1.0
+    },
+    "legal_request_success_rate": {
+      "correct": 400,
+      "total": 400,
+      "accuracy": 1.0
+    },
+    "schema_rejection_rate": {
+      "correct": 150,
+      "total": 150,
+      "accuracy": 1.0
+    },
+    "permission_rejection_rate": {
+      "correct": 150,
+      "total": 150,
+      "accuracy": 1.0
+    },
+    "ownership_isolation_rate": {
+      "correct": 100,
+      "total": 100,
+      "accuracy": 1.0
+    },
+    "fault_handling_rate": {
+      "correct": 100,
+      "total": 100,
+      "accuracy": 1.0
+    },
+    "idempotency_rate": {
+      "correct": 100,
+      "total": 100,
+      "accuracy": 1.0
+    },
+    "duplicate_business_writes": 0,
+    "unauthorized_field_leaks": 0,
+    "by_category": {
+      "fault_handling": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "idempotency": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "legal_request": {
+        "correct": 400,
+        "total": 400,
+        "accuracy": 1.0
+      },
+      "ownership_isolation": {
+        "correct": 100,
+        "total": 100,
+        "accuracy": 1.0
+      },
+      "permission_rejection": {
+        "correct": 150,
+        "total": 150,
+        "accuracy": 1.0
+      },
+      "schema_rejection": {
+        "correct": 150,
+        "total": 150,
+        "accuracy": 1.0
+      }
+    },
+    "failure_count": 0,
+    "failure_samples": []
+  },
+  "limitations": [
+    "The dataset is deterministic demo data, not independently reviewed human gold.",
+    "Tool selection is not measured because this suite starts after tool selection.",
+    "Database portability is checked separately by the MySQL integration suite."
+  ]
+}

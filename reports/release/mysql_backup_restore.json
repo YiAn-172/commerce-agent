@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "verified",
+  "restore_target": "isolated_temporary_database_deleted_after_verification",
+  "backup": "backups\\commerce.sql",
+  "backup_bytes": 11712187,
+  "backup_sha256": "7bff892918a68ba41f2adfcc6a06d565e6b5958cad36a20a84a5e064f923bf77",
+  "source_counts": {
+    "users": 100,
+    "orders": 3000,
+    "service_tickets": 110,
+    "approval_tasks": 110,
+    "knowledge_versions": 3
+  },
+  "restored_counts": {
+    "users": 100,
+    "orders": 3000,
+    "service_tickets": 110,
+    "approval_tasks": 110,
+    "knowledge_versions": 3
+  },
+  "counts_match": true,
+  "created_at": "2026-09-19T04:22:19.742034+00:00"
+}

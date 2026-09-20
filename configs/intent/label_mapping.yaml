@@ -1,0 +1,98 @@
+schema_version: "1.0"
+target_labels:
+  - product_search
+  - product_recommend
+  - product_compare
+  - product_detail
+  - stock_price
+  - order_status
+  - logistics_tracking
+  - cancel_order
+  - return_exchange
+  - refund_progress
+  - after_sales_eligibility
+  - policy_faq
+  - complaint
+  - human_handoff
+  - chitchat
+  - out_of_scope
+
+sources:
+  full_ecom:
+    product_search: product_search
+    similarity_search: product_search
+    reorder_assistance: product_search
+    bundle_suggestions: product_recommend
+    gift_recommendation: product_recommend
+    personalized_recommendations: product_recommend
+    product_comparison: product_compare
+    product_detail_qa: product_detail
+    stock_availability: stock_price
+    order_status: order_status
+    order_cancellation: cancel_order
+    exchange_request: return_exchange
+    return_refund: return_exchange
+    faq_answering: policy_faq
+    payment_issues: policy_faq
+    account_management: policy_faq
+    complaint_handling: complaint
+    human_handoff: human_handoff
+    cart_management: discard
+
+  bitext_retail:
+    product_information: product_detail
+    availability: stock_price
+    availability_online: stock_price
+    availability_in_store: stock_price
+    sales_period: stock_price
+    track_order: order_status
+    order_history: order_status
+    track_delivery: logistics_tracking
+    delivery_issue: logistics_tracking
+    delivery_time: logistics_tracking
+    cancel_order: cancel_order
+    change_order: cancel_order
+    return_product: return_exchange
+    return_product_online: return_exchange
+    return_product_in_store: return_exchange
+    exchange_product: return_exchange
+    exchange_product_in_store: return_exchange
+    wrong_item: return_exchange
+    missing_item: return_exchange
+    request_refund: return_exchange
+    refund_status: refund_progress
+    refund_policy: after_sales_eligibility
+    return_policy: after_sales_eligibility
+    shipping_costs: policy_faq
+    request_invoice: policy_faq
+    payment_methods: policy_faq
+    damaged_delivery: complaint
+    product_issue: complaint
+    submit_feedback: complaint
+    submit_product_feedback: complaint
+    human_agent: human_handoff
+    customer_service: human_handoff
+    use_app: discard
+    payment_issue: discard
+    close_account: discard
+    recover_password: discard
+    remove_product: discard
+    technical_issue: discard
+    store_opening_hours: discard
+    request_right_to_rectification: discard
+    pay: discard
+    change_account: discard
+    open_account: discard
+    add_product: discard
+    store_location: discard
+    submit_product_idea: discard
+
+  massive_zh:
+    general_greet: chitchat
+    general_joke: chitchat
+    general_quirky: chitchat
+    default: out_of_scope
+
+  smp2017:
+    chat: chitchat
+    default: out_of_scope

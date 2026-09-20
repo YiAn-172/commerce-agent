@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.md whitespace=-trailing-space
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.parquet binary
+*.onnx binary

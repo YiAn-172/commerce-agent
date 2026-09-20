@@ -1,0 +1,1401 @@
+{
+  "schema_version": "1.0",
+  "gold_version": "intent_ai_assisted_v1",
+  "gold_rows": 1600,
+  "gold_sha256": "f704b344046184f539517a083ac078f11c9d52c1352c8c23498ed78ca208edbd",
+  "tfidf": {
+    "accuracy": 0.9025,
+    "macro_precision": 0.906860613196435,
+    "macro_recall": 0.9025,
+    "macro_f1": 0.9031447930798477,
+    "ece_15_bin": 0.5827035390274928,
+    "multiclass_brier": 0.5279688857697451,
+    "oos_f1": 0.7889908256880734,
+    "per_class": {
+      "product_search": {
+        "precision": 0.9325842696629213,
+        "recall": 0.83,
+        "f1": 0.8783068783068783,
+        "support": 100
+      },
+      "product_recommend": {
+        "precision": 0.9514563106796117,
+        "recall": 0.98,
+        "f1": 0.9655172413793104,
+        "support": 100
+      },
+      "product_compare": {
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1": 0.92,
+        "support": 100
+      },
+      "product_detail": {
+        "precision": 0.8611111111111112,
+        "recall": 0.93,
+        "f1": 0.8942307692307693,
+        "support": 100
+      },
+      "stock_price": {
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231,
+        "support": 100
+      },
+      "order_status": {
+        "precision": 0.9494949494949495,
+        "recall": 0.94,
+        "f1": 0.9447236180904522,
+        "support": 100
+      },
+      "logistics_tracking": {
+        "precision": 0.9789473684210527,
+        "recall": 0.93,
+        "f1": 0.9538461538461539,
+        "support": 100
+      },
+      "cancel_order": {
+        "precision": 0.9504950495049505,
+        "recall": 0.96,
+        "f1": 0.9552238805970149,
+        "support": 100
+      },
+      "return_exchange": {
+        "precision": 0.9333333333333333,
+        "recall": 0.84,
+        "f1": 0.8842105263157894,
+        "support": 100
+      },
+      "refund_progress": {
+        "precision": 0.9705882352941176,
+        "recall": 0.99,
+        "f1": 0.9801980198019802,
+        "support": 100
+      },
+      "after_sales_eligibility": {
+        "precision": 0.8958333333333334,
+        "recall": 0.86,
+        "f1": 0.8775510204081632,
+        "support": 100
+      },
+      "policy_faq": {
+        "precision": 0.8316831683168316,
+        "recall": 0.84,
+        "f1": 0.835820895522388,
+        "support": 100
+      },
+      "complaint": {
+        "precision": 0.7627118644067796,
+        "recall": 0.9,
+        "f1": 0.8256880733944955,
+        "support": 100
+      },
+      "human_handoff": {
+        "precision": 1.0,
+        "recall": 0.99,
+        "f1": 0.9949748743718593,
+        "support": 100
+      },
+      "chitchat": {
+        "precision": 0.8953488372093024,
+        "recall": 0.77,
+        "f1": 0.8279569892473119,
+        "support": 100
+      },
+      "out_of_scope": {
+        "precision": 0.7288135593220338,
+        "recall": 0.86,
+        "f1": 0.7889908256880734,
+        "support": 100
+      }
+    },
+    "confusion_matrix": [
+      [
+        83,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        0,
+        5
+      ],
+      [
+        1,
+        98,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        92,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        93,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        1,
+        1,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        94,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        2,
+        93,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        96,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        84,
+        1,
+        4,
+        1,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0,
+        3,
+        0,
+        86,
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        5,
+        84,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        3,
+        0,
+        0,
+        1,
+        90,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        99,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        77,
+        17
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        7,
+        86
+      ]
+    ]
+  },
+  "macbert_onnx": {
+    "accuracy": 0.95375,
+    "macro_precision": 0.9550492597086624,
+    "macro_recall": 0.95375,
+    "macro_f1": 0.9535086483824392,
+    "ece_15_bin": 0.019988231488095316,
+    "multiclass_brier": 0.08067185779249593,
+    "oos_f1": 0.9074074074074074,
+    "per_class": {
+      "product_search": {
+        "precision": 0.9603960396039604,
+        "recall": 0.97,
+        "f1": 0.9651741293532339,
+        "support": 100
+      },
+      "product_recommend": {
+        "precision": 0.9705882352941176,
+        "recall": 0.99,
+        "f1": 0.9801980198019802,
+        "support": 100
+      },
+      "product_compare": {
+        "precision": 0.9801980198019802,
+        "recall": 0.99,
+        "f1": 0.9850746268656716,
+        "support": 100
+      },
+      "product_detail": {
+        "precision": 0.9595959595959596,
+        "recall": 0.95,
+        "f1": 0.9547738693467337,
+        "support": 100
+      },
+      "stock_price": {
+        "precision": 0.98,
+        "recall": 0.98,
+        "f1": 0.98,
+        "support": 100
+      },
+      "order_status": {
+        "precision": 0.9705882352941176,
+        "recall": 0.99,
+        "f1": 0.9801980198019802,
+        "support": 100
+      },
+      "logistics_tracking": {
+        "precision": 0.98,
+        "recall": 0.98,
+        "f1": 0.98,
+        "support": 100
+      },
+      "cancel_order": {
+        "precision": 0.979381443298969,
+        "recall": 0.95,
+        "f1": 0.9644670050761421,
+        "support": 100
+      },
+      "return_exchange": {
+        "precision": 0.9134615384615384,
+        "recall": 0.95,
+        "f1": 0.9313725490196079,
+        "support": 100
+      },
+      "refund_progress": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 100
+      },
+      "after_sales_eligibility": {
+        "precision": 0.93,
+        "recall": 0.93,
+        "f1": 0.93,
+        "support": 100
+      },
+      "policy_faq": {
+        "precision": 0.8762886597938144,
+        "recall": 0.85,
+        "f1": 0.8629441624365483,
+        "support": 100
+      },
+      "complaint": {
+        "precision": 0.9791666666666666,
+        "recall": 0.94,
+        "f1": 0.9591836734693877,
+        "support": 100
+      },
+      "human_handoff": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 100
+      },
+      "chitchat": {
+        "precision": 0.9759036144578314,
+        "recall": 0.81,
+        "f1": 0.8852459016393442,
+        "support": 100
+      },
+      "out_of_scope": {
+        "precision": 0.8448275862068966,
+        "recall": 0.98,
+        "f1": 0.9074074074074074,
+        "support": 100
+      }
+    },
+    "confusion_matrix": [
+      [
+        97,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        95,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        98,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        99,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        98,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        95,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        95,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        93,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        4,
+        1,
+        0,
+        0,
+        2,
+        0,
+        2,
+        5,
+        85,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        94,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        81,
+        17
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        98
+      ]
+    ]
+  },
+  "macbert_error_samples": [
+    {
+      "sample_id": "gold-product_search-037",
+      "text_zh": "Anker PowerCore 20000 有货吗?多少钱?",
+      "actual": "product_search",
+      "predicted": "stock_price",
+      "confidence": 0.9052502046891755,
+      "second_candidate": "product_search"
+    },
+    {
+      "sample_id": "gold-product_search-rewrite-014",
+      "text_zh": "想看看适合运动的旅行背包，我现在比较着急",
+      "actual": "product_search",
+      "predicted": "product_recommend",
+      "confidence": 0.9873116544773953,
+      "second_candidate": "product_search"
+    },
+    {
+      "sample_id": "gold-product_search-rewrite-019",
+      "text_zh": "帮我筛选一下能用于旅行的旅行背包，谢谢",
+      "actual": "product_search",
+      "predicted": "product_recommend",
+      "confidence": 0.9634602153262368,
+      "second_candidate": "out_of_scope"
+    },
+    {
+      "sample_id": "gold-product_recommend-013",
+      "text_zh": "之前用的降噪耳机还行,现在3000元想换个智能家居",
+      "actual": "product_recommend",
+      "predicted": "return_exchange",
+      "confidence": 0.8274021694159646,
+      "second_candidate": "product_recommend"
+    },
+    {
+      "sample_id": "gold-product_compare-rewrite-003",
+      "text_zh": "同价位的这两款智能手表怎么选",
+      "actual": "product_compare",
+      "predicted": "product_search",
+      "confidence": 0.8845233382315738,
+      "second_candidate": "product_compare"
+    },
+    {
+      "sample_id": "gold-product_detail-006",
+      "text_zh": "对,我在看Fluke 117 Multimeter。能告诉我它带校准证书吗?",
+      "actual": "product_detail",
+      "predicted": "policy_faq",
+      "confidence": 0.9635473559056469,
+      "second_candidate": "product_detail"
+    },
+    {
+      "sample_id": "gold-product_detail-032",
+      "text_zh": "我想买Fluke 117 Multimeter,能详细说说它对非线性负载的True RMS功能吗?还有,这个型号都带哪些配件,保修期是多久?",
+      "actual": "product_detail",
+      "predicted": "policy_faq",
+      "confidence": 0.6690224391590853,
+      "second_candidate": "product_detail"
+    },
+    {
+      "sample_id": "gold-product_detail-057",
+      "text_zh": "洋葱洗发水有啥成分?",
+      "actual": "product_detail",
+      "predicted": "policy_faq",
+      "confidence": 0.7258748491304063,
+      "second_candidate": "product_detail"
+    },
+    {
+      "sample_id": "gold-product_detail-062",
+      "text_zh": "你好!想问一下 PS5,它自带游戏吗,还是要另外买?",
+      "actual": "product_detail",
+      "predicted": "policy_faq",
+      "confidence": 0.9701897956653726,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-product_detail-066",
+      "text_zh": "Tulsi茶里有啥成分?",
+      "actual": "product_detail",
+      "predicted": "policy_faq",
+      "confidence": 0.9488329231811101,
+      "second_candidate": "product_detail"
+    },
+    {
+      "sample_id": "gold-stock_price-001",
+      "text_zh": "智能手表和平板电脑哪个现在更便宜",
+      "actual": "stock_price",
+      "predicted": "product_compare",
+      "confidence": 0.9748406984284629,
+      "second_candidate": "product_search"
+    },
+    {
+      "sample_id": "gold-stock_price-078",
+      "text_zh": "一万元以内能买什么?",
+      "actual": "stock_price",
+      "predicted": "chitchat",
+      "confidence": 0.7688453705665677,
+      "second_candidate": "out_of_scope"
+    },
+    {
+      "sample_id": "gold-order_status-rewrite-006",
+      "text_zh": "最近一笔订单为什么还没有发货，麻烦尽快处理",
+      "actual": "order_status",
+      "predicted": "policy_faq",
+      "confidence": 0.5236894111919392,
+      "second_candidate": "order_status"
+    },
+    {
+      "sample_id": "gold-logistics_tracking-056",
+      "text_zh": "到哪了?订单 [订单号]。",
+      "actual": "logistics_tracking",
+      "predicted": "order_status",
+      "confidence": 0.46797120612888204,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-logistics_tracking-070",
+      "text_zh": "降噪耳机到哪了?",
+      "actual": "logistics_tracking",
+      "predicted": "order_status",
+      "confidence": 0.5135227422059843,
+      "second_candidate": "logistics_tracking"
+    },
+    {
+      "sample_id": "gold-cancel_order-rewrite-002",
+      "text_zh": "能不能撤销最近一笔订单",
+      "actual": "cancel_order",
+      "predicted": "return_exchange",
+      "confidence": 0.9868709604623604,
+      "second_candidate": "cancel_order"
+    },
+    {
+      "sample_id": "gold-cancel_order-rewrite-006",
+      "text_zh": "能不能撤销最近一笔订单，麻烦尽快处理",
+      "actual": "cancel_order",
+      "predicted": "return_exchange",
+      "confidence": 0.9871348960271505,
+      "second_candidate": "cancel_order"
+    },
+    {
+      "sample_id": "gold-cancel_order-rewrite-010",
+      "text_zh": "能不能撤销最近一笔订单，请帮我确认一下",
+      "actual": "cancel_order",
+      "predicted": "return_exchange",
+      "confidence": 0.9889253328559994,
+      "second_candidate": "cancel_order"
+    },
+    {
+      "sample_id": "gold-cancel_order-rewrite-014",
+      "text_zh": "能不能撤销最近一笔订单，我现在比较着急",
+      "actual": "cancel_order",
+      "predicted": "return_exchange",
+      "confidence": 0.9858150427233254,
+      "second_candidate": "cancel_order"
+    },
+    {
+      "sample_id": "gold-cancel_order-rewrite-018",
+      "text_zh": "能不能撤销最近一笔订单，谢谢",
+      "actual": "cancel_order",
+      "predicted": "return_exchange",
+      "confidence": 0.9876214934735282,
+      "second_candidate": "cancel_order"
+    },
+    {
+      "sample_id": "gold-return_exchange-000",
+      "text_zh": "游戏笔记本用了30天天,想换货可以吗",
+      "actual": "return_exchange",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.9482743400679744,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-return_exchange-028",
+      "text_zh": "之前用一万元以内买的扫地机器人,现在降价了,能退差价吗?",
+      "actual": "return_exchange",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.9761102004816443,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-return_exchange-068",
+      "text_zh": "你们的退款保证是啥?",
+      "actual": "return_exchange",
+      "predicted": "policy_faq",
+      "confidence": 0.9537992307848221,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-return_exchange-rewrite-007",
+      "text_zh": "这个商品坏了，怎么提交维修售后，麻烦尽快处理",
+      "actual": "return_exchange",
+      "predicted": "complaint",
+      "confidence": 0.5170104183059999,
+      "second_candidate": "return_exchange"
+    },
+    {
+      "sample_id": "gold-return_exchange-rewrite-015",
+      "text_zh": "这个商品坏了，怎么提交维修售后，我现在比较着急",
+      "actual": "return_exchange",
+      "predicted": "complaint",
+      "confidence": 0.504397656705361,
+      "second_candidate": "return_exchange"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-033",
+      "text_zh": "我需要帮助来查看你们的退款政策。",
+      "actual": "after_sales_eligibility",
+      "predicted": "return_exchange",
+      "confidence": 0.8610326625608796,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-068",
+      "text_zh": "智能手表能唤货吗?",
+      "actual": "after_sales_eligibility",
+      "predicted": "policy_faq",
+      "confidence": 0.8058252425947351,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-075",
+      "text_zh": "我需要人帮忙看看你们的报销政策。",
+      "actual": "after_sales_eligibility",
+      "predicted": "return_exchange",
+      "confidence": 0.9205518581888786,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-rewrite-003",
+      "text_zh": "这个商品超过七天还能申请售后吗",
+      "actual": "after_sales_eligibility",
+      "predicted": "policy_faq",
+      "confidence": 0.6492446488285811,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-rewrite-007",
+      "text_zh": "这个商品超过七天还能申请售后吗，麻烦尽快处理",
+      "actual": "after_sales_eligibility",
+      "predicted": "policy_faq",
+      "confidence": 0.5996869479702617,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-rewrite-011",
+      "text_zh": "这个商品超过七天还能申请售后吗，请帮我确认一下",
+      "actual": "after_sales_eligibility",
+      "predicted": "policy_faq",
+      "confidence": 0.7251246223281799,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-after_sales_eligibility-rewrite-019",
+      "text_zh": "这个商品超过七天还能申请售后吗，谢谢",
+      "actual": "after_sales_eligibility",
+      "predicted": "policy_faq",
+      "confidence": 0.7702132331854195,
+      "second_candidate": "after_sales_eligibility"
+    },
+    {
+      "sample_id": "gold-policy_faq-004",
+      "text_zh": "订单[订单号]能取消吗?",
+      "actual": "policy_faq",
+      "predicted": "cancel_order",
+      "confidence": 0.968457189921916,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-007",
+      "text_zh": "我想了解你们退款流程的信息,怎么获取?",
+      "actual": "policy_faq",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.9753271327175644,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-014",
+      "text_zh": "嗨,我刚买了Ugaoo肥料,室内植物多久用一次合适?",
+      "actual": "policy_faq",
+      "predicted": "product_detail",
+      "confidence": 0.948178150303683,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-020",
+      "text_zh": "嘿,能给我讲讲 3M N95 口罩吗?就想知道它是不是我需要的。",
+      "actual": "policy_faq",
+      "predicted": "product_detail",
+      "confidence": 0.5765514271546313,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-023",
+      "text_zh": "退款多久到账啊都七天天了",
+      "actual": "policy_faq",
+      "predicted": "refund_progress",
+      "confidence": 0.9739072143418134,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-032",
+      "text_zh": "Wi-Fi 7路由器的运废多少?",
+      "actual": "policy_faq",
+      "predicted": "refund_progress",
+      "confidence": 0.37730883727128683,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-034",
+      "text_zh": "嘿,我在看3M N95口罩。这是工业用的还是医用的?",
+      "actual": "policy_faq",
+      "predicted": "product_detail",
+      "confidence": 0.9282915646002924,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-040",
+      "text_zh": "我想看看你们那该死的退款政策,能帮我吗?",
+      "actual": "policy_faq",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.9700127824029565,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-042",
+      "text_zh": "我想多了解一下你们的退款政策,帮我找找信息。",
+      "actual": "policy_faq",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.9717877894973137,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-044",
+      "text_zh": "能取消不?[订单号]。",
+      "actual": "policy_faq",
+      "predicted": "cancel_order",
+      "confidence": 0.9901461867701347,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-051",
+      "text_zh": "静音键盘能发到成都吗",
+      "actual": "policy_faq",
+      "predicted": "product_search",
+      "confidence": 0.5544500721523629,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-056",
+      "text_zh": "我得看看你们那个该死的退款政策,能帮我一下吗?",
+      "actual": "policy_faq",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.963791964126834,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-058",
+      "text_zh": "想了解你们他妈的退款政策,能给我讲讲吗?",
+      "actual": "policy_faq",
+      "predicted": "after_sales_eligibility",
+      "confidence": 0.9821843167847163,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-policy_faq-072",
+      "text_zh": "洗面奶的信息有吗?",
+      "actual": "policy_faq",
+      "predicted": "stock_price",
+      "confidence": 0.589602480223363,
+      "second_candidate": "product_detail"
+    },
+    {
+      "sample_id": "gold-policy_faq-078",
+      "text_zh": "嗨,想问下Gardena 10L浇水壶是再生塑料做的吗?",
+      "actual": "policy_faq",
+      "predicted": "product_detail",
+      "confidence": 0.8622129713207554,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-complaint-038",
+      "text_zh": "武汉这边[订单号]的扫地机器人一直不配送,投诉",
+      "actual": "complaint",
+      "predicted": "logistics_tracking",
+      "confidence": 0.921143771005591,
+      "second_candidate": "complaint"
+    },
+    {
+      "sample_id": "gold-complaint-040",
+      "text_zh": "嘿,我订了一个Bosch GSB 13 RE电钻([订单号]),才两周就已经出问题了。这可不是我对Bosch的期望!",
+      "actual": "complaint",
+      "predicted": "product_search",
+      "confidence": 0.48506867428999834,
+      "second_candidate": "return_exchange"
+    },
+    {
+      "sample_id": "gold-complaint-060",
+      "text_zh": "4K显示器有问题,申请退款被拒,[订单号],我要投诉。",
+      "actual": "complaint",
+      "predicted": "return_exchange",
+      "confidence": 0.9543799865256,
+      "second_candidate": "complaint"
+    },
+    {
+      "sample_id": "gold-complaint-067",
+      "text_zh": "书一直没送到。[订单号]",
+      "actual": "complaint",
+      "predicted": "logistics_tracking",
+      "confidence": 0.9789105100100317,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-complaint-074",
+      "text_zh": "行吧,你这么不顶用,那告诉我怎么正式投诉我根本没收到的那条Levi's 511 Slim Jeans,订单号是[订单号]。",
+      "actual": "complaint",
+      "predicted": "order_status",
+      "confidence": 0.42353399465989794,
+      "second_candidate": "return_exchange"
+    },
+    {
+      "sample_id": "gold-complaint-075",
+      "text_zh": "帮忙向你们公司提出索赔。",
+      "actual": "complaint",
+      "predicted": "out_of_scope",
+      "confidence": 0.41677904269729843,
+      "second_candidate": "return_exchange"
+    },
+    {
+      "sample_id": "gold-chitchat-005",
+      "text_zh": "告诉我我弹得的吉他曲在调上",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9740803353775817,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-009",
+      "text_zh": "我下午五点之后不想接任何电话",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9837635585315925,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-011",
+      "text_zh": "今晚曲棍球比赛几点开始",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9856768486182479,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-012",
+      "text_zh": "板凳比扁担宽扁担比板凳长",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.911586007930321,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-014",
+      "text_zh": "你好我今天早上七点需要喝咖啡",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9609918158015927,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-017",
+      "text_zh": "第一次七十度预报是什么时候",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9846884696995242,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-025",
+      "text_zh": "我今天占星报告说什么",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9837812462963856,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-029",
+      "text_zh": "今年十三号星期五",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9839991553820117,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-031",
+      "text_zh": "我想点餐你们有什么专供的海鲜吗",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9829974559218908,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-037",
+      "text_zh": "这个月几号我会比较忙",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9814741803745344,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-039",
+      "text_zh": "什么是最好的巧克力曲奇饼干食谱",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9832717945290448,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-041",
+      "text_zh": "告诉我哪种酒精饮料比较好",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9347742438656651,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-043",
+      "text_zh": "打电话去毛里塔尼亚每分钟话费是多少",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9806184690730975,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-chitchat-053",
+      "text_zh": "附近五十公里以内最便宜的马拉松是什么",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9286695735507138,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-054",
+      "text_zh": "李子柒有多少订阅",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9381587050611094,
+      "second_candidate": "policy_faq"
+    },
+    {
+      "sample_id": "gold-chitchat-064",
+      "text_zh": "提示什么",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9549064954665019,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-069",
+      "text_zh": "这台电脑很难用",
+      "actual": "chitchat",
+      "predicted": "product_search",
+      "confidence": 0.4072490505336888,
+      "second_candidate": "out_of_scope"
+    },
+    {
+      "sample_id": "gold-chitchat-073",
+      "text_zh": "我想解决数学问题",
+      "actual": "chitchat",
+      "predicted": "out_of_scope",
+      "confidence": 0.9104653958353222,
+      "second_candidate": "chitchat"
+    },
+    {
+      "sample_id": "gold-chitchat-076",
+      "text_zh": "机械键盘和Mesh路由器哪个好?",
+      "actual": "chitchat",
+      "predicted": "product_compare",
+      "confidence": 0.9819007055267555,
+      "second_candidate": "product_recommend"
+    },
+    {
+      "sample_id": "gold-out_of_scope-008",
+      "text_zh": "哪个运营商的流量套餐划算",
+      "actual": "out_of_scope",
+      "predicted": "product_recommend",
+      "confidence": 0.9112531242033306,
+      "second_candidate": "out_of_scope"
+    },
+    {
+      "sample_id": "gold-out_of_scope-050",
+      "text_zh": "最近有什么明星八卦",
+      "actual": "out_of_scope",
+      "predicted": "chitchat",
+      "confidence": 0.9821976688253322,
+      "second_candidate": "out_of_scope"
+    }
+  ],
+  "evaluation_status": "ai_assisted_verified_for_demo",
+  "human_review_status": "not_performed",
+  "limitations": [
+    "TF-IDF ECE and Brier use softmax-normalized LinearSVC decision scores; they are diagnostic and not calibrated probabilities.",
+    "MacBERT ECE and Brier use the published validation-fitted temperature.",
+    "AI-assisted suites are project-owner-accepted demo evidence, not independent human-gold evaluation."
+  ]
+}

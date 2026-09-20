@@ -1,0 +1,91 @@
+schema_version: '1.0'
+sources:
+- source_id: full_ecom
+  kind: huggingface_dataset
+  repo_id: rescommons/Full-Ecom-Chatbot-Dataset
+  url: https://huggingface.co/datasets/rescommons/Full-Ecom-Chatbot-Dataset
+  requested_revision: main
+  resolved_revision: 1726d95a7ca7876b1a99366976ca0bc6ef59eb2f
+  downloaded_at: '2026-09-15T11:02:41.883977+00:00'
+  local_path: data/raw/full_ecom
+  declared_license: mit
+  upstream_source: Research Commons aggregation; only explicitly approved record sources
+    may enter processed data
+  allowed_use: Local model-development experiments with per-record provenance filtering
+  redistribution_allowed: false
+  attribution_required: true
+  license_status: approved_for_experiment
+  approved_record_sources:
+  - synthetic_api_generated
+  - bitext_customer_support
+  - bitext_retail_ecom
+  handler: data-engineering
+  notes: ASOS and Amazon-derived records are quarantined because the aggregation license
+    does not replace upstream terms.
+  file_count: 8
+  total_bytes: 73419633
+  sha256: 99dd72ead32fbb105a8e8d5235845e7144f69016aae4744c1fcf9a076ba15257
+- source_id: massive_zh
+  kind: huggingface_dataset
+  repo_id: SetFit/amazon_massive_intent_zh-CN
+  url: https://huggingface.co/datasets/SetFit/amazon_massive_intent_zh-CN
+  requested_revision: main
+  resolved_revision: 2d22dfb0ce80a74e8350417c0435223ac0e2ef7c
+  downloaded_at: '2026-09-15T11:02:49.352076+00:00'
+  local_path: data/raw/massive_zh
+  declared_license: cc-by-4.0
+  upstream_source: Amazon MASSIVE 1.0/1.1, localized from SLURP
+  allowed_use: Intent experiments with attribution; only semantically compatible labels
+    or explicit OOS samples
+  redistribution_allowed: false
+  attribution_required: true
+  license_status: approved_for_experiment
+  approved_record_sources: []
+  handler: data-engineering
+  notes: Mirror metadata may omit the license; the upstream MASSIVE NOTICE and LICENSE
+    state CC BY 4.0.
+  file_count: 11
+  total_bytes: 1435140
+  sha256: 89cb1004f0718fd01d88b5ea4c41f28a32280829c087f481ca0bb093b102ce98
+- source_id: smp2017
+  kind: git_repository
+  repo_id: null
+  url: https://github.com/HITlilingzhi/SMP2017ECDT-DATA.git
+  requested_revision: master
+  resolved_revision: 25ddbc9e10f0051d4871b0474052fb1adc5354f7
+  downloaded_at: '2026-09-15T11:02:54.685047+00:00'
+  local_path: data/raw/smp2017
+  declared_license: research-use-notice
+  upstream_source: HIT-SCIR SMP2017 ECDT evaluation data
+  allowed_use: Local non-commercial research experiment with required paper citation
+  redistribution_allowed: false
+  attribution_required: true
+  license_status: approved_for_experiment
+  approved_record_sources: []
+  handler: data-engineering
+  notes: Repository contains no SPDX/OSI LICENSE; README says open for research use.
+    Raw data and derivatives are not redistributed.
+  file_count: 2
+  total_bytes: 34218418
+  sha256: 8918426e403d568c37cd9f93828882005942177b59621b23976cf8f55aa889c6
+- source_id: bitext_retail
+  kind: huggingface_dataset
+  repo_id: bitext/Bitext-retail-ecommerce-llm-chatbot-training-dataset
+  url: https://huggingface.co/datasets/bitext/Bitext-retail-ecommerce-llm-chatbot-training-dataset
+  requested_revision: main
+  resolved_revision: 12dd624ddcd3057382b2faad661bcda1fa869491
+  downloaded_at: '2026-09-15T11:03:03.644970+00:00'
+  local_path: data/raw/bitext_retail
+  declared_license: cdla-sharing-1.0
+  upstream_source: Bitext Innovations retail and e-commerce chatbot dataset
+  allowed_use: Computational use with attribution and CDLA Sharing obligations
+  redistribution_allowed: false
+  attribution_required: true
+  license_status: approved_for_experiment
+  approved_record_sources: []
+  handler: data-engineering
+  notes: Added as a direct, license-traceable source to cover e-commerce intents without
+    relying on unclear ASOS/Amazon provenance.
+  file_count: 5
+  total_bytes: 43077868
+  sha256: ea9a92ea23f294ba7b63eec06fca62a1c23a8d11d2ca7cccfc7d9a72c1b6827c

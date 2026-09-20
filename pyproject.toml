@@ -1,0 +1,119 @@
+[project]
+name = "commerce-agent"
+version = "0.1.0"
+description = "Docker-first e-commerce customer-service and shopping Agent"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "alembic>=1.14,<2",
+  "aiosqlite>=0.20,<1",
+  "asyncmy>=0.2,<1",
+  "fastapi>=0.115,<1",
+  "httpx>=0.28,<1",
+  "langchain-core>=0.3,<2",
+  "langchain-mcp-adapters>=0.1,<1",
+  "langgraph>=0.6,<2",
+  "langgraph-checkpoint-sqlite>=2,<4",
+  "mcp>=1.2,<2",
+  "openai>=1.60,<3",
+  "orjson>=3.10,<4",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "pyjwt>=2.10,<3",
+  "python-multipart>=0.0.20,<1",
+  "redis>=5.2,<7",
+  "sqlalchemy>=2.0,<3",
+  "tenacity>=9,<10",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[dependency-groups]
+dev = [
+  "mypy>=1.14,<2",
+  "pytest>=8.3,<9",
+  "pytest-asyncio>=0.25,<2",
+  "pytest-cov>=6,<8",
+  "ruff>=0.9,<1",
+  "types-pyyaml>=6.0,<7",
+]
+data = [
+  "datasketch>=1.6,<2",
+  "datasets>=3.2,<5",
+  "huggingface-hub>=0.28,<2",
+  "numpy>=2.1,<3",
+  "pandas>=2.2,<3",
+  "pyarrow>=18,<24",
+  "pyyaml>=6.0,<7",
+  "scikit-learn>=1.6,<2",
+]
+ml = [
+  "onnx>=1.17,<2",
+  "onnxruntime>=1.20,<2",
+  "optimum>=1.24,<3",
+  "torch>=2.5,<3",
+  "transformers>=4.48,<6",
+]
+inference = [
+  "numpy>=2.1,<3",
+  "onnxruntime>=1.20,<2",
+  "pyyaml>=6.0,<7",
+  "transformers>=4.48,<6",
+]
+rag = [
+  "elasticsearch[async]>=8.17,<9",
+  "pymilvus>=2.5,<3",
+  "sentence-transformers>=3.3,<6",
+]
+test = [
+  "locust>=2.32,<3",
+]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[tool.hatch.build.targets.wheel]
+packages = ["apps", "packages", "services"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --strict-config"
+asyncio_mode = "auto"
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+  "pandas",
+  "joblib",
+  "onnx",
+  "onnxruntime",
+  "datasets",
+  "datasketch",
+  "pymilvus",
+  "sklearn.*",
+  "torch",
+  "torch.*",
+  "transformers",
+]
+ignore_missing_imports = true

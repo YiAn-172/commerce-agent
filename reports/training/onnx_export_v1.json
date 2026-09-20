@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "checkpoint": "models/intent_classifier/best",
+  "checkpoint_sha256": "d53d7016266add9736f561ed37289c33855667fe8c6e67975f48673edd0a11de",
+  "selection": {
+    "run_group": "macbert_v1",
+    "selection_metric": "macro_f1",
+    "selected_run_id": "seed13_lr3em05",
+    "selected_seed": 13,
+    "selected_learning_rate": 3e-05,
+    "base_model_revision": "a986e004d2a7f2a1c2f5a3edef4e20604a974ed1"
+  },
+  "config_sha256": "d2008bdeeffe33eea03e7105685d15bb3db50b39e7c784470f8485240fa8ac2e",
+  "onnx_path": "models/intent_classifier/best/onnx/model.onnx",
+  "onnx_sha256": "fb019e74904bf499c6928cd7966b091fa5f656459998e1349f02ac7c44e70e06",
+  "onnx_bytes": 409351745,
+  "opset": 17,
+  "inputs": [
+    "input_ids",
+    "attention_mask",
+    "token_type_ids"
+  ],
+  "outputs": [
+    "logits"
+  ],
+  "labels": [
+    "product_search",
+    "product_recommend",
+    "product_compare",
+    "product_detail",
+    "stock_price",
+    "order_status",
+    "logistics_tracking",
+    "cancel_order",
+    "return_exchange",
+    "refund_progress",
+    "after_sales_eligibility",
+    "policy_faq",
+    "complaint",
+    "human_handoff",
+    "chitchat",
+    "out_of_scope"
+  ],
+  "checker_passed": true
+}

@@ -1,0 +1,32 @@
+{
+  "gold_queue_rows": 1600,
+  "gold_rows_per_stratum": {
+    "after_sales_eligibility": 100,
+    "cancel_order": 100,
+    "chitchat": 100,
+    "complaint": 100,
+    "human_handoff": 100,
+    "logistics_tracking": 100,
+    "order_status": 100,
+    "out_of_scope": 100,
+    "policy_faq": 100,
+    "product_compare": 100,
+    "product_detail": 100,
+    "product_recommend": 100,
+    "product_search": 100,
+    "refund_progress": 100,
+    "return_exchange": 100,
+    "stock_price": 100
+  },
+  "independent_human_rewrite_rows": 366,
+  "double_annotation_rows": 320,
+  "challenge_queue_rows": 400,
+  "challenge_type_counts": {
+    "multi_intent": 160,
+    "low_information": 120,
+    "out_of_scope": 80,
+    "near_boundary": 40
+  },
+  "status": "pending_human_review_not_gold",
+  "freeze_gate": "Do not rename to intent_gold_v1 or use for final metrics until two-person overlap, adjudication, kappa calculation, and leakage checks pass."
+}

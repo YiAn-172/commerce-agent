@@ -1,0 +1,10 @@
+{
+  "phase": "decision_committed_graph_not_resumed",
+  "principal_id": "usr_demo_0005",
+  "session_id": "ses_p7_f704ceb831b2491f",
+  "approval_id": "approval_b0f39daa140d4df8b6399687138d4724",
+  "decision": "approved",
+  "decision_state_version": 3,
+  "api_container_restart_required": true,
+  "session_created": true
+}

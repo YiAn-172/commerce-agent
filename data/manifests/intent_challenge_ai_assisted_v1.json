@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "challenge_version": "intent_challenge_ai_assisted_v1",
+  "evaluation_status": "ai_assisted_verified_for_demo",
+  "human_review_status": "not_performed",
+  "row_count": 400,
+  "challenge_type_counts": {
+    "low_information": 120,
+    "multi_intent": 160,
+    "near_boundary": 40,
+    "out_of_scope": 80
+  },
+  "output_sha256": "6ba6e20cfe82c3747dd1ab303c24b94c07eb3cc8a89d8daf226eda6838a1e1ac",
+  "created_at": "2026-09-18T10:49:08.943276+00:00"
+}
