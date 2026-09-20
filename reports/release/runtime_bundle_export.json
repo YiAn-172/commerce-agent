@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "verified",
+  "bundle_path": "dist\\commerce-agent-demo-runtime-v1.zip",
+  "bundle_size_bytes": 414276839,
+  "bundle_sha256": "f8386e93c390b444dc72e73de86eb67c21e227be9ec62b0678be3d6f26ea4c73",
+  "file_count": 10,
+  "payload_size_bytes": 414272874,
+  "contains_secrets": false,
+  "created_at": "2026-09-20T03:22:09.288319+00:00"
+}

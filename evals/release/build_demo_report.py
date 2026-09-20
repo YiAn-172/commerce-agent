@@ -82,6 +82,7 @@ def build(root: Path) -> dict[str, Any]:
     commit = git(root, "rev-parse", "HEAD")
     porcelain = git(root, "status", "--porcelain")
     deepseek = read_json(root / "reports/agent/p6_deepseek_live.json") or {}
+    fresh_clone = read_json(root / "reports/release/fresh_clone_reproduction.json") or {}
     waivers: list[dict[str, Any]] = [
         {
             "gate": "independent_human_review",
@@ -97,8 +98,8 @@ def build(root: Path) -> dict[str, Any]:
             "gate": "fresh_clone_reproduction",
             "status": "not_performed_demo_only",
             "reason": (
-                "The repository has no initial Git HEAD, so the measured run used the current "
-                "workspace and newly recreated containers rather than a separate fresh clone."
+                "The committed source has not yet been proven in a fully isolated demo runtime "
+                "with externally distributed model/data artifacts."
             ),
         },
         {
@@ -134,6 +135,14 @@ def build(root: Path) -> dict[str, Any]:
             "status": deepseek.get("status", "not_run"),
             "model": deepseek.get("model"),
             "checked_at": deepseek.get("checked_at"),
+        },
+        "fresh_clone_reproduction": {
+            "status": fresh_clone.get("evaluation_status", "not_run"),
+            "git_commit": fresh_clone.get("git_commit"),
+            "source_checks_passed": fresh_clone.get("source_checks_passed", False),
+            "runtime_artifacts_complete": fresh_clone.get(
+                "runtime_artifacts_complete", False
+            ),
         },
         "evidence": {
             name: {

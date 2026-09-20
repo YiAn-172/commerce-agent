@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "evaluation_status": "source_and_runtime_artifacts_verified",
+  "git_commit": "9dbf9ac08a188e67f87fc3936717e48e153de7fd",
+  "clone_clean": true,
+  "source_checks_passed": true,
+  "runtime_artifacts_complete": true,
+  "runtime_artifacts": {
+    "intent_model_manifest": true,
+    "intent_onnx": true,
+    "knowledge_documents": true
+  },
+  "training_artifacts": {
+    "intent_train_data": false
+  },
+  "runtime_bundle": {
+    "sha256": "f8386e93c390b444dc72e73de86eb67c21e227be9ec62b0678be3d6f26ea4c73",
+    "file_count": 10,
+    "installed_files": 10
+  },
+  "full_isolated_demo_stack_started": false,
+  "scope_note": "This verifies committed source plus an explicitly supplied runtime bundle from a clean local clone. It does not claim a fully isolated demo-stack deployment.",
+  "checks": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--local",
+        "--no-hardlinks",
+        "C:\\Users\\mtcbf\\Desktop\\commerce-agent",
+        "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.tmp\\fresh-clone-verification"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.35,
+      "stdout_tail": "",
+      "stderr_tail": "Cloning into 'C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.tmp\\fresh-clone-verification'...\ndone.\n"
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.095,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "config",
+        "--quiet"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.342,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--cache-dir",
+        "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.uv-cache",
+        "--frozen",
+        "--all-groups",
+        "ruff",
+        "check",
+        "packages",
+        "apps",
+        "services",
+        "evals",
+        "scripts",
+        "tests"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 8.481,
+      "stdout_tail": "All checks passed!\n",
+      "stderr_tail": "warning: `VIRTUAL_ENV=C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead\nUsing CPython 3.11.15\nCreating virtual environment at: .venv\n   Building commerce-agent @ file:///C:/Users/mtcbf/Desktop/commerce-agent/.tmp/fresh-clone-verification\n      Built commerce-agent @ file:///C:/Users/mtcbf/Desktop/commerce-agent/.tmp/fresh-clone-verification\nInstalled 167 packages in 7.26s\n"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--cache-dir",
+        "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.uv-cache",
+        "--frozen",
+        "--all-groups",
+        "mypy",
+        "packages",
+        "apps",
+        "services",
+        "evals",
+        "scripts",
+        "tests"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 51.155,
+      "stdout_tail": "Success: no issues found in 210 source files\n",
+      "stderr_tail": "warning: `VIRTUAL_ENV=C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead\n"
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "--profile",
+        "test",
+        "run",
+        "--rm",
+        "--no-deps",
+        "evaluator",
+        "uv",
+        "run",
+        "--frozen",
+        "pytest",
+        "-q",
+        "tests",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/tmp/pytest-fresh-clone"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 32.67,
+      "stdout_tail": "........................................................................ [ 49%]\n........................................................................ [ 99%]\n.                                                                        [100%]\n=============================== warnings summary ===============================\n../opt/venv/lib/python3.11/site-packages/starlette/testclient.py:53\n  /opt/venv/lib/python3.11/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n145 passed, 1 warning in 21.83s\n",
+      "stderr_tail": "   Building commerce-agent @ file:///workspace\n      Built commerce-agent @ file:///workspace\nInstalled 1 package in 0.87ms\n"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.043,
+      "stdout_tail": "9dbf9ac08a188e67f87fc3936717e48e153de7fd\n",
+      "stderr_tail": ""
+    }
+  ],
+  "environment": {
+    "operating_system": "nt",
+    "clone_path": "C:\\Users\\mtcbf\\Desktop\\commerce-agent\\.tmp\\fresh-clone-verification",
+    "configuration_source": "workspace_env",
+    "pytest_dependencies": "existing_compose_network"
+  },
+  "created_at": "2026-09-20T03:27:08.896084+00:00"
+}

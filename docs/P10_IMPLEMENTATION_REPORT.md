@@ -15,8 +15,9 @@ now publishes two intentionally separate evidence profiles:
 
 The demo report preserves `human_review_status=not_performed` and
 `provenance=ai_assisted_project_owner_accepted`. It does not relabel AI-assisted annotations as
-human gold. It also records that a separate fresh-clone reproduction and presentation video were
-not performed; the measured run used newly recreated containers against the current workspace.
+human gold. The initial Git baseline now exists. A clean-clone source verification is recorded
+separately, while a fully isolated demo-runtime reconstruction still waits for externally
+distributed model/data artifacts. A presentation video has not been recorded.
 
 ## 2. Docker stack and readiness
 
@@ -166,24 +167,49 @@ Measured source and restored counts matched: 100 users, 3,000 orders, 110 servic
 Final commands and results:
 
 ```text
-ruff check packages apps evals scripts tests: passed
-mypy packages apps evals scripts tests: passed on 203 source files
-pytest in Compose evaluator: 145 passed, 1 dependency warning
+ruff check packages apps services evals scripts tests: passed
+mypy packages apps services evals scripts tests: passed on 215 source files
+pytest in Compose evaluator: 148 passed, 1 dependency warning
 ```
 
 The full test suite ran inside the Compose evaluator so MySQL integration tests used the real
 container hostname and backend.
 
-## 8. Remaining strict-release blockers
+## 8. Clean-clone source verification
+
+After creating the initial Git baseline at commit
+`9dbf9ac08a188e67f87fc3936717e48e153de7fd`,
+`scripts/verify_fresh_clone.py` cloned only committed files into an ignored temporary directory and
+measured the clone independently:
+
+- clone working tree: clean;
+- `docker compose config --quiet`: passed;
+- Ruff: passed;
+- mypy: passed on 210 source files;
+- pytest from the clone-mounted Compose evaluator: 145 passed.
+
+The test container reused the already-running Compose dependency network and the local `.env`
+configuration; secrets were not copied into evidence. This is therefore source reproducibility
+evidence, not a fully isolated deployment reproduction.
+
+The ignored ONNX runtime and generated knowledge documents were packaged into
+`dist/commerce-agent-demo-runtime-v1.zip` using a strict ten-file whitelist. The 414,276,839-byte
+bundle contains no secrets and has SHA-256
+`f8386e93c390b444dc72e73de86eb67c21e227be9ec62b0678be3d6f26ea4c73`.
+Its importer rejects undeclared members and path traversal, verifies every file hash, and fails
+closed on mismatched existing files. The bundle is local and Git-ignored until it is uploaded to a
+controlled release location. Evidence: `reports/release/runtime_bundle_export.json` and
+`reports/release/fresh_clone_reproduction.json`. The latter is
+`source_and_runtime_artifacts_verified`; a separate isolated stack was not started.
+
+## 9. Remaining strict-release blockers
 
 The strict `latest_candidate.json` correctly remains blocked by:
 
 - no independent human intent gold;
 - routing/tool-selection human review not completed;
 - E2E human review not completed;
-- separate fresh-clone reproduction and presentation recording not completed;
-- repository has no initial Git HEAD;
-- working tree is not clean.
+- fully isolated fresh-clone runtime reconstruction and presentation recording are not completed.
 
 These blockers are intentionally not weakened. The current project can be demonstrated using the
 AI-assisted profile, but must not be represented as a human-gold or strict production release.

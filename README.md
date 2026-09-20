@@ -66,7 +66,7 @@ C:\Users\mtcbf\Desktop\commerce-agent
   checkpoint 导出、API 重启恢复、64 条安全攻击和两组在线负载均已形成可审计证据。
 - 浏览器演示已完成 AI 辅助视觉复验：客户登录默认进入干净的新咨询，压测/安全测试
   技术会话不会污染客户侧栏，运营视角可见激活知识版本、评测指标和 mock 审批队列。
-- 最新全仓回归为 145 个测试全部通过；Ruff 和 203 个源码/测试文件的 mypy 通过。
+- 最新全仓回归为 148 个测试全部通过；Ruff 和 215 个源码/测试文件的 mypy 通过。
   Compose 配置、Alembic 漂移、演示数据一致性和知识版本激活状态均通过。
 
 人工队列尚未完成双人标注与仲裁，因此当前不能称为“1,600 条冻结人工金标”。当前可用
@@ -411,6 +411,21 @@ artifacts are marked `ai_assisted_verified_for_demo` and retain
 strict production report remains blocked, while `reports/release/latest_demo_verified.json` records
 the explicit demo waivers and verified Docker/load/security/recovery evidence. See
 `docs/P9_IMPLEMENTATION_REPORT.md` and `docs/P10_IMPLEMENTATION_REPORT.md`.
+
+### 运行时产物包
+
+模型权重和生成后的知识文档不提交 Git。发布演示仓库前，可生成一个不含 `.env` 或密钥的
+运行时包，并将报告中的 SHA-256 与压缩包一起发布到受控 Release：
+
+```powershell
+uv run --cache-dir .uv-cache --frozen python scripts/export_runtime_bundle.py
+uv run --cache-dir .uv-cache --frozen python scripts/import_runtime_bundle.py `
+  dist/commerce-agent-demo-runtime-v1.zip --sha256 <release-sha256>
+```
+
+`dist/` 默认被 Git 忽略。导入器要求压缩包成员与清单完全一致、拒绝路径穿越，并逐文件
+验证大小和 SHA-256；遇到不同的已有文件默认失败关闭，只有显式 `--replace` 才会替换。
+本地已生成的 v1 包尚未上传到外部 Release，因此完整远端克隆复现仍未闭环。
 
 ## 数据安全与版本边界
 

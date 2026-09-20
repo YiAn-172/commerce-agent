@@ -19,6 +19,7 @@ data/annotation/*
 models/*
 !models/.gitkeep
 backups/
+dist/
 reports/**/*.html
 reports/**/*.jsonl
 *.sqlite
